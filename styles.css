@@ -1,0 +1,174 @@
+html {
+        background-image: image-set("Assets/Icon.png");
+        background-size: cover;
+}
+body {
+        top: -10px;
+        left: -10px;
+        position: fixed;
+        background-color: rgba(51, 51, 51, 0.5);
+        background-size: cover;
+        width: 100%;
+        height: 2000px;
+}
+
+.top {
+        position:fixed;
+        width: 80%;
+        top: 0;
+        margin-right: 10%;
+        margin-left: 10%;
+        align-self: center;
+        font-weight: 900;
+        background-color:#0ce23a38;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        transition-duration: 0.4s;
+        white-space-collapse: nowrap;
+}
+
+.top a {
+        font-weight: 900;
+        font-size:larger;
+        margin: 15px;
+        padding: 5px;
+        padding-bottom: 18px;
+        padding-top: 18px;
+        color: #000000;
+        background-color: #bdb64ea8;
+        background-size: cover;
+        width: 20%;
+        border-radius: 13px;
+        display:inline-block;
+        transition-duration: 0.4s;
+        text-decoration: none;
+}
+
+.top a:hover{
+        margin: 10px;
+        padding: 10px;
+        padding-bottom: 23px;
+        padding-top: 23px;
+        background-color:rgba(230, 220, 90, 0.87);
+}
+
+.top a.active{
+        background-color: rgba(230, 220, 90, 0.87)
+}
+
+.shader{
+        color:#00000080;
+        background-color: #00000054;
+        size: inherit;
+}
+
+.center {
+        top: 10px;
+        left:10px;
+        padding-left:10%;
+        padding-right:10%
+}
+
+.socialsList{
+        margin:10%;
+        padding: 1px;
+        width: 80%;
+        margin-top: 200px;
+        left:20%;
+        color: aliceblue;
+        background-color: #00000080;
+        border-radius: 20px;
+        height: 700px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+}
+
+.social{
+        height: 220px;
+        width: 80%;
+        margin: 5%;
+        align-items: center;
+        border-radius:20px;
+        margin-top: 100px;
+}
+.social .body{
+        background-color: #3333336c;
+        position:relative;
+        height:240px;
+        top:0;
+        padding-top:40px;
+        border-radius: 20px;
+}
+.social h1{
+        height:35px;
+        position:relative;
+        background-color: #00000057;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding:5px;
+        padding-left:15px;
+        bottom:302px;
+}
+.social .body .text {
+        color: aliceblue;
+        font-size: x-large;
+        position:relative;
+        margin: 10px;
+        padding: 10px;
+        display: inline-block;
+        width: 50%;
+        text-decoration: none;
+}
+.social .body .image{
+        transition-duration: 0.5s;
+        position:absolute;
+        padding:10px;
+        width: 160px;
+        height: 160px;
+        top:60px;
+        right:20px;
+        display: inline-block;
+        background-color: white;
+        background-size:contain;
+        border-radius: 15px;
+
+}
+@media only screen and (max-width: 700px){
+        .top {
+                width:100%;
+                margin:0;
+        }
+        .top a{
+                width: 26%;
+                margin: 5px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+        }
+        .socialsList{
+                margin-left:0;
+                width: 100%;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                height:700px
+        }
+        .social{
+                margin:0;
+                width:95%;
+                height:280px;
+                padding-bottom: 100px;
+        }
+        .social .body{
+                height:280px
+        }
+        .social h1{
+                bottom:341px;
+        }
+        .social .body .image{
+                height: 80px;
+                width: 80px
+        }
+        .social .body .text{
+                font-size: medium;
+        }
+}
