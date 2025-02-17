@@ -75,7 +75,7 @@ body {
         padding: 1px;
         width: 80%;
         margin-top: 200px;
-        left:20%;
+        left:15%;
         color: aliceblue;
         background-color: #00000080;
         border-radius: 20px;
@@ -87,9 +87,10 @@ body {
 .social{
         height: 220px;
         width: 80%;
-        margin: 5%;
+        margin: 10%;
         align-items: center;
         border-radius:20px;
+        margin-bottom:0;
         margin-top: 100px;
 }
 .social .body{
@@ -134,7 +135,11 @@ body {
         border-radius: 15px;
 
 }
+
+
+.mobile{display:none;}
 @media only screen and (max-width: 700px){
+        html{background-size: 200%;}
         .top {
                 width:100%;
                 margin:0;
@@ -154,7 +159,7 @@ body {
         }
         .social{
                 margin:0;
-                width:95%;
+                width:100%;
                 height:280px;
                 padding-bottom: 100px;
         }
@@ -171,4 +176,6 @@ body {
         .social .body .text{
                 font-size: medium;
         }
+        .desktop{display: none;}
+        .mobile{display: contents;}
 }
