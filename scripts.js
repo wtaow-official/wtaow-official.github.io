@@ -55,7 +55,7 @@ function checkEnabled(id, cname){
         if (string == "true"){
                 element.style.display = "flex";
                 document.getElementById("base").style.overflowY = "hidden"
-                document.getElementById("posterSwap").style.backgroundColor = "green"
+                document.getElementById("posterSwap").style.backgroundColor = "#00FF00"
         }
         else{
                 document.getElementById("posterSwap").style.backgroundColor = "red"
@@ -67,7 +67,7 @@ function swapEnabled(cname){
         if (string == "false"){
                 setCookie(cname, true, 365)
                 console.log("poster is set to true")
-                document.getElementById("posterSwap").style.backgroundColor = "green"
+                document.getElementById("posterSwap").style.backgroundColor = "#00FF00"
         }
         else{
                 setCookie(cname, false, 365)
