@@ -14,80 +14,117 @@
                                 font-size: larger;
                                 font-weight: 900;
                         }
-                        .tile.alexis .image{
-                                background-image: image-set("assets/alexis.png");
-                        }
-                        .tile.ali .image{
-                                background-image: image-set("assets/ali.png");
-                        }
-                        .tile.angel_1-0 .image{
-                                background-image: image-set("assets/angelbot_model_1-0.png");
-                        }
-                        .tile.angel_3-2 .image{
-                                background-image: image-set("assets/angelbot_model_3-2.png");
-                        }
-                        .tile.angel_3-3 .image{
-                                background-image: image-set("assets/angelbot_model_3-3.png");
-                        }
-                        .tile.angel_x .image{
-                                background-image: image-set("assets/angelbot_model_x.png");
-                        }
-                        .tile.blake .image{
-                                background-image: image-set("assets/blake.png");
-                        }
+                        .tile.alexis .image{background-image: image-set("assets/alexis.png");}
+                        .tile.ali .image{background-image: image-set("assets/ali.png");}
+                        .tile.angel_1-0 .image{background-image: image-set("assets/angelbot_model_1-0.png");}
+                        .tile.angel_3-2 .image{background-image: image-set("assets/angelbot_model_3-2.png");}
+                        .tile.angel_3-3 .image{background-image: image-set("assets/angelbot_model_3-3.png");}
+                        .tile.angel_x .image{background-image: image-set("assets/angelbot_model_x.png");}
+                        .tile.blake .image{background-image: image-set("assets/blake.png");}
+                        .tile.blake .image{background-image: image-set("assets/blake.png");}
+                        .tile.griffon .image{background-image: image-set("assets/griffon.png");}
+                        .tile.kit .image{background-image: image-set("assets/kit2.png");}
+                        .tile.lettia .image{background-image: image-set("assets/lettia.png");}
+                        .tile.maria .image{background-image: image-set("assets/maria.png");}
+                        .tile.marissa .image{background-image: image-set("assets/marissa.png");}
+                        .tile.medusa .image{background-image: image-set("assets/medusa.png");}
+                        .tile.milo .image{background-image: image-set("assets/milo.png");}
+                        .tile.owen .image{background-image: image-set("assets/owen.png");}
+                        .tile.sophia .image{background-image: image-set("assets/sophia.png");}
+                        .tile.thea .image{background-image: image-set("assets/thea.png");}
                 </style>
+                <script>
+                        function link(hyperlink){
+                                window.location.href = hyperlink;
+                        }
+                </script>
         </head>
 
         <body class = "index_Back">
-
+                <div class= "backing"></div>
+                <div class= "cover"></div>
                 <div class = "top">
                         <div class = "links">
                                 <a href = "../socials.html"><p>Socials</p></a>
                                 <a href = ".."><p>Home</p></a>
-                                <a href = "characters/" class = "active"><p>Characters</p></a>
+                                <a href = "." class = "active"><p>Characters</p></a>
                         </div>
                 </div>
 
-                <div class = "center">
-                </div>
                 <div class = "characterSelector">
-                        <div class = "tile alexis" id = "alexis">
+                        <div class = "tile alexis" onclick = "link('alexis.html')">
                                 <a class = "image"></a>
                                 <a>Alexis</a>
                         </div>
-                        <div class = "tile ali">
+                        <div class = "tile ali" onclick = "link('ali.html')">
                                 <a class = "image"></a>
                                 <a>Ali</a>
                         </div>
-                        <div class = "tile angel_1-0">
+                        <div class = "tile angel_1-0" onclick = "link('angelbot-model_1-0.html')">
                                 <a class = "image"></a>
                                 <a>Angelbot Model 1.0</a>
                         </div>
-                        <div class = "tile angel_3-2">
+                        <div class = "tile angel_3-2" onclick = "link('angelbot_model_3-2.html')">
                                 <a class = "image"></a>
                                 <a>Angelbot Model 3.2</a>
                         </div>
-                        <div class = "tile angel_3-3">
+                        <div class = "tile angel_3-3" onclick = "link('angelbot_model_3-3.html')">
                                 <a class = "image"></a>
                                 <a>Angelbot Model 3.3</a>
                         </div>
-                        <div class = "tile angel_x">
+                        <div class = "tile angel_x" onclick = "link('angelbot_model_x.html')">
                                 <a class = "image"></a>
                                 <a>Angelbot Model X</a>
                         </div>
-                        <div class = "tile blake">
+                        <div class = "tile blake" onclick = "link('blake.html')">
                                 <a class = "image"></a>
                                 <a>Blake</a>
                         </div>
-                        <div class = "tile griffon">
-                                <a class = "image"></a>
+                        <div class = 'tile griffon' onclick = "link('griffon.html')">
+                                <a class = 'image'></a>
                                 <a>Griffon</a>
                         </div>
-                        <div class = "tile kit">
-                                <a class = "image"></a>
+                        <div class = 'tile kit' onclick = "link('kit.html')">
+                                <a class = 'image'></a>
                                 <a>Kit</a>
                         </div>
-
+                        <div class = 'tile lettia' onclick = "link('lettia.html')">
+                                <a class = 'image'></a>
+                                <a>Lettia</a>
+                        </div>
+                        <div class = 'tile maria' onclick = "link('maria.html')">
+                                <a class = 'image'></a>
+                                <a>Maria</a>
+                        </div>
+                        <div class = 'tile marissa' onclick = "link('marissa.html')">
+                                <a class = 'image'></a>
+                                <a>Marrissa</a>
+                        </div>
+                        <div class = 'tile medusa' onclick = "link('medusa.html')">
+                                <a class = 'image'></a>
+                                <a>Medusa</a>
+                        </div>
+                        <div class = 'tile milo' onclick = "link('milo.html')">
+                                <a class = 'image'></a>
+                                <a>Milo</a>
+                        </div>
+                        <div class = 'tile owen' onclick = "link('owen.html')">
+                                <a class = 'image'></a>
+                                <a>Owen</a>
+                        </div>
+                        <div class = 'tile sophia' onclick = "link('sophia.html')">
+                                <a class = 'image'></a>
+                                <a>Sophia</a>
+                        </div>
+                        <div class = 'tile thea' onclick = "link('thea.html')">
+                                <a class = 'image'></a>
+                                <a>Thea</a>
+                        </div>
+<!--
+Did I entirely remake the image for Kit in the picrew because it was ever so slightly off?
+Yes, yes I did, it was pissing me off. Did it take a while because I wasn't the one who made the original?
+Also yes. I'm a perfectionist and autistic, deal with it
+-->
                 </div>
 
 

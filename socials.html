@@ -6,6 +6,8 @@
                 <title>WTAOW</title>
                 <link rel="icon" type="image/x-icon" href="assets/Icon.png">
                 <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+                <link rel="javascript" href = "scripts.js" type="text/javascript">
+                <script src = "scripts.js"></script>
                 <style>
                         .discord{
                                 margin-top:30px;
@@ -26,28 +28,33 @@
                         .tiktok h1{background-color: #fe285686;}
                         .tumblr .body {background-color: rgb(58, 48, 82)}
                         .tumblr .body .image {background-image:image-set("assets/tumblr.png");}
-                        .tumblr h1{background-color: #efb76d;}
-                    
+
                         @media only screen and (max-width: 700px){
-                                .discord{height:240px}
-                                .discord .body{height:260px}
-                                .discord h1{bottom:322px}
+                                .discord{height:250px}
+                                .discord .body{height:270px}
+                                .discord h1{bottom:332px}
                                 .youtube{height:120px}
                                 .youtube .body{height:140px}
                                 .youtube h1{bottom:202px}
                                 .tiktok{height:160px}
                                 .tiktok .body{height:160px}
                                 .tiktok h1{bottom:222px;}
+                                .tumblr{height:160px}
+                                .tumblr .body{height:160px}
+                                .tumblr h1{bottom:222px;}
                         }
                 </style>
+                <script>
+                </script>
         </head>
 
-        <body>
-
+        <body onload = "">
+                <div class= "backing"></div>
+                <div class= "cover"></div>
                 <div class = "socialsList" >
                         <div class = "social discord">
                                 <div class = "body">
-                                        <a class = "image" href ="https://discord.gg/GfDZJJ25qK"></a>
+                                        <a class = "image" href ="https://discord.gg/GfDZJJ25qK" onmouseover ="spin('image', 0)"></a>
                                         <a class = "text"  href ="https://discord.gg/GfDZJJ25qK">
                                                 Come join our discord! We foster a wonderful community with our excellent staff, here you can;
                                             <br>▣ Audition for roles in the project,
@@ -65,7 +72,7 @@
                                                 Check out our Youtube channel!
                                             <br>There you can find tons of lore and a lot of fun :)
                                         </a>
-                                        <a class = "image" href ="https://www.youtube.com/@fireboaserpent"></a>
+                                        <a class = "image" href ="https://www.youtube.com/@fireboaserpent" onmouseover ="spin('image', 1)"></a>
                                 </div>
                                 <h1>Youtube</h1>
                         </div>
@@ -75,7 +82,7 @@
                                                 Check out our TikTok page!
                                             <br>There you can find tons of lore and a lot of fun :)
                                         </a>
-                                        <a class = "image" href ="https://www.tiktok.com/@fireboaserpent"></a>
+                                        <a class = "image" href ="https://www.tiktok.com/@fireboaserpent" onmouseover ="spin('image', 2)"></a>
                                 </div>
                                 <h1>TikTok</h1>
                         </div>
@@ -84,7 +91,7 @@
                                         <a class = "text" href ="https://www.tumblr.com/wasthereanyotherway">
                                                 lorem ipsum dolor sit amet, consecetur adipiscing elit
                                         </a>
-                                        <a class = "image" href ="https://www.tumblr.com/wasthereanyotherway"></a>
+                                        <a class = "image" href ="https://www.tumblr.com/wasthereanyotherway" onmouseover ="spin('image', 3)"></a>
                                 </div>
                                 <h1>Tumblr</h1>
                         </div>
