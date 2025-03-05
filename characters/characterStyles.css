@@ -1,0 +1,21 @@
+.characterSelector{
+        margin: 10%;
+        width: 80%;
+        background-color:rgba(205, 134, 63, 0.74);
+}
+.characterSelector .tile{
+        margin:5.5%;
+        display: inline-block;
+        width: 20%;
+        background-color:rgba(87, 79, 72, 0.74);
+        padding: 1%;
+        align-content: center;
+}
+
+.tile .image{
+        width: 102%;
+        aspect-ratio: 1/1;
+        background-size: contain;
+        display:inline-block;
+        object-fit:contain;
+}

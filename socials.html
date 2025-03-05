@@ -4,36 +4,35 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>WTAOW</title>
-                <link rel="icon" type="image/x-icon" href="Assets/Icon.png">
+                <link rel="icon" type="image/x-icon" href="assets/Icon.png">
                 <link href="styles.css" rel="stylesheet" type="text/css" media="all">
                 <style>
                         .discord{
                                 margin-top:30px;
-                                height:260px
+                                height:300px
                         }
                         .discord .body {
                                 background-color: rgba(88, 101, 242, 0.7);
-                                height:260px
+                                height:300px
                         }
                         .discord h1{
-                                bottom:321px
+                                bottom:361px
                         }
-                        .discord .body .image {background-image:image-set("Assets/discord.png")}
+                        .discord .body .image {background-image:image-set("assets/discord.png")}
                         .youtube .body {background-color: rgba(255, 0, 0, 0.7)}
-                        .youtube .body .image {background-image:image-set("Assets/youtube.png")}
+                        .youtube .body .image {background-image:image-set("assets/youtube.png")}
                         .tiktok .body {background-color: rgba(0, 0, 0, 0.8)}
-                        .tiktok .body .image {background-image:image-set("Assets/tiktok.png");}
+                        .tiktok .body .image {background-image:image-set("assets/tiktok.png");}
                         .tiktok h1{background-color: #fe285686;}
-
-                        .tiktok{
-                                border-color: #fe2858;
-                                border-width: 10px;
-                        }
+                        .tumblr .body {background-color: rgb(58, 48, 82)}
+                        .tumblr .body .image {background-image:image-set("assets/tumblr.png");}
+                        .tumblr h1{background-color: #efb76d;}
+                    
                         @media only screen and (max-width: 700px){
-                                .discord{height:340px}
-                                .discord .body{height:340px}
-                                .discord h1{bottom:402px}
-                                .youtube{height:140px}
+                                .discord{height:240px}
+                                .discord .body{height:260px}
+                                .discord h1{bottom:322px}
+                                .youtube{height:120px}
                                 .youtube .body{height:140px}
                                 .youtube h1{bottom:202px}
                                 .tiktok{height:160px}
@@ -45,12 +44,7 @@
 
         <body>
 
-                <div class = "top">
-                                <a href = "" class = "active">Socials</a>
-                                <a href = "." >Home</a>
-                                <a href = "video-feed.html">Videos</a>
-                </div>
-                <div class = "socialsList">
+                <div class = "socialsList" >
                         <div class = "social discord">
                                 <div class = "body">
                                         <a class = "image" href ="https://discord.gg/GfDZJJ25qK"></a>
@@ -85,9 +79,21 @@
                                 </div>
                                 <h1>TikTok</h1>
                         </div>
-                        <br><br><br><br><br><br><br><br><br><br><br>
+                        <div class = "social tumblr">
+                                <div class = "body">
+                                        <a class = "text" href ="https://www.tumblr.com/wasthereanyotherway">
+                                                lorem ipsum dolor sit amet, consecetur adipiscing elit
+                                        </a>
+                                        <a class = "image" href ="https://www.tumblr.com/wasthereanyotherway"></a>
+                                </div>
+                                <h1>Tumblr</h1>
+                        </div>
                         <p class = "desktop"><br><br><br><br></p>
                 </div>
-                <p></p>
+                <div class = "top">
+                        <a href = "" class = "active"><p>Socials</p></a>
+                        <a href = "."><p>Home</p></a>
+                        <a href = "characters/"><p>Characters</p></a>
+                </div>
         </body>
 </html>

@@ -1,26 +1,33 @@
+
 html {
-        background-image: image-set("Assets/Icon.png");
-        background-size: cover;
+        width: 102%;
+        background-image: image-set("assets/Icon.png");
+        background-size: contain;
+        overflow-x: hidden;
+
 }
-body {
+.cover {
+        position: fixed;
         top: -10px;
         left: -10px;
-        position: fixed;
-        background-color: rgba(51, 51, 51, 0.5);
+        background-color: rgba(21, 21, 21, 0.8);
         background-size: cover;
         width: 100%;
-        height: 2000px;
+        height: 100%;
+        overflow-x: hidden;
 }
+
+
 
 .top {
         position:fixed;
-        width: 80%;
+        width: 90%;
         top: 0;
-        margin-right: 10%;
-        margin-left: 10%;
+        margin-right: 5%;
+        margin-left: 5%;
         align-self: center;
         font-weight: 900;
-        background-color:#0ce23a38;
+        background-color:#0a9127be;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         text-align: center;
@@ -30,7 +37,7 @@ body {
 
 .top a {
         font-weight: 900;
-        font-size:larger;
+        font-size:x-large;
         margin: 15px;
         padding: 5px;
         padding-bottom: 18px;
@@ -38,23 +45,35 @@ body {
         color: #000000;
         background-color: #bdb64ea8;
         background-size: cover;
-        width: 20%;
+        width: 180px;
+        height: 30px;
         border-radius: 13px;
         display:inline-block;
         transition-duration: 0.4s;
         text-decoration: none;
 }
-
-.top a:hover{
-        margin: 10px;
-        padding: 10px;
-        padding-bottom: 23px;
-        padding-top: 23px;
-        background-color:rgba(230, 220, 90, 0.87);
-}
-
 .top a.active{
         background-color: rgba(230, 220, 90, 0.87)
+}
+.top a.active:before{
+        background-color: rgba(230, 220, 90, 0.87)
+}
+.top a:hover{
+        animation: testAnim1 3s infinite;
+        -webkit-animation: testAnim1 3s infinite;
+        background-color: rgba(230, 220, 90, 0.87);
+}
+
+.top p{
+        position: absolute;
+        width: 178px;
+        top: 5%;
+        text-align: center;
+        transition-duration: 0.4;
+}
+.top a:hover p{
+        animation: testAnim2 3s infinite;
+        -webkit-animation: testAnim2 3s infinite;
 }
 
 .shader{
@@ -64,24 +83,50 @@ body {
 }
 
 .center {
-        top: 10px;
         left:10px;
+        margin-top: 300px;
+        width: 60%;
         padding-left:10%;
-        padding-right:10%
+        padding-right:10%;
+        font-size: x-large;
 }
+
+span.bigCap {
+        font-size: 200%;
+}
+
+
+.tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: rgba(0, 0, 0, 0.444);
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        bottom: 100%;
+        left: 150%;
+        margin-left: -60px;
+      }
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
 
 .socialsList{
         margin:10%;
         padding: 1px;
         width: 80%;
-        margin-top: 200px;
+        margin-top: 140px;
         left:15%;
         color: aliceblue;
         background-color: #00000080;
         border-radius: 20px;
-        height: 700px;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        margin-bottom: 0;
+        padding-bottom: 0;
 }
 
 .social{
@@ -117,25 +162,46 @@ body {
         position:relative;
         margin: 10px;
         padding: 10px;
+        height: 90%;
         display: inline-block;
-        width: 70%;
+        width: 65%;
         text-decoration: none;
 }
 .social .body .image{
         transition-duration: 0.5s;
         position:absolute;
         padding:10px;
-        width: 160px;
-        height: 160px;
+        height:65%;
+        aspect-ratio: 1/1;
         top:60px;
         right:20px;
         display: inline-block;
         background-color: white;
         background-size:contain;
         border-radius: 15px;
+}
+
+.social .body .image:hover{
+        animation: spin 3s;
+        -webkit-animation: spin 3s;
+}
+
+
+
+@keyframes testAnim1{
+        0%  {background-color:rgba(230, 220, 90, 0.87)}
+        25% {background-color:rgba(241, 228, 80, 0.87)}
+        50% {background-color:rgba(230, 220, 90, 0.87)}
+        100%{background-color:rgba(230, 220, 90, 0.87)}
 
 }
 
+@keyframes spin{
+        0%{rotate: 0deg;}
+        10%{rotate:-15deg}
+        80%{rotate: 375deg}
+        100%{rotate: 360deg;}
+}
 
 .mobile{display:none;}
 @media only screen and (max-width: 700px){
@@ -145,23 +211,25 @@ body {
                 margin:0;
         }
         .top a{
-                width: 26%;
+                width: 90px;
                 margin: 5px;
                 margin-top: 15px;
                 margin-bottom: 15px;
+                height: 15px;
+        }
+        .top a p{
+                width: 90px;
         }
         .socialsList{
                 margin-left:0;
                 width: 100%;
-                overflow-y: scroll;
-                overflow-x: hidden;
-                height:700px
+
         }
         .social{
                 margin:0;
                 width:100%;
                 height:280px;
-                padding-bottom: 100px;
+                margin-top: 100px;
         }
         .social .body{
                 height:280px
