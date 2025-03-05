@@ -49,24 +49,29 @@ function checkEnabled(id, cname){
         var element = document.getElementById(id)
         string = getCookie(cname)
         if (string == "") {
-                setCookie(cname, true, 10000)
+                setCookie(cname, true, 365)
         }
         console.log(string)
         if (string == "true"){
                 element.style.display = "flex";
                 document.getElementById("base").style.overflowY = "hidden"
+                document.getElementById("posterSwap").style.backgroundColor = "green"
+        }
+        else{
+                document.getElementById("posterSwap").style.backgroundColor = "red"
         }
 }
 
 function swapEnabled(cname){
         string = getCookie(cname)
         if (string == "false"){
-                setCookie(cname, true, 10000)
+                setCookie(cname, true, 365)
                 console.log("poster is set to true")
+                document.getElementById("posterSwap").style.backgroundColor = "green"
         }
         else{
-                setCookie(cname, false, 10000)
+                setCookie(cname, false, 365)
                 console.log("poster is set to false")
-                console.log(getCookie(cname))
+                document.getElementById("posterSwap").style.backgroundColor = "red"
         }
 }

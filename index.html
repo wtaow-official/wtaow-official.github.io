@@ -9,6 +9,18 @@
                 <link rel="javascript" href = "scripts.js" type="text/javascript">
                 <script src = "scripts.js"></script>
                 <style>
+                        .posterSwap{
+                                z-index: 4;
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                        }
+                        .posterSwap .tooltiptext{
+                                color: aliceblue;
+                                top:100%;
+                                left:250%;
+                                bottom: auto;
+                        }
                 </style>
 
                 <script>
@@ -21,6 +33,10 @@
                 <div class= "poster" id = "posterWTAOW" onclick = "begone('posterWTAOW')" >
                                 <img src = "assets/poster.png">
                 </div>
+                <button class= "posterSwap tooltip" id= "posterSwap" onclick = "swapEnabled('poster')">
+                        P
+                        <span class = "tooltiptext">Click to enable or disable the poster appearing</span>
+                </button>
                 <div class = "top">
                         <div class = "links">
                                 <a href = "socials.html"><p>Socials</p></a>
@@ -28,7 +44,6 @@
                                 <a href = "characters/"><p>Characters</p></a>
                         </div>
                 </div>
-                <button class= "posterStop" onclick = "swapEnabled('poster')"></button>
                 <div class = "center">
                         <p style = "color: aliceblue;">
                                 Welcome to the official website for
