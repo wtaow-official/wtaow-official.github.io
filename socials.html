@@ -20,7 +20,13 @@
                         .discord h1{
                                 bottom:361px
                         }
-                        .discord .body .image {background-image:image-set("assets/discord.png")}
+                        .discord .body .image {
+                                background-image:image-set("assets/discord.png");
+                                height: 0;
+                                width: 20%;
+                                aspect-ratio: 1/1;
+                                height: auto;
+                        }
                         .youtube .body {background-color: rgba(255, 0, 0, 0.7)}
                         .youtube .body .image {background-image:image-set("assets/youtube.png")}
                         .tiktok .body {background-color: rgba(0, 0, 0, 0.8)}
@@ -29,10 +35,12 @@
                         .tumblr .body {background-color: rgb(58, 48, 82)}
                         .tumblr .body .image {background-image:image-set("assets/tumblr.png");}
 
+
                         @media only screen and (max-width: 700px){
                                 .discord{height:250px}
                                 .discord .body{height:270px}
                                 .discord h1{bottom:332px}
+                                .discord .body .text{height: 25%;}
                                 .youtube{height:120px}
                                 .youtube .body{height:140px}
                                 .youtube h1{bottom:202px}
@@ -43,6 +51,7 @@
                                 .tumblr .body{height:160px}
                                 .tumblr h1{bottom:222px;}
                         }
+
                 </style>
                 <script>
                 </script>
@@ -55,14 +64,25 @@
                         <div class = "social discord">
                                 <div class = "body">
                                         <a class = "image" href ="https://discord.gg/GfDZJJ25qK" onmouseover ="spin('image', 0)"></a>
-                                        <a class = "text"  href ="https://discord.gg/GfDZJJ25qK">
+                                        <a class = "text"  href ="https://discord.gg/GfDZJJ25qK" style="padding-bottom: 0; margin-bottom: 0;">
                                                 Come join our discord! We foster a wonderful community with our excellent staff, here you can;
-                                            <br>▣ Audition for roles in the project,
-                                            <br>▣ Work with others to uncover secrets,
-                                            <br>▣ Get alerted for all new content drops,
-                                            <br>▣ Interact with a wholesome community
-                                            <p>ALL are welcome and discrimination will NOT be tolerated</p>
+                                        <span class = "desktop">
+                                                <br>▣ Audition for roles in the project,
+                                                <br>▣ Work with others to uncover secrets,
+                                                <br>▣ Get alerted for all new content drops,
+                                                <br>▣ Interact with a wholesome community
+                                                <p>ALL are welcome and discrimination will NOT be tolerated</p>
+                                        </span>
                                         </a>
+                                        <span class = "mobile">
+                                        <a class = "text" style="width: 90%; padding-top: 0; margin-top: 0;">
+                                                <br>▣ Audition for roles in the project,
+                                                <br>▣ Work with others to uncover secrets,
+                                                <br>▣ Get alerted for all new content drops,
+                                                <br>▣ Interact with a wholesome community
+                                                <p>ALL are welcome and discrimination will NOT be tolerated</p>
+                                        </a>
+                                        </span>
                                 </div>
                                 <h1>Discord</h1>
                         </div>
