@@ -1,7 +1,6 @@
 
 html {
         overflow-x: hidden;
-        overscroll-behavior-y:auto;
         background-color: #000000;
 }
 .backing{
@@ -20,7 +19,7 @@ html {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: rgba(21, 21, 21, 0.8);
+        background-color: rgba(21, 21, 21, 0.6);
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -245,6 +244,9 @@ html {
                 aspect-ratio: 23/27;
                 width: auto;
         }
+        .cover{
+                background-color: rgba(41, 41, 41, 0.103);
+        }
         .top {
                 top: 0;
                 left: 0;
@@ -283,7 +285,7 @@ html {
         .socialsList{
                 margin-left:0;
                 width: 100%;
-                background-color: #0000002f;
+                background-color: #0000002c;
         }
         .social{
                 margin:0;
