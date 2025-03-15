@@ -4,7 +4,7 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>WTAOW</title>
-                <link rel="icon" type="image/x-icon" href="assets/Icon.png">
+                <link rel="icon" type="image/x-icon" href="assets/icon.png">
                 <link href="styles.css" rel="stylesheet" type="text/css" media="all">
                 <link rel="javascript" href = "scripts.js" type="text/javascript">
                 <script src = "scripts.js"></script>
@@ -60,11 +60,16 @@
         <body onload = "">
                 <div class= "backing"></div>
                 <div class= "cover"></div>
+                <div class = "top">
+                        <a href = "" class = "active" tabindex = "1"><p>Socials</p></a>
+                        <a href = "." tabindex = "1"><p>Home</p></a>
+                        <a href = "characters/" tabindex = "1"><p>Characters</p></a>
+                </div>
                 <div class = "socialsList" >
                         <div class = "social discord">
                                 <div class = "body">
-                                        <a class = "image" href ="https://discord.gg/GfDZJJ25qK" onmouseover ="spin('image', 0)"></a>
-                                        <a class = "text"  href ="https://discord.gg/GfDZJJ25qK" style="padding-bottom: 0; margin-bottom: 0;">
+                                        <a class = "image" href ="https://discord.gg/GfDZJJ25qK" onmouseover ="spin('image', 0)" tabindex = "-1"></a>
+                                        <a class = "text"  href ="https://discord.gg/GfDZJJ25qK" style="padding-bottom: 0; margin-bottom: 0;" onfocus ="spin('image', 0)" tabindex = "1">
                                                 Come join our discord! We foster a wonderful community with our excellent staff, here you can;
                                         <span class = "desktop">
                                                 <br>▣ Audition for roles in the project,
@@ -88,38 +93,34 @@
                         </div>
                         <div class = "social youtube">
                                 <div class = "body">
-                                        <a class = "text" href ="https://www.youtube.com/@fireboaserpent">
+                                        <a class = "text" href ="https://www.youtube.com/@fireboaserpent" onfocus ="spin('image', 1)" tabindex = "1">
                                                 Check out our Youtube channel!
                                             <br>There you can find tons of lore and a lot of fun :)
                                         </a>
-                                        <a class = "image" href ="https://www.youtube.com/@fireboaserpent" onmouseover ="spin('image', 1)"></a>
+                                        <a class = "image" href ="https://www.youtube.com/@fireboaserpent" onmouseover ="spin('image', 1)" tabindex = "-1"></a>
                                 </div>
                                 <h1>Youtube</h1>
                         </div>
                         <div class = "social tiktok">
                                 <div class = "body">
-                                        <a class = "text" href ="https://www.tiktok.com/@fireboaserpent">
+                                        <a class = "text" href ="https://www.tiktok.com/@fireboaserpent" onfocus ="spin('image', 2)" tabindex = "1">
                                                 Tick your way over to our TikTok page where you can find all of the currently released videos over there
                                         </a>
-                                        <a class = "image" href ="https://www.tiktok.com/@fireboaserpent" onmouseover ="spin('image', 2)"></a>
+                                        <a class = "image" href ="https://www.tiktok.com/@fireboaserpent" onmouseover ="spin('image', 2)" tabindex = "-1"></a>
                                 </div>
                                 <h1>TikTok</h1>
                         </div>
                         <div class = "social tumblr">
                                 <div class = "body">
-                                        <a class = "text" href ="https://www.tumblr.com/wasthereanyotherway">
+                                        <a class = "text" href ="https://www.tumblr.com/wasthereanyotherway" onfocus ="spin('image', 3)" tabindex = "1">
                                                 Come tumble on down to our tumblr, there you can you can submit fanart and ask questions
                                         </a>
-                                        <a class = "image" href ="https://www.tumblr.com/wasthereanyotherway" onmouseover ="spin('image', 3)"></a>
+                                        <a class = "image" href ="https://www.tumblr.com/wasthereanyotherway" onmouseover ="spin('image', 3)" tabindex = "-1"></a>
                                 </div>
                                 <h1>Tumblr</h1>
                         </div>
                         <p class = "desktop"><br><br><br><br></p>
                 </div>
-                <div class = "top">
-                        <a href = "" class = "active"><p>Socials</p></a>
-                        <a href = "."><p>Home</p></a>
-                        <a href = "characters/"><p>Characters</p></a>
-                </div>
+
         </body>
 </html>

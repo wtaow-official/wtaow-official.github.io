@@ -24,7 +24,55 @@
 .characterSelector .tile:hover{
         cursor: pointer;
 }
-.tile .image{
+.characterSelector .tile .image{
+        width: 102%;
+        aspect-ratio: 1/1;
+        background-size: contain;
+        display:inline-block;
+        object-fit:contain;
+}
+.characterSelector .tile a{
+        white-space-collapse: nowrap;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 900;
+}
+
+.characterPage{
+        display: flex;
+        margin: 7.5%;
+        width:80%;
+        padding: 2.5%;
+        margin-top: 300px;
+        background-color: rgba(240, 206, 161, 0.486);
+        border-radius: 20px;
+        height: 1000px;
+}
+.characterPage div{
+        height:100%;
+        background-color: rgba(0, 0, 0, 0.144);
+}
+.characterPage .textColumn{
+        height:auto;
+        margin:10px;
+        margin-left:0px;
+        padding: 10px;
+        padding-left: 50px;
+        width: 80%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-family: cursive;
+        font-size:10;
+}
+.characterPage .imageColumn{
+        padding: 10px;
+        margin:10px;
+        margin-right:0px;
+        width:50vw;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+}
+.characterPage .image{
         width: 102%;
         aspect-ratio: 1/1;
         background-size: contain;
@@ -42,5 +90,31 @@
                 margin: 2.45%;
                 width: 42.5%;
                 margin-top: 25px
+        }
+        .characterPage{
+                display: block;
+                margin: 2.5%;
+                width:80%;
+                padding: 7.5%;
+                margin-top: 300px;
+                background-color: rgba(250, 235, 215, 0.412);
+        }
+        .characterPage .imageColumn{
+                margin: 0;
+                width: auto;
+                height: auto;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 10px;
+        }
+        .characterPage .textColumn{
+                margin-top: 0;
+                width: 80%;
+                border-top-color: rgba(235, 186, 123, 0.686);
+                border-top-style:groove;
+                border-top-width: 10px;
+                border-bottom-left-radius: 10px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 10px;
         }
 }

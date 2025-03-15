@@ -8,7 +8,7 @@ html {
         position: fixed;
         top: 0;
         right: 0;
-        background-image: image-set("assets/Icon.png");
+        background-image: image-set("assets/background.png");
         background-size: 100%;
         width: 100vw;
         height: 100vw;
@@ -42,11 +42,12 @@ html {
         text-align: center;
         transition-duration: 0.4s;
         white-space-collapse: nowrap;
+        z-index: 5;
 }
 
 .top a {
         font-weight: 900;
-        font-size:x-large;
+        font-size:xx-large;
         margin: 15px;
         padding: 5px;
         padding-bottom: 18px;
@@ -60,6 +61,8 @@ html {
         display:inline-block;
         transition-duration: 0.4s;
         text-decoration: none;
+        text-shadow: 1px 0 #000;
+        z-index: 6;
 }
 .top a.active{
         background-color: rgba(230, 220, 90, 0.87)
@@ -76,7 +79,7 @@ html {
 .top p{
         position: absolute;
         width: 178px;
-        top: 5%;
+        top: -3%;
         text-align: center;
         transition-duration: 0.4;
 }
@@ -101,7 +104,7 @@ html {
         padding-top:20px;
         margin: 0;
         height: 150vh;
-        background: linear-gradient(180deg, #000000, #000000, #000000, #000000, rgba(0, 0, 0, 0.0));
+        background: linear-gradient(180deg, #000000, #000000, rgba(0, 0, 0, 0.0));
         transition-duration: 3000ms;
 }
 .poster img{
@@ -245,7 +248,7 @@ html {
                 width: auto;
         }
         .cover{
-                background-color: rgba(41, 41, 41, 0.103);
+                background-color: rgba(41, 41, 41, 0.703);
         }
         .top {
                 top: 0;

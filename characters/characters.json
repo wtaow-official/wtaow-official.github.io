@@ -1,0 +1,131 @@
+{
+        "Array":[
+                "alexis",
+                "Ali",
+                "angelbot_model_1-0",
+                "angelbot_model_3-2",
+                "angelbot_model_3-3",
+                "angelbot_model_x",
+                "blake",
+                "griffon",
+                "kit",
+                "lettia",
+                "maria",
+                "marissa",
+                "medusa",
+                "milo",
+                "owen",
+                "sophia",
+                "thea",
+                "xero"
+        ],
+        "alexis":{
+                "title": "Alexis",
+                "image": "alexis.png",
+                "class": "alexis",
+                "": ""
+        },
+        "ali":{
+                "title": "ali",
+                "image": "ali.png",
+                "class": "ali",
+                "": ""
+        },
+        "angelbot_model_1-0":{
+                "title": "Angelbot Model 1.0 #443",
+                "image": "angelbot_model_1-0.png",
+                "class": "angel_1-0",
+                "": ""
+        },
+        "angelbot_model_3-2":{
+                "title": "Angelbot Model 3.2 #02",
+                "image": "angelbot_model_3-2.png",
+                "class": "angel_3-2",
+                "": ""
+        },
+        "angelbot_model_3-3":{
+                "title": "Angelbot Model 3.3 #001",
+                "image": "angelbot_model_3-3.png",
+                "class": "angel_3-3",
+                "": ""
+        },
+        "angelbot_model_x":{
+                "title": "Angelbot Model X",
+                "image": "angelbot_model_x.png",
+                "class": "angel_x",
+                "": ""
+        },
+
+        "blake":{
+                "title": "Blake",
+                "image": "blake.png",
+                "class": "blake",
+                "": ""
+        },
+        "griffon":{
+                "title": "Griffon",
+                "image": "griffon.png",
+                "class": "griffon",
+                "": ""
+        },
+        "kit":{
+                "title": "Kit",
+                "image": "kit.png",
+                "class": "kit",
+                "": ""
+        },
+        "lettia":{
+                "title": "Lettia",
+                "image": "lettia.png",
+                "class": "lettia",
+                "": ""
+        },
+        "maria":{
+                "title": "Maria",
+                "image": "maria.png",
+                "class": "maria",
+                "": ""
+        },
+        "marissa":{
+                "title": "Marissa",
+                "image": "marissa.png",
+                "class": "marissa",
+                "": ""
+        },
+        "medusa":{
+                "title": "Medusa",
+                "image": "medusa.png",
+                "class": "medusa",
+                "": ""
+        },
+        "milo":{
+                "title": "Milo",
+                "image": "milo.png",
+                "class": "milo",
+                "": ""
+        },
+        "owen":{
+                "title": "Owen",
+                "image": "owen.png",
+                "class": "owen",
+                "": ""
+        },
+        "sophia":{
+                "title": "Sophia",
+                "image": "sophia.png",
+                "class": "sophia",
+                "": ""
+        },
+        "thea":{
+                "title": "Thea",
+                "image": "thea.png",
+                "class": "thea",
+                "": ""
+        },
+        "xero":{
+                "title": "Xero",
+                "image": "xero",
+                "class": "xero",
+                "": ""
+        }
+}

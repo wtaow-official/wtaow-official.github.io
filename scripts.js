@@ -1,3 +1,4 @@
+
 function sleep(ms){
         return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -31,6 +32,7 @@ function setCookie(cname, cvalue, exdays) {
 function getCookie(cname) {
         let name = cname + "=";
         let decodedCookie = decodeURIComponent(document.cookie);
+        console.log(decodedCookie);
         let ca = decodedCookie.split(';');
         for(let i = 0; i <ca.length; i++) {
                 let c = ca[i];
@@ -73,5 +75,32 @@ function swapEnabled(cname){
                 setCookie(cname, false, 365)
                 console.log("poster is set to false")
                 document.getElementById("posterSwap").style.backgroundColor = "red"
+        }
+}
+
+function schrodingersXeroPicture(){
+        string = getCookie("xeroImage")
+        console.log(string)
+
+        picture = document.getElementsByClassName("xero")[0]["children"][0]
+        console.log(picture)
+
+        if (string == ""||string == "undefined") {
+                fetch("./characters.json")
+                .then(res => res.json())
+                .then(data =>{
+                        let characterArray = data["Array"]
+                        randomNumber = Math.floor(Math.random()* characterArray.length-1)
+                        setCookie("xeroImage", characterArray[randomNumber], 0.00625)
+                        imageUrl = "url('./assets/" + characterArray[randomNumber] + ".png')"
+                        picture.style.backgroundImage = imageUrl
+                        console.log("Image set to",characterArray[randomNumber] + ".png")
+        });
+        }
+        else{
+                imageName = getCookie("xeroImage")
+                imageUrl = "url('./assets/" + imageName + ".png')"
+                picture.style.backgroundImage = imageUrl
+                console.log("Image set to",imageName + ".png")
         }
 }
