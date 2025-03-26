@@ -66,8 +66,8 @@ string = '''<!DOCTYPE html>
                                                 <td class = "data">PRONOUNS</td>
                                         </tr>
                                         <tr>
-                                                <td class = "category">Oreintation:</td>
-                                                <td class = "data">OREINTATION</td>
+                                                <td class = "category">Orientation:</td>
+                                                <td class = "data">ORIENTATION</td>
                                         </tr>
                                         <tr>
                                                 <td class = "category">Age:</td>

@@ -15,3 +15,8 @@ function imgTxtAlignment(){
                 imgCol.style.height = x + "px"*/
         }
 }
+
+function moveUp(id){
+        let element = document.getElementsByClassName(id)[0];
+        element.style.marginTop = "150px"
+}

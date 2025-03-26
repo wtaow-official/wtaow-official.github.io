@@ -56,7 +56,7 @@ function checkEnabled(id, cname){
                 setCookie(cname, true, 365)
         }
         console.log(string)
-        if (string != "true"){
+        if (string == "false"){
                 document.getElementById("posterSwap").style.backgroundColor = "red"
         }
         else{
@@ -80,11 +80,11 @@ function swapEnabled(cname){
         }
 }
 
-function schrodingersXeroPicture(){
+function schrodingersXeroPicture(className){
         string = getCookie("xeroImage")
         console.log(string)
 
-        picture = document.getElementsByClassName("xero")[0]["children"][0]
+        picture = document.getElementsByClassName(className)[0]["children"][0]
         console.log(picture)
 
         if (string == ""||string == "undefined") {

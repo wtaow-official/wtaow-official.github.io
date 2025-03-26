@@ -15,7 +15,7 @@ for char in characters["Array"]:
         #        break
         outString = templateString
         character = characters[char]
-        output = open(f"characters/{char}.html", "x")
+        output = open(f"characters/{char}.html", "w")
         print(character)
         for value in character:
                 print(value.upper())

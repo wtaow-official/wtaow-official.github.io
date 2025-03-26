@@ -46,6 +46,7 @@ html {
 }
 
 .top a {
+        transition-duration: 0.4s;
         font-weight: 900;
         font-size:xx-large;
         margin: 15px;
@@ -71,8 +72,8 @@ html {
         background-color: rgba(230, 220, 90, 0.87)
 }
 .top a:hover{
-        animation: testAnim1 3s infinite;
-        -webkit-animation: testAnim1 3s infinite;
+        /*animation: testAnim1 3s infinite;
+        -webkit-animation: testAnim1 3s infinite;*/
         background-color: rgba(230, 220, 90, 0.87);
 }
 
