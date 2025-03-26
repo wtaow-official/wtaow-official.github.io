@@ -137,6 +137,7 @@ html {
         display: inline-block;
       }
       .tooltip .tooltiptext {
+        z-index: 10;
         visibility: hidden;
         width: 160px;
         background-color: rgba(0, 0, 0, 0.444);
@@ -277,6 +278,7 @@ html {
                 margin: 0;
                 left: -50px;
                 width: calc(100% + 100px);
+                z-index: 20;
         }
         .poster img{
                 margin: 0;

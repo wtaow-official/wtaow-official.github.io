@@ -11,16 +11,18 @@
                 <style>
                         .posterSwap{
                                 background-color: #00FF00;
-                                z-index: 4;
+                                z-index: 6;
                                 position: absolute;
                                 top: 10px;
                                 left: 10px;
                         }
                         .posterSwap .tooltiptext{
+                                position: absolute;
                                 color: aliceblue;
                                 top:100%;
                                 left:250%;
                                 bottom: auto;
+                                z-index: 7;
                         }
                 </style>
 
@@ -31,13 +33,14 @@
         <body onload = "checkEnabled('posterWTAOW', 'poster')">
                 <div class= "backing"></div>
                 <div class= "cover"></div>
-                <div class= "poster" id = "posterWTAOW" onclick = "begone('posterWTAOW')" onfocus = "begone('posterWTAOW')" tabindex="0">
-                                <img src = "assets/poster.png">
-                </div>
                 <button class= "posterSwap tooltip" id= "posterSwap" onclick = "swapEnabled('poster')">
                         P
                         <span class = "tooltiptext">Click to enable or disable the poster appearing</span>
                 </button>
+                <div class= "poster" id = "posterWTAOW" onclick = "begone('posterWTAOW')" onfocus = "begone('posterWTAOW')" tabindex="0">
+                                <img src = "assets/poster.png" tabindex="0">
+                </div>
+
                 <div class = "top">
                         <div class = "links">
                                 <a href = "socials.html"><p>Socials</p></a>
@@ -48,7 +51,7 @@
                 <div class = "center">
                         <p style = "color: aliceblue;">
                                 Welcome to the official website for
-                                <span class = "tooltip"> WTAOW,<span class = "tooltiptext">Was There Any Other Way</span></span>
+                                <span class = "tooltip"> WTAOW<span class = "tooltiptext">Was There Any Other Way</span></span>,
                                 here you can find all the characters, videos, socials and much more!
                         </p>
                 </div>

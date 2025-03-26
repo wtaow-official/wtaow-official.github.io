@@ -39,38 +39,45 @@
 }
 
 .characterPage{
-        display: flex;
+        transition-duration: 0.4s;
+        display:flex;
         margin: 7.5%;
-        width:80%;
+        width:auto;
         padding: 2.5%;
         margin-top: 300px;
-        background-color: rgba(240, 206, 161, 0.486);
         border-radius: 20px;
-        height: 1000px;
+        justify-content: center;
 }
 .characterPage div{
         height:100%;
-        background-color: rgba(0, 0, 0, 0.144);
+        background-color: rgba(235, 186, 123, 0.686);
 }
 .characterPage .textColumn{
+        transition-duration: 0.4s;
+        position: relative;
         height:auto;
         margin:10px;
         margin-left:0px;
         padding: 10px;
-        padding-left: 50px;
-        width: 80%;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        font-family: cursive;
-        font-size:10;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 45vw;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-family:monospace;
+        font-size:20px;
+        background-color: rgba(235, 186, 123, 0.686);
 }
 .characterPage .imageColumn{
+        transition-duration: 0.4s;
         padding: 10px;
         margin:10px;
         margin-right:0px;
         width:50vw;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        height:auto;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: rgba(235, 186, 123, 0.686);
 }
 .characterPage .image{
         width: 102%;
@@ -80,7 +87,14 @@
         object-fit:contain;
 }
 
+h1{
+        padding-top: 20px;
+}
+
 @media only screen and (max-width: 700px) {
+        h1{
+                text-align: center;
+        }
         .characterSelector{
                 width: 95%;
                 margin: 2.5%;
@@ -97,24 +111,30 @@
                 width:80%;
                 padding: 7.5%;
                 margin-top: 300px;
-                background-color: rgba(250, 235, 215, 0.412);
+                background-color: rgba(250, 186, 123, 0.412);
         }
         .characterPage .imageColumn{
                 margin: 0;
                 width: auto;
                 height: auto;
-                border-top-left-radius: 10px;
                 border-bottom-left-radius: 0px;
-                border-top-right-radius: 10px;
+                border-top-right-radius: 20px;
+                padding-bottom: 0;
+                margin-bottom: 0;
         }
         .characterPage .textColumn{
                 margin-top: 0;
-                width: 80%;
-                border-top-color: rgba(235, 186, 123, 0.686);
-                border-top-style:groove;
-                border-top-width: 10px;
-                border-bottom-left-radius: 10px;
+                width: auto;
+                padding: 10px;
+                padding-top: 0;
+                border-bottom-left-radius: 20px;
                 border-top-right-radius: 0px;
-                border-bottom-right-radius: 10px;
+        }
+        .seperator{
+                display:inline-block;
+                width: auto;
+        }
+        .bar{
+                display: block;
         }
 }

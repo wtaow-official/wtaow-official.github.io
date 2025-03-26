@@ -5,8 +5,10 @@ function sleep(ms){
 function begone(chosenId){
         var element = document.getElementById(chosenId);
         element.style.top = "-200vh";
+        element.tabIndex = -1;
         sleep(3000).then(() => {
                 document.getElementById("base").style.overflowY = "visible"
+                element.style.display = "none";
         });
 }
 function socialIn(){
@@ -54,13 +56,13 @@ function checkEnabled(id, cname){
                 setCookie(cname, true, 365)
         }
         console.log(string)
-        if (string == "true"){
+        if (string != "true"){
+                document.getElementById("posterSwap").style.backgroundColor = "red"
+        }
+        else{
                 element.style.display = "flex";
                 document.getElementById("base").style.overflowY = "hidden"
                 document.getElementById("posterSwap").style.backgroundColor = "#00FF00"
-        }
-        else{
-                document.getElementById("posterSwap").style.backgroundColor = "red"
         }
 }
 
