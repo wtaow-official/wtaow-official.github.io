@@ -97,9 +97,9 @@ html {
 
 .poster{
         position: absolute;
-        display: none;
+        display: flex;
         top:-10px;
-        left: -10px;
+        left:0px;
         z-index: 8;
         width: calc(100vw + 20px);
         padding-top:20px;
@@ -107,15 +107,17 @@ html {
         height: 150vh;
         background: linear-gradient(180deg, #000000, #000000, rgba(0, 0, 0, 0.0));
         transition-duration: 3000ms;
+        justify-content: center;
 }
 .poster img{
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         top: 0;
         padding-top:0;
         padding-bottom:0;
         height: 100vh;
+        justify-self: center;
 }
 
 .center {
@@ -277,16 +279,14 @@ html {
         }
         .poster{
                 margin: 0;
-                left: -50px;
-                width: calc(100% + 100px);
+                width: calc(100%);
                 z-index: 20;
         }
         .poster img{
                 margin: 0;
                 margin-top: 100px;
-                margin-left: 10%;
-                width: calc(100% - 100px);
-                height: calc((21/16)*110vw);
+                width: calc(100vw);
+                height: calc((21/16)*100vw);
         }
         .socialsList{
                 margin-left:0;
