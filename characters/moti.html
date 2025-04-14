@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Template</title>
+                <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+                <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
+                <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
+                <script src = "../scripts.js"></script>
+                <script src = "scripts.js"></script>
+                <style>
+                        .image{
+                                background-image: image-set("assets/moti.png");
+                        }
+                        .textColumn table{
+                                width: auto;
+                                font-size: larger;
+
+                        }
+                        .data{
+                                padding-left: 20px;
+                                width:auto;
+                                font-weight: 500;
+                        }
+                        .category{
+                                width:auto;
+                                margin-right: 20px;
+                                font-weight: 800;
+                        }
+                        @media only screen and (max-width: 700px) {
+                                .textColumn table{
+                                        font-size: 20px;
+                                }
+                                .data{
+                                        padding-left: 20px;
+                                        font-weight: 500;
+                                }
+                        }
+                </style>
+        </head>
+
+        <body class = "index_Back">
+                <div class= "backing"></div>
+                <div class= "cover"></div>
+                <div class = "top">
+                        <div class = "links">
+                                <a tabindex="1" href = "../socials.html">Socials</a>
+                                <a tabindex="1" href = ".." >Home</a>
+                                <a tabindex="1" href = "."  class = "active">Characters</a>
+                                <a tabindex="1" href = "../Fanart">Fanart</a>
+                                <a tabindex="1" href = "../C&C">C&C</a>
+                                <a tabindex="1" href = "../credits.html" style="margin-right: 15%;">Credits</a>
+                        </div>
+                </div>
+
+                <div class = "characterPage">
+                        <div class = "imageColumn" id = "imageCol">
+                                <a class = "image"></a>
+                        </div>
+                        <div class = "textColumn" id = "textCol">
+                                <h1 style = "margin-top:0; font-size: 28px;">Moti</h1>
+                                <table>
+                                        <tr>
+                                                <td class = "category">Gender: </td>
+                                                <td class = "data">Female</td>
+                                        </tr>
+                                        <tr>
+                                                <td class = "category">Pronouns:</td>
+                                                <td class = "data">She/Her</td>
+                                        </tr>
+                                        <tr>
+                                                <td class = "category">Orientation:</td>
+                                                <td class = "data">/?/</td>
+                                        </tr>
+                                        <tr>
+                                                <td class = "category">Age:</td>
+                                                <td class = "data">10/11</td>
+                                        </tr>
+                                        <tr>
+                                                <td class = "category">Eyes:</td>
+                                                <td class = "data">One red, one covered with an eyepatch.</td>
+                                        </tr>
+                                        <tr>
+                                                <td class = "category">Height</td>
+                                                <td class = "data">4'6</td>
+                                        </tr>
+                                        <tr>
+                                                <td class = "category">Story Role:</td>
+                                                <td class = "data">Minor Supporting Character</td>
+                                        </tr>
+                                        <tr>
+                                                <td class = "category">Voice Actor:</td>
+                                                <td class = "data">
+                                                        <a href="../C&C/minnow.html">Minnow</a>
+                                                </td>
+                                        </tr>
+                                </table>
+                                <h3>Abilities</h3>
+                                <p>Moti can sing people to sleep.</p>
+                                <h3>Personality</h3>
+                                <p>Moti was a hopeful young kid, but they're starting to lose faith in the world. Their hope is draining - it's there, but it might not be for much longer.</p>
+                        </div>
+                </div>
+
+                <div class = "bottom">
+                </div>
+                <br>
+        </body>
+        <script>
+                imgTxtAlignment();
+                moveUp("characterPage")
+        </script>
+</html>

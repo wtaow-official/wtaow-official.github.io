@@ -1,5 +1,6 @@
 
 html {
+        overflow-y: overlay;
         overflow-x: hidden;
         background-color: #000000;
 }
@@ -30,10 +31,10 @@ html {
 
 .top {
         position:fixed;
-        width: 90%;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
         top: 0;
-        margin-right: 5%;
-        margin-left: 5%;
         align-self: center;
         font-weight: 900;
         background-color:#0a9127be;
@@ -41,23 +42,55 @@ html {
         border-bottom-right-radius: 15px;
         text-align: center;
         transition-duration: 0.4s;
-        white-space-collapse: nowrap;
         z-index: 5;
+        height: 115px;
 }
+.top .links{
+        padding-left: 2.5%;
+        padding-right: 5%;
+        position:fixed;
+        display: flex;
+        overflow-x: overlay;
+        overflow-y: hidden;
+        width: 100%;
+        flex-wrap: nowrap;
+        z-index: 6;
+}
+.top .links::-webkit-scrollbar-track-piece{
+        background: #00000000;
+        width: 10vw;
+}        /*justify-content: center;*/
 
+::-webkit-scrollbar-thumb{
+        width: 1px;
+        background: rgba(0, 0, 0, 0.432);
+        height: 1px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+}
+::-webkit-scrollbar{
+        width: 5px;
+        height: 5px;
+}
+::-webkit-scrollbar-track-piece{
+        background: #00000000;
+}
 .top a {
         transition-duration: 0.4s;
         font-weight: 900;
-        font-size:xx-large;
+        font-size:xxx-large;
         margin: 15px;
         padding: 5px;
         padding-bottom: 18px;
-        padding-top: 18px;
+        padding-top: 8px;
         color: #000000;
         background-color: #bdb64ea8;
         background-size: cover;
-        width: 180px;
-        height: 30px;
+        width: 250px;
+        height: 45px;
         border-radius: 13px;
         display:inline-block;
         transition-duration: 0.4s;
@@ -259,18 +292,21 @@ html {
                 left: 0;
                 width:100%;
                 margin:0;
+                height: 95px;
+        }
+        .top .links{
+                padding-left: 0%;
+                padding-right: 0;
+                margin-right: 0;
         }
         .top a{
-                font-size: larger;
-                width: 90px;
+                font-size: xx-large;
+                width: 190px;
                 margin: 5px;
                 margin-top: 15px;
                 margin-bottom: 15px;
-                height: 15px;
-        }
-        .top a p{
-                width: 90px;
-                top: 11px
+                padding-top: 10px;
+                padding-bottom: 0px;
         }
         .center{
                 margin-top: 200px;

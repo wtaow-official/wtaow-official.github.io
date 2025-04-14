@@ -14,7 +14,9 @@
                 "marissa",
                 "medusa",
                 "milo",
+                "moti",
                 "owen",
+                "rahi",
                 "sophia",
                 "thea",
                 "xero"
@@ -31,7 +33,10 @@
                 "eyes":"Dark Brown",
                 "role": "Protagonist",
                 "VA": "Mr-Sane",
-                "": ""
+                "personality" : "Alexis is caring but cold. Gain their loyalty and you've got a lifelong friend, but cross them and they'll remmeber it. Thwy're not the forgiving type, and they're vary way of strangers. When they warm up to you , though, they're sassy and funny.",
+                "abilities": "Alexis can withstand extreme temperatures and go for long periods without food.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "ali":{
                 "title": "Ali",
@@ -45,7 +50,10 @@
                 "eyes":"Blue & Teal",
                 "role": "Protagonist",
                 "VA": "Dove",
-                "": ""
+                "personality" : "Ali is a cheerful and bright kid, filled with hope. He lost his big sister a few months ago, and is desperate to find her. They believe that everyone deserves a second chance, and are determined to trust people even when <a href = 'alexis.html'>Alexis</a> won't",
+                "abilities": "",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "angelbot_model_1-0":{
                 "title": "Angelbot Model 1.0 #443",
@@ -59,7 +67,10 @@
                 "eyes":"Grey",
                 "role": "Antagonist turned Supporting Character",
                 "VA": "Ashe Kaine",
-                "": ""
+                "personality" : "Angelbot Model 1.0 was designed to be a mostly neutral search and recovery bot.",
+                "abilities": "Angelbot Model 1.0 has the ability to scan all living creatures and link them to the Angelbot database. Angelbot Model 1.0 can also fly, as all Angelbots™ can.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "angelbot_model_3-2":{
                 "title": "Angelbot Model 3.2 #02",
@@ -73,7 +84,10 @@
                 "eyes":"Grey",
                 "role": "Antagonist",
                 "VA": "Bloomaboo",
-                "": ""
+                "personality" : "The Angelbot Model 3.0 line was designed with your safety in mind, and with wild animals roaming the caverns, it has been programmed to automatically exterminate threats registered in the Angelbot database. It may appear scary to you, but it is all designed with your safety in mind.",
+                "abilities": "Angelbot Model 3.2 has the ability to scan all living matter and add it to the Angelbot database. As the Angelbot Model 3.0 was designed to excavate, it has the ability to turn its arms into a variety of tools, including saws, lasers, and shovels. Angelbot Model 3.2 can also fly, and has lightweight metal to help it do so.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "angelbot_model_3-3":{
                 "title": "Angelbot Model 3.3 #001",
@@ -87,7 +101,10 @@
                 "eyes":"Orange",
                 "role": "Antagonist?",
                 "VA": "Sofia Tarvalo",
-                "": ""
+                "personality" : "Angelbot Model 3.3 was designed to be a multipurpose bot capable of more than its predecessors.",
+                "abilities": "Angelbot Model 3.3 is the only one of its kind. There's a reason for that.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "angelbot_model_x":{
                 "title": "Angelbot Model X",
@@ -100,8 +117,11 @@
                 "height": "6'0",
                 "eyes":"Grey",
                 "role": "Antagonist",
-                "VA": "/!/",
-                "": ""
+                "VA": "Onyx",
+                "personality" : "Angelbot Model X was designed to help with foreign war efforts while preserving the lives of our great soldiers and saving our citizens from seeing the horrors of war. It was designed to scare enemy troops and break enemy formations.",
+                "abilities": "Angelbot Model X was designed to end wars as quickly as possible, so that our brave soldiers could return home. It has many capabilities, including bulletproof metal, built-in ammunition, and a rudimentary AI capable of evaluating situations and strategizing.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
 
         "blake":{
@@ -115,8 +135,11 @@
                 "height": "6'0",
                 "eyes":"Grey",
                 "role": "Side",
-                "VA": "/!/",
-                "": ""
+                "VA": "Rakumaroo",
+                "personality" : "Blake's tough. She won't take shit from anyone, not after everything she's been through.",
+                "abilities": "Blake had the abilities of the Angelbot Gamma line.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "griffon":{
                 "title": "Griffon",
@@ -130,7 +153,9 @@
                 "eyes":"Yellow",
                 "role": "Protagonist",
                 "VA": "Queen_Sniw",
-                "": ""
+                "personality": "Griffon is smart. Too smart for his own good. He's loyal, but he won't sacrifice himself for someone else, mostly because he's always wary of trusting the wrong people. Luckily for him, his power usually prevents that.",
+                "abilities": "Among other things. Griffon has the uncanny ability to predict the future - to a degree",
+                "":""
         },
         "kit":{
                 "title": "Kit",
@@ -144,7 +169,10 @@
                 "eyes":"Teal, One scarred shut",
                 "role": "Protagonist",
                 "VA": "Chips.26",
-                "": ""
+                "personality" : "Kit would rip the world apart to get what she wants. She will do anything, hurt anyone, abandon all of her morals, if she has to. She is determined, and she won't let anything stand in her way.",
+                "abilities": "Kit can withstand insane heat and isn't affected by fire. They also have the ability to eat most foods, even those widely considered inedible.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "lettia":{
                 "title": "Lettia",
@@ -157,8 +185,11 @@
                 "height": "5'4",
                 "eyes":"Green",
                 "role": "Side",
-                "VA": "/!/",
-                "": ""
+                "VA": "Sacred_N",
+                "personality" : "Lettia is cautious and distrustful. Trying to befriend her is akin to trying to befriend a feral cat; she'll bite and scratch and claw before letting you close.",
+                "abilities": "Lettia can secrete a liquid sedative",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "maria":{
                 "title": "Maria",
@@ -172,7 +203,10 @@
                 "eyes":"Red & Green",
                 "role": "Antagonist",
                 "VA": "Jadesgarden",
-                "": ""
+                "personality" : "Maria is kind and sweet until she needs to be angry.",
+                "abilities": "Maria's full set of abilities are unknown, but she has the eye model of an Angelbot Model X and the wing model of the failed Angelbot Model 3.3 prototype",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "marissa":{
                 "title": "Marissa",
@@ -186,7 +220,10 @@
                 "eyes":"Purple",
                 "role": "Minor Supporting Character",
                 "VA": "Cheese",
-                "": ""
+                "personality" : "Marissa is a kind soul, talking and laughing with both Alexis and Ali and offering them solace in the chaos raging around them. She's sweet, and she's helpful too - she has so much knowledge about the world around her, both natural and not.",
+                "abilities": "Marissa has no abilities.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "medusa":{
                 "title": "Medusa",
@@ -199,8 +236,11 @@
                 "height": "6'1",
                 "eyes":"Covered",
                 "role": "Mysterious Extra",
-                "VA": "/!/",
-                "": ""
+                "VA": "Willow",
+                "personality" : "Medusa is well-spoken and helpful, though there's a certain air of knowing around him. She has seen things you haven't, things you will never see. They knows something you don't - though, they don't seem to be malicious.",
+                "abilities": "???",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "milo":{
                 "title": "Milo",
@@ -214,7 +254,27 @@
                 "eyes":"Brown",
                 "role": "Supporting Character",
                 "VA": "Tookie",
-                "": ""
+                "personality" : "Milo is calm and collected. He tends not to fly off the handle, but sometimes people test his patience. He's generally friendly, and tries to give everyone a chance. Even those who don't deserve it.",
+                "abilities": "Milo has an excellent sense of hearing",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
+        },
+        "moti":{
+                "title": "Moti",
+                "image": "moti.png",
+                "class": "moti",
+                "gender": "Female",
+                "pronouns": "She/Her",
+                "orientation": "/?/",
+                "age": "10/11",
+                "height": "4'6",
+                "eyes":"One red, one covered with an eyepatch.",
+                "role": "Minor Supporting Character",
+                "VA": "Minnow",
+                "personality" : "Moti was a hopeful young kid, but they're starting to lose faith in the world. Their hope is draining - it's there, but it might not be for much longer.",
+                "abilities": "Moti can sing people to sleep.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "owen":{
                 "title": "Owen",
@@ -227,8 +287,28 @@
                 "height": "5'6",
                 "eyes":"Pink",
                 "role": "Supporting Character",
-                "VA": "/!/",
-                "": ""
+                "VA": "Shi No Ōgama",
+                "personality" : "Owen's typically calm and collected. He likes plants and gardening, and tends to produce the best crops around. She shares her food with all the hungry people who come to his doorstep",
+                "abilities": "Owen seems to be able to speak to the surrounding flora.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
+        },
+        "rahi":{
+                "title": "Rahi",
+                "image": "rahi.png",
+                "class": "rahi",
+                "gender": "Female",
+                "pronouns": "He/Any",
+                "orientation": "/?/",
+                "age": "13/14",
+                "height": "4'8",
+                "eyes":"Hazel-Brown",
+                "role": "Minor Supporting Character",
+                "VA": "Ronin",
+                "personality" : "Rahi is a young and scrappy kid. He's angry beyond his years, and he'll start a fight in a heartbeat. He's distrustful, and knows better than to trust the first kind face he sees.",
+                "abilities": "Rahi can turn himself and anyone he's touching invisible alongside their clothes and accessories.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "sophia":{
                 "title": "Sophia",
@@ -242,7 +322,10 @@
                 "eyes":"Green",
                 "role": "Minor Supporting Character",
                 "VA": "Jsalt",
-                "": ""
+                "personality" : "Sophia is a sweet but sheltered kid. She can be overbearing or pushy at times, but she doesn't mean any harm, and will apologize profusely if she actually upsets you. She can be oblivious of her own actions, but very perceptive of others.",
+                "abilities": "Sophia has no abilities.",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "thea":{
                 "title": "Thea",
@@ -256,7 +339,10 @@
                 "eyes":"Brown-Orange",
                 "role": "Supporting Character",
                 "VA": "Rakumaroo",
-                "": ""
+                "personality" : "Thea has been beaten down by the world around her no matter what she does. Hybrids are wary of her, humans turn on her when they get to know her, and the world at large just seems to put her down. She won't let it stop her, though - she's determined to find the people she lost and she will go to any length to do so.",
+                "abilities": "Thea's human - she has no abilities",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         },
         "xero":{
                 "title": "Xero",
@@ -269,7 +355,11 @@
                 "height": "???",
                 "eyes":"Purple",
                 "role": "Supporting Character",
-                "VA": "/!/",
-                "": ""
+                "VA": ["Fireboa", "Kirachi", "Aurora"],
+                "personality" : "Xero is a slippery one.",
+                "abilities": "Xero has the ability to see what's on your mind. More than that, though, xe has the uncanny ability to perfectly imitate you.",
+                "script": "schrodingersXeroPicture('imageColumn')",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
         }
 }

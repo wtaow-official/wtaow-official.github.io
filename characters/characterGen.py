@@ -11,8 +11,6 @@ print(templateString)
 
 
 for char in characters["Array"]:
-        #if char == "angelbot_model_1-0":
-        #        break
         outString = templateString
         character = characters[char]
         output = open(f"characters/{char}.html", "w")
@@ -25,15 +23,31 @@ for char in characters["Array"]:
                                 outString = outString.replace(value.upper(), replacement)
 
                         elif value == "VA":
-                                replacement = character[value].replace(" ", "-")
-                                outString = outString.replace("VA.html", replacement)
-                                replacement = character[value]
-                                outString = outString.replace(value.upper(), replacement)
-                                outString = outString.replace("vas", "VAs")
+                                if str(type(character[value])) != "<class 'list'>":
+                                        replacement = character[value].replace(" ", "-").lower() + ".html"
+                                        outString = outString.replace("VA.html", replacement)
+                                        replacement = character[value]
+                                        outString = outString.replace(value.upper(), replacement)
+                                else:
+                                        VAlistLines = ""
+                                        anchorPrefab = '''                                                        <a href="../C&C/VA.html">VA</a>\n'''
+                                        for VA in character[value]:
+                                                tempLine = anchorPrefab
+                                                replacement = VA.replace(" ", "-").lower() + ".html"
+                                                tempLine = tempLine.replace("VA.html", replacement)
+                                                replacement = VA
+                                                tempLine = tempLine.replace(value.upper(), replacement)
+                                                VAlistLines += tempLine
+                                        print(VAlistLines)
+                                        outString = outString.replace(anchorPrefab, VAlistLines)
+
+
 
                         else:
                                 replacement = character[value]
                                 outString = outString.replace(value.upper(), replacement)
 
                         print("Replaced")
+                outString = outString.replace("\n                SCRIPT","")
+                outString = outString.replace("�","o")
         output.write(outString)

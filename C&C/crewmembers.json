@@ -1,0 +1,21 @@
+{
+        "Array":[
+                "aurora",
+                "bloom",
+                "fireboa",
+                "jade",
+                "kira"
+        ],
+        "aurora":{
+                "title": "Aurora",
+                "about":[
+                        "Hiya, I'm Aurora, I'm the one of the voices of Xero and also the sole coder behind this entire website, I hope you like it.",
+                        "I've been coding for nearly 9 years now and I mainly do python, C# and HTML"
+                ],
+                "socials":{
+                        "tumblr": "thethinkingaurora.tumblr.com"
+                },
+                "image": "assets/aurora.png",
+                "roles":["Coder", "VA", "Puzzlemaker"]
+        }
+}

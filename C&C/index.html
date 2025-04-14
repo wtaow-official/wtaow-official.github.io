@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Characters</title>
+                <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+                <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
+                <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
+                <script src = "../scripts.js"></script>
+                <style>
+                        .tile.fire .image{background-image: image-set("assets/fireboa.png");}
+                        .tile.aurora .image{background-image: image-set("assets/aurora.png");}
+                        .tile.bloom .image{background-image: image-set("assets/bloomaboo.png");}
+                        .tile.tookie .image{background-image: image-set("assets/tookie.png");}
+                        .tile.angel_3-3 .image{background-image: image-set("assets/angelbot_model_3-3.png");}
+                        .tile.angel_x .image{background-image: image-set("assets/angelbot_model_x.png");}
+                        .tile.blake .image{background-image: image-set("assets/blake.png");}
+                        .tile.griffon .image{background-image: image-set("assets/griffon.png");}
+                        .tile.kit .image{background-image: image-set("assets/kit.png");}
+                        .tile.lettia .image{background-image: image-set("assets/lettia.png");}
+                        .tile.maria .image{background-image: image-set("assets/maria.png");}
+                        .tile.marissa .image{background-image: image-set("assets/marissa.png");}
+                        .tile.medusa .image{background-image: image-set("assets/medusa.png");}
+                        .tile.milo .image{background-image: image-set("assets/milo.png");}
+                        .tile.owen .image{background-image: image-set("assets/owen.png");}
+                        .tile.sophia .image{background-image: image-set("assets/sophia.png");}
+                        .tile.thea .image{background-image: image-set("assets/thea.png");}
+                </style>
+
+                <script>
+                        function link(hyperlink){
+                                window.location.href = hyperlink;
+                        }
+                        function focusLink(hyperlink){
+                                self.on
+                        }
+                </script>
+
+        </head>
+
+        <body class = "index_Back">
+                <div class= "backing"></div>
+                <div class= "cover"></div>
+                <div class = "top">
+                        <div class = "links">
+                                <a href = "../socials.html">Socials</a>
+                                <a href = "..">Home</a>
+                                <a href = "../characters/">Characters</a>
+                                <a href = "../Fanart/">Fanart</a>
+                                <a href = "." class = "active">VAs</a>
+                                <a href = "../credits.html" style="margin-right: 15%;">Credits</a>
+                        </div>
+                </div>
+
+                <div class = "characterSelector">
+                        <div class = 'tile fire' onclick = "link('fireboa.html')">
+                                <a class = 'image' id = "fire" href="fireboa.html" tabindex="0"></a>
+                                <a>FireBoa<span class = "mobile"><br></span></a>
+                        </div>
+                        <div class = 'tile bloom' onclick = "link('bloomaboo.html')">
+                                <a class = 'image' id = "bloom" href="bloomaboo.html" tabindex="0"></a>
+                                <a>Bloomaboo<span class = "mobile"><br></span></a>
+                        </div>
+                        <div class = 'tile jade' onclick = "link('jadesgarden.html')">
+                                <a class = 'image' id = "jade" href="jadesgarden.html" tabindex="0"></a>
+                                <a>Jade<span class = "mobile"><br></span></a>
+                        </div>
+                        <div class = 'tile kira' onclick = "link('kirachi.html')">
+                                <a class = 'image' id = "kira" href="kirachi.html" tabindex="0"></a>
+                                <a>Kirachi<span class = "mobile"><br></span></a>
+                        </div>
+                        <div class = 'tile aurora' onclick = "link('aurora.html')">
+                                <a class = 'image' id = "aurora" href="aurora.html" tabindex="0"></a>
+                                <a>Aurora<span class = "mobile"><br></span></a>
+                        </div>
+                </div>
+
+
+                <div class = "bottom">
+                </div>
+                <br>
+        </body>
+        <script>
+                schrodingersXeroPicture('xero')
+        </script>
+</html>
