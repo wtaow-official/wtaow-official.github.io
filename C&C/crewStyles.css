@@ -95,6 +95,20 @@
         -o-border-radius: 30px;
 }
 
+.fireboa .imageColumn{
+        background-color: #db2929af;
+}
+
+.fireboa .textColumn{
+        background-color: #db2929af;
+}
+.titleCard{
+        background-size: cover;
+        height: 100px;
+        aspect-ratio: 8/2;
+        display: inline-block;
+}
+
 h1{
         padding-top: 20px;
 }
@@ -146,5 +160,13 @@ p{margin-top: 0;}
         }
         .bar{
                 display: block;
+        }
+        .fireboa{
+                display: block;
+                margin: 1.5%;
+                width:90%;
+                padding: 3.5%;
+                margin-top: 1000px;
+                background-color: #A00000;
         }
 }

@@ -55,6 +55,23 @@
                 "Picrew" : "https://picrew.me/en/image_maker/1706331",
                 "" : ""
         },
+        "andreja":{
+                "title": "Andreja",
+                "image": "andreja.png",
+                "class": "andreja",
+                "gender": "N/A",
+                "pronouns": "She/They",
+                "orientation": "N/A",
+                "age": "27",
+                "height": "5'11",
+                "eyes":"Blue",
+                "role": "Antagonist",
+                "VA": "/!/",
+                "personality" : "Andreja is a mysterious presence,  a kind voice matched with a knowing look in her gaze. There is more to her than meets the eye, but good luck finding out what secrets she has.",
+                "abilities": "Andreja's breath is a paralytic agent",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
+        },
         "angelbot_model_1-0":{
                 "title": "Angelbot Model 1.0 #443",
                 "image": "angelbot_model_1-0.png",
@@ -188,6 +205,23 @@
                 "VA": "Sacred_N",
                 "personality" : "Lettia is cautious and distrustful. Trying to befriend her is akin to trying to befriend a feral cat; she'll bite and scratch and claw before letting you close.",
                 "abilities": "Lettia can secrete a liquid sedative",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
+        },
+        "maia":{
+                "title": "Maia",
+                "image": "maia.png",
+                "class": "maia",
+                "gender": "/?/",
+                "pronouns": "/?/",
+                "orientation": "/?/",
+                "age": "Teen",
+                "height": "",
+                "eyes":"",
+                "role": "",
+                "VA": "/!/",
+                "personality" : "She seems shy, or maybe just awkward. ",
+                "abilities": "n/A",
                 "Picrew" : "https://picrew.me/en/image_maker/1706331",
                 "" : ""
         },
@@ -359,6 +393,23 @@
                 "personality" : "Xero is a slippery one.",
                 "abilities": "Xero has the ability to see what's on your mind. More than that, though, xe has the uncanny ability to perfectly imitate you.",
                 "script": "schrodingersXeroPicture('imageColumn')",
+                "Picrew" : "https://picrew.me/en/image_maker/1706331",
+                "" : ""
+        },
+        "":{
+                "title": "",
+                "image": "",
+                "class": "",
+                "gender": "",
+                "pronouns": "",
+                "orientation": "",
+                "age": "",
+                "height": "",
+                "eyes":"",
+                "role": "",
+                "VA": "",
+                "personality" : "",
+                "abilities": "",
                 "Picrew" : "https://picrew.me/en/image_maker/1706331",
                 "" : ""
         }

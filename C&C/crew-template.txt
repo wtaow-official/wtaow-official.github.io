@@ -3,10 +3,10 @@
         <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Template</title>
+                <title>TITLE</title>
                 <link rel="icon" type="image/x-icon" href="../assets/icon.png">
                 <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
-                <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
+                <link href="crewStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <script src = "scripts.js"></script>
                 <style>
@@ -37,6 +37,7 @@
                                         font-weight: 500;
                                 }
                         }
+                        CSS
                 </style>
         </head>
 
@@ -47,14 +48,14 @@
                         <div class = "links">
                                 <a tabindex="1" href = "../socials.html">Socials</a>
                                 <a tabindex="1" href = ".." >Home</a>
-                                <a tabindex="1" href = ""  class = "active">Characters</a>
+                                <a tabindex="1" href = "../characters">Characters</a>
                                 <a tabindex="1" href = "../Fanart">Fanart</a>
-                                <a tabindex="1" href = "../C&C">C&C</a>
+                                <a tabindex="1" href = "." class = "active">C&C</a>
                                 <a tabindex="1" href = "../credits.html" style="margin-right: 15%;">Credits</a>
                         </div>
                 </div>
 
-                <div class = "crewPage CLASS" id = "crewPage">
+                <div class = "crewPage">
                         <div class = "imageColumn" id = "imageCol">
                                 <a class = "image"></a>
                         </div>
@@ -66,40 +67,20 @@
                                                 <td class = "data">GENDER</td>
                                         </tr>
                                         <tr>
-                                                <td class = "category">Pronouns:</td>
+                                                <td class = "category">Pronouns: </td>
                                                 <td class = "data">PRONOUNS</td>
                                         </tr>
                                         <tr>
-                                                <td class = "category">Orientation:</td>
-                                                <td class = "data">ORIENTATION</td>
-                                        </tr>
-                                        <tr>
-                                                <td class = "category">Age:</td>
-                                                <td class = "data">AGE</td>
-                                        </tr>
-                                        <tr>
-                                                <td class = "category">Eyes:</td>
-                                                <td class = "data">EYES</td>
-                                        </tr>
-                                        <tr>
-                                                <td class = "category">Height</td>
-                                                <td class = "data">HEIGHT</td>
-                                        </tr>
-                                        <tr>
-                                                <td class = "category">Story Role:</td>
-                                                <td class = "data">ROLE</td>
-                                        </tr>
-                                        <tr>
-                                                <td class = "category">Voice Actor:</td>
+                                                <td class = "category">Roles: </td>
                                                 <td class = "data">
-                                                        <a href="../C&C/VA.html">VA</a>
+                                                        ROLES
                                                 </td>
                                         </tr>
                                 </table>
-                                <h3>Abilities</h3>
-                                <p>ABILITIES</p>
-                                <h3>Personality</h3>
-                                <p>PERSONALITY</p>
+                                <h3>About Me</h3>
+                                <p>
+                                        ABOUT
+                                </p>
                         </div>
                 </div>
 
@@ -109,7 +90,7 @@
         </body>
         <script>
                 imgTxtAlignment()
-                moveUp("characterPage")
+                moveUp("crewPage")
                 SCRIPT
         </script>
 </html>
