@@ -1,0 +1,50 @@
+
+                        <div class = 'tile aurora' onclick = "link('aurora.html')">
+                                <a class = 'image' id = "aurora" href="aurora.html" tabindex="0"></a>
+                                <a>Aurora<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile bloom' onclick = "link('bloom.html')">
+                                <a class = 'image' id = "bloom" href="bloom.html" tabindex="0"></a>
+                                <a>Bloom<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile fireboa' onclick = "link('fireboa.html')">
+                                <a class = 'image' id = "fireboa" href="fireboa.html" tabindex="0"></a>
+                                <a>Fireboa<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile jadesgarden' onclick = "link('jadesgarden.html')">
+                                <a class = 'image' id = "jadesgarden" href="jadesgarden.html" tabindex="0"></a>
+                                <a>Jadesgarden<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile kirachi' onclick = "link('kirachi.html')">
+                                <a class = 'image' id = "kirachi" href="kirachi.html" tabindex="0"></a>
+                                <a>Kirachi<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile mr-Sane' onclick = "link('mr-Sane.html')">
+                                <a class = 'image' id = "mr-Sane" href="mr-Sane.html" tabindex="0"></a>
+                                <a>Mr-sane<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile yurika' onclick = "link('yurika.html')">
+                                <a class = 'image' id = "yurika" href="yurika.html" tabindex="0"></a>
+                                <a>Yurika<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile ashe' onclick = "link('ashe.html')">
+                                <a class = 'image' id = "ashe" href="ashe.html" tabindex="0"></a>
+                                <a>Ashe<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile snow' onclick = "link('snow.html')">
+                                <a class = 'image' id = "snow" href="snow.html" tabindex="0"></a>
+                                <a>Snow<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile tookie' onclick = "link('tookie.html')">
+                                <a class = 'image' id = "tookie" href="tookie.html" tabindex="0"></a>
+                                <a>Tookie<span class = "mobile"><br></span></a>
+                        </div>

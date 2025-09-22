@@ -152,7 +152,24 @@ html {
         height: 100vh;
         justify-self: center;
 }
+.textColumn table{
+        width: auto;
+        font-size: larger;
 
+}
+.data{
+        padding-left: 20px;
+        padding-top: 10px;
+        width:auto;
+        font-weight: 500;
+}
+.category{
+        width:auto;
+        vertical-align: text-top;
+        padding-top: 10px;
+        margin-right: 20px;
+        font-weight: 800;
+}
 .center {
         left:10px;
         margin-top: 300px;
@@ -350,6 +367,15 @@ html {
                 font-size: medium;
                 width: 60%;
         }
+
+        .textColumn table{
+                font-size: 20px;
+        }
+        .data{
+                padding-left: 20px;
+                font-weight: 500;
+        }
+
         .desktop{display: none;}
         .mobile{display: contents;}
 }
