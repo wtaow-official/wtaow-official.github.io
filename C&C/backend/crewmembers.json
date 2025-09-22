@@ -1,7 +1,7 @@
 {
         "Array":[
                 "aurora",
-                "bloom",
+                "bloomaboo",
                 "fireboa",
                 "jadesgarden",
                 "kirachi",
@@ -12,7 +12,7 @@
                 "tookie"
         ],
         "aurora":{
-                "generate": false,
+                "generate": true,
                 "titleCard": false,
                 "title": "Aurora",
                 "gender": "Girlflux",
@@ -48,7 +48,7 @@
                 "roles": ["Director", "Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"],
                 "css": ".titleCard{background-image: image-set('assets/fireboa/title.png');aspect-ratio:10/2}\n.crewpage div{background-color: #db2929;}"
         },
-        "bloom":{
+        "bloomaboo":{
                 "generate": true,
                 "titleCard": false,
                 "title": "Bloomaboo",
@@ -64,7 +64,7 @@
                 "roles": ["Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"]
         },
         "mr-Sane":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Mr Sane",
                 "pronouns": "He/They",
@@ -80,7 +80,7 @@
                 "roles": ["VA", "Artist", "Musician"]
         },
         "yurika":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "YourLocalYurika",
                 "pronouns": "She/Her/They",
@@ -110,7 +110,7 @@
                 "roles": []
         },
         "kirachi":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Kirachi",
                 "gender":"",
@@ -127,7 +127,7 @@
                 "roles": ["Writer", "VA", "Musician"]
         },
         "ashe":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Asheira",
                 "gender":"TransFem",
@@ -143,7 +143,7 @@
                 "roles": ["VA"]
         },
         "snow":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Queen_Sniw",
                 "gender":"",
@@ -162,16 +162,16 @@
         "tookie":{
                 "generate": false,
                 "titleCard": false,
-                "title": "",
+                "title": "Tookie",
                 "gender":"",
-                "pronouns":"",
+                "pronouns":"Any",
                 "about": [
                         ""
                 ],
                 "socials":{
                         "list":[]
                 },
-                "image": "../assets/messychild.jpg",
+                "image": "assets/{name}.jpg",
                 "roles": ["VA", "Snippet Writer"]
         },
         "":{

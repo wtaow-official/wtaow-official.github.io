@@ -271,6 +271,17 @@ html {
         background-size:contain;
         border-radius: 15px;
 }
+
+.top .credits{
+        display: none;
+        z-index: -99999999;
+}
+.top .fanart{
+        display: none;
+        z-index: -99999999;
+}
+
+
 /*
 .social .body .image:hover{
         animation: spin 3s;
