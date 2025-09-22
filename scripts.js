@@ -4,9 +4,14 @@ function sleep(ms){
 }
 function begone(chosenId){
         var element = document.getElementById(chosenId);
+        string = getCookie("poster")
+        let x = 3000
+        if (string == "false"){
+                x = 0
+        }
         element.style.top = "-200vh";
         element.tabIndex = -1;
-        sleep(3000).then(() => {
+        sleep(x).then(() => {
                 document.getElementById("base").style.overflowY = "visible"
                 element.style.display = "none";
         });
@@ -65,6 +70,7 @@ function checkEnabled(id, cname){
                 document.getElementById("posterSwap").style.backgroundColor = "red"
                 document.getElementById("base").style.overflowY = "hidden";
                 document.getElementById("posterWTAOW").style.display = "none";
+                begone("posterWTAOW")
         }
         else{
                 element.style.display = "flex";
