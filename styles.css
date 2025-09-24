@@ -306,7 +306,7 @@ html {
         transition-duration: 0.5s;
 }
 .newsbutton{
-        background-color: whitesmoke;
+        background-color: rgba(245, 245, 245, 0.356);
         right: -14vw;
         bottom: -14vh;
 }
