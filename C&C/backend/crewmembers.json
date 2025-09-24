@@ -64,9 +64,10 @@
                 "roles": ["Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"]
         },
         "mr-Sane":{
-                "generate": false,
+                "generate": true,
                 "titleCard": false,
                 "title": "Mr Sane",
+                "gender": "Male",
                 "pronouns": "He/They",
                 "about": [
                         "Hello I'm Mr Sane! I voice {Alexis} in WTAOW, but I'm also a youtuber! If you like watching video games, horror, music and Vtubers, Ancient Egypt, anime, cosplays? And all over silly stupid humor",
@@ -80,9 +81,10 @@
                 "roles": ["VA", "Artist", "Musician"]
         },
         "yurika":{
-                "generate": false,
+                "generate": true,
                 "titleCard": false,
                 "title": "YourLocalYurika",
+                "gender": "???",
                 "pronouns": "She/Her/They",
                 "about": [
                         "I'm an artist and musician for WTAOW",
@@ -110,10 +112,10 @@
                 "roles": []
         },
         "kirachi":{
-                "generate": false,
+                "generate": true,
                 "titleCard": false,
                 "title": "Kirachi",
-                "gender":"",
+                "gender":"Male",
                 "pronouns":"He/Him",
                 "about": [
                         "It is I, Kirachi! Your infamous 2d man liker. I'm a big creative nerd and especially happy to do work for WTAOW! Other than spending most of my days developing my game on the computer, I also have been doing volunteer work VA for 5 years, am an avid money-spender on theatre workshops, and roleplayer and D&D enthusiast! "
@@ -143,11 +145,11 @@
                 "roles": ["VA"]
         },
         "snow":{
-                "generate": false,
+                "generate": true,
                 "titleCard": false,
                 "title": "Queen_Sniw",
-                "gender":"",
-                "pronouns":"",
+                "gender":"???",
+                "pronouns":"It/Its",
                 "about": [
                         "Haiiiii I'm Snow :3",
                         "I generally don't do much nor have an online presence (at least yet lmao). I'm just a silly little therian going through life and all I do is voice the purple haired goober ({Griffon})."
@@ -163,7 +165,7 @@
                 "generate": false,
                 "titleCard": false,
                 "title": "Tookie",
-                "gender":"",
+                "gender":"???",
                 "pronouns":"Any",
                 "about": [
                         ""
