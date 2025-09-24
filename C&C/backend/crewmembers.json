@@ -54,7 +54,7 @@
                 "css": ".titleCard{background-image: image-set('assets/fireboa/title.png');aspect-ratio:10/2}\n.crewpage div{background-color: #db2929;}"
         },
         "bloomaboo":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Bloomaboo",
                 "gender": "?",
@@ -84,10 +84,12 @@
                         "cardd": "https://mrsane.carrd.co/"
                 },
                 "image": "assets/mrSane.png",
-                "roles": ["VA", "Artist", "Musician"]
+                "roles": ["VA", "Artist", "Musician"],
+                "css": ".backing{background-image: image-set('assets/mrSane/background.png');}"
+
         },
         "yurika":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Yuri",
                 "gender": "???",
@@ -102,7 +104,7 @@
                 "roles": ["Artist", "Musician"]
         },
         "jadesgarden":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "",
                 "about": [
@@ -165,7 +167,7 @@
                 "roles": ["VA", "Singer"]
         },
         "tookie":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Tookie",
                 "gender":"???",
@@ -192,11 +194,11 @@
                         "list":["tumblr"],
                         "tumblr": "https://tumblr.com/beelze98"
                 },
-                "image": "assets/{name}.png",
+                "image": "assets/{name}.jpg",
                 "roles": ["Editor"]
         },
         "koen":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Koen",
                 "gender":"",
@@ -207,11 +209,11 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}.png",
+                "image": "assets/{name}.jpg",
                 "roles": ["VA"]
         },
         "embry":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Embry",
                 "gender":"Non-binary",
@@ -222,11 +224,12 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}.png",
-                "roles": ["Singer"]
+                "image": "assets/{name}/icon.png",
+                "roles": ["Singer"],
+                "css": ".backing{background-image: image-set('assets/embry/background.jpg');}"
         },
         "rebecca":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Rebecca Mondry-Zanaglio ",
                 "gender":"Demigirl",
@@ -255,8 +258,9 @@
                         "linktree":"https://linktr.ee/Yazuroo",
                         "throne": "https://throne.com/yazuroo"
                 },
-                "image": "assets/{name}.png",
-                "roles": ["Singer"]
+                "image": "assets/{name}/icon.jpg",
+                "roles": ["Singer"],
+                "css": ".backing{background-image: image-set('assets/yazuroo/background.jpg');}"
         },
         "":{
                 "generate": false,
