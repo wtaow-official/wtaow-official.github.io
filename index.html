@@ -32,7 +32,7 @@
 
         <body onload = "checkEnabled('posterWTAOW', 'poster')">
                 <div class= "backing"></div>
-                <div class= "cover"></div>
+                <div class= "cover" id="darken"></div>
                 <div class= "poster" id = "posterWTAOW" onclick = "begone('posterWTAOW')" onfocus = "begone('posterWTAOW')" tabindex="1">
                         <img src = "assets/poster.png" onfocus = "begone('posterWTAOW')" tabindex="1">
                 </div>
@@ -65,8 +65,13 @@
                 </div>
 
 
-                <div class = "bottom">
+                <div class = "bottom newspaper" id="news" onclick="paperfound()">
                 </div>
+                <div class = "bottom newsbutton" onclick="paperfound()"></div>
                 <br>
         </body>
+        <script>begone("posterWTAOW")
+                let paper = document.getElementById("news");
+                paper.style.bottom = "-88vh"
+        </script>
 </html>

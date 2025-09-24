@@ -1,3 +1,5 @@
+const vh = document.body.offsetHeight/100
+const vw = document.body.offsetWidth/100
 
 function sleep(ms){
         return new Promise(resolve => setTimeout(resolve, ms));
@@ -136,4 +138,32 @@ function imgTxtAlignment(){
                 /*x = (txtCol.offsetHeight).toString()
                 imgCol.style.height = x + "px"*/
         }
+}
+
+function paperfound(){
+        let paper = document.getElementById("news");
+        let dark = document.getElementById("darken");
+
+        console.log("docOffsetW", document.body.offsetWidth)
+        console.log("paperOffsetW", paper.offsetWidth)
+        console.log("docOffsetH", document.body.offsetHeight)
+        console.log("paperOffsetH", paper.offsetHeight)
+
+        x = ((document.body.offsetWidth - paper.offsetWidth)/200).toString()
+        y = ((document.body.offsetHeight - paper.offsetHeight)/2).toString()
+
+        console.log("x", x)
+        console.log("y", y)
+
+        if (paper.style.bottom == "-88vh"){
+                paper.style.right = x + "px"
+                paper.style.bottom = "5vh"
+                dark.style.zIndex = "100"
+        }
+        else{
+                paper.style.bottom = "-88vh"
+                paper.style.right = "-98vw"
+                dark.style.zIndex = "-1"
+        }
+
 }

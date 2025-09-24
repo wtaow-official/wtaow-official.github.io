@@ -281,7 +281,35 @@ html {
         z-index: -99999999;
 }
 
+.bottom{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 5vw;
+        height: 5vh;
+        padding: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+}
 
+.newspaper{
+        z-index: 999999;
+        right: -98vw;
+        bottom: -88vh;
+        width: 90vw;
+        height: 80vh;
+        background-image: image-set("assets/untitled1199.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+
+        transition-duration: 0.5s;
+}
+.newsbutton{
+        background-color: whitesmoke;
+        right: -14vw;
+        bottom: -14vh;
+}
 /*
 .social .body .image:hover{
         animation: spin 3s;

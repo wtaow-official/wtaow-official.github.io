@@ -9,7 +9,12 @@
                 "yurika",
                 "ashe",
                 "snow",
-                "tookie"
+                "tookie",
+                "harvey",
+                "yazuroo",
+                "koen",
+                "embry",
+                "rebecca"
         ],
         "aurora":{
                 "generate": true,
@@ -67,15 +72,16 @@
                 "generate": true,
                 "titleCard": false,
                 "title": "Mr Sane",
-                "gender": "Male",
-                "pronouns": "He/They",
+                "gender": "Man",
+                "pronouns": "He/him",
                 "about": [
                         "Hello I'm Mr Sane! I voice {Alexis} in WTAOW, but I'm also a youtuber! If you like watching video games, horror, music and Vtubers, Ancient Egypt, anime, cosplays? And all over silly stupid humor",
                         "Then I'm your guy!"
                 ],
                 "socials":{
-                        "list":["youtube"],
-                        "youtube":"https://youtube.com/@mr_sane"
+                        "list":["youtube", "cardd"],
+                        "youtube":"https://youtube.com/@mr_sane",
+                        "cardd": "https://mrsane.carrd.co/"
                 },
                 "image": "assets/mrSane.png",
                 "roles": ["VA", "Artist", "Musician"]
@@ -83,14 +89,11 @@
         "yurika":{
                 "generate": true,
                 "titleCard": false,
-                "title": "YourLocalYurika",
+                "title": "Yuri",
                 "gender": "???",
-                "pronouns": "She/Her/They",
+                "pronouns": "They/Them",
                 "about": [
-                        "I'm an artist and musician for WTAOW",
-                        "Traditional art professional, digital art... arm I'm ok with that! /hj",
-                        "I play piano :)",
-                        "I might be inside your walls /j /silly"
+                        "Greetings… I am Yuri✨ I am kind of an artist, and I like music!! Im don't really have a lot of achievements but I do cover songs with some friends irl. Sometimes I write a bit for fun, and sometimes I try new things. I like to listen to true crime podcasts and music. Nice to meet you, stranger on the internet…(^_^)"
                 ],
                 "socials":{
                         "list":[]
@@ -162,19 +165,98 @@
                 "roles": ["VA", "Singer"]
         },
         "tookie":{
-                "generate": false,
+                "generate": true,
                 "titleCard": false,
                 "title": "Tookie",
                 "gender":"???",
                 "pronouns":"Any",
                 "about": [
-                        ""
+                        "cryptid"
                 ],
                 "socials":{
                         "list":[]
                 },
                 "image": "assets/{name}.jpg",
                 "roles": ["VA", "Snippet Writer"]
+        },
+        "harvey":{
+                "generate": true,
+                "titleCard": false,
+                "title": "Harvey",
+                "gender":"Demiboy",
+                "pronouns":"He/They",
+                "about": [
+                        "Hi hi! I'm Harvey. I'm an editor, among other things. I have experience in short film making and theatre (4 years and 9~ years respectively), and I love doing the behind the scenes work on creative projects, whether that be stage crew, camera work, sound, foley artistry, or so on. I also play DND and draw in my spare time."
+                ],
+                "socials":{
+                        "list":["tumblr"],
+                        "tumblr": "https://tumblr.com/beelze98"
+                },
+                "image": "assets/{name}.png",
+                "roles": ["Editor"]
+        },
+        "koen":{
+                "generate": true,
+                "titleCard": false,
+                "title": "Koen",
+                "gender":"",
+                "pronouns":"He/It",
+                "about": [
+                        "Hiya, my name is Koen! I cut and dye my hair a lot so it's never the same but as I'm writing this it's blue and green! :3 You'll often find me under the username TheDove0859 most places. I love anime, music, theatre, art and way more. I voice act {Ali} !! Wtaow is one of the best things I've been a part of, I've done various other projects and will definitely do more in the future! <3"
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "assets/{name}.png",
+                "roles": ["VA"]
+        },
+        "embry":{
+                "generate": true,
+                "titleCard": false,
+                "title": "Embry",
+                "gender":"Non-binary",
+                "pronouns":"They/Them",
+                "about": [
+                        "Hello peoples! I'm your local raccoon trash hermit! I haven't done much professional work (or any at all), but I've been singing for most of my life. I've been trying to write a book, and do art on the side outside of school and work. I don't have much of a life outside of the Internet, but one of my biggest dreams is to do work like this professionally, whether it be voice acting or just singing."
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "assets/{name}.png",
+                "roles": ["Singer"]
+        },
+        "rebecca":{
+                "generate": true,
+                "titleCard": false,
+                "title": "Rebecca Mondry-Zanaglio ",
+                "gender":"Demigirl",
+                "pronouns":"She/They",
+                "about": [
+                        "Hi! I'm Rebecca/Raku, and I'm a voice actor and singer. I started voice acting in December 2024, but I have 10+ years of experience singing and even competed locally. Voice acting has been an enjoyable hobby, and I have been thankful to receive roles in games, visual novels, animations, YouTube series, audio dramas, and more! Aside from voice acting, I am a cosplay musical guest performing for local conventions, and I am designing a supernatural musical adventure game! "
+                ],
+                "socials":{
+                        "list":["cardd"],
+                        "cardd": "https://rebeccamondry.carrd.co/"
+                },
+                "image": "assets/{name}.png",
+                "roles": ["VA", "Singer"]
+        },
+        "yazuroo":{
+                "generate": true,
+                "titleCard": false,
+                "title": "Yazuroo",
+                "gender":"Male",
+                "pronouns":"He/Him",
+                "about": [
+                        "Hey hey hello! Name's Yazuroo, and I'm your local pigeon, I'm also a hobby artist, wannabe singer and a BIIIG gamer! Sure my skills aint the best but hey ho, I'm trying -v- I take art commisions, can do VA stuff (im not good at it tho) and i play a lot of games (i spend too much on those) even tho i have a shitty laptop lol. oh yeah btw Silksong is great, go play it!!!!!"
+                ],
+                "socials":{
+                        "list":["linktree", "throne"],
+                        "linktree":"https://linktr.ee/Yazuroo",
+                        "throne": "https://throne.com/yazuroo"
+                },
+                "image": "assets/{name}.png",
+                "roles": ["Singer"]
         },
         "":{
                 "generate": false,

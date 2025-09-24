@@ -15,6 +15,8 @@ prefabs = {
 }
 elements = ["css", "script", ""]
 
+socialntFiles = ""
+
 
 for crew in crewmembers["Array"]:
         outString = templateString
@@ -66,6 +68,8 @@ for crew in crewmembers["Array"]:
                                         outString = outString.replace(value.upper(), lines)
                                 elif value == "socials":
                                         lines = ""
+                                        if len(crewmember[value]["list"]) == 0:
+                                                socialntFiles += f"\n  - {crew}.html"
                                         for social in crewmember[value]["list"]:
 
                                                 line = ""
@@ -89,3 +93,4 @@ for crew in crewmembers["Array"]:
                 output.write(outString)
         else:
                 pass
+print(f"Files without socials lists: {socialntFiles}")
