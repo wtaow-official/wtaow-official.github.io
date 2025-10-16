@@ -4,7 +4,7 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>WTAOW</title>
-                <link rel="icon" type="image/x-icon" href="assets/icon.png">
+                <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
                 <link href="styles.css" rel="stylesheet" type="text/css" media="all">
                 <link rel="javascript" href = "scripts.js" type="text/javascript">
                 <script src = "scripts.js"></script>
@@ -34,7 +34,7 @@
                 <div class= "backing"></div>
                 <div class= "cover" id="darken"></div>
                 <div class= "poster" id = "posterWTAOW" onclick = "begone('posterWTAOW')" onfocus = "begone('posterWTAOW')" tabindex="1">
-                        <img src = "assets/poster.png" onfocus = "begone('posterWTAOW')" tabindex="1">
+                        <img src = "assets/images/poster.png" onfocus = "begone('posterWTAOW')" tabindex="1" onkeydown="begone('posterWTAOW')">
                 </div>
                 <button class= "posterSwap tooltip" id= "posterSwap" onclick = "swapEnabled('poster')">
                         P
@@ -66,8 +66,10 @@
 
 
                 <div class = "bottom newspaper" id="news" onclick="paperfound()">
+                        <audio src="assets/audio/crumple.mp3"></audio>
                 </div>
-                <div class = "bottom newsbutton" onclick="paperfound()"></div>
+                <div class = "bottom newsbutton" onclick="paperfound()">
+                </div>
                 <br>
         </body>
         <script>

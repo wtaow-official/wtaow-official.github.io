@@ -141,19 +141,14 @@ function imgTxtAlignment(){
 }
 
 function paperfound(){
-        let paper = document.getElementById("news");
-        let dark = document.getElementById("darken");
+        const audioElement = document.querySelector("audio")
+        const paper = document.getElementById("news");
+        const dark = document.getElementById("darken");
 
-        console.log("docOffsetW", document.body.offsetWidth)
-        console.log("paperOffsetW", paper.offsetWidth)
-        console.log("docOffsetH", document.body.offsetHeight)
-        console.log("paperOffsetH", paper.offsetHeight)
-
+        audioElement.play()
         x = ((document.body.offsetWidth - paper.offsetWidth)/200).toString()
         y = ((document.body.offsetHeight - paper.offsetHeight)/2).toString()
 
-        console.log("x", x)
-        console.log("y", y)
 
         if (paper.style.bottom == "-88vh"){
                 paper.style.right = x + "px"

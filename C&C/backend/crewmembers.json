@@ -6,7 +6,7 @@
                 "jadesgarden",
                 "kirachi",
                 "mr-Sane",
-                "yurika",
+                "yuri",
                 "ashe",
                 "snow",
                 "tookie",
@@ -14,10 +14,13 @@
                 "yazuroo",
                 "koen",
                 "embry",
-                "rebecca"
+                "rebecca",
+		"shi-no-ogama",
+		"death",
+                "onyx"
         ],
         "aurora":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Aurora",
                 "gender": "Girlflux",
@@ -30,7 +33,7 @@
                         "list":["tumblr"],
                         "tumblr": "https://thethinkingaurora.tumblr.com"
                 },
-                "image": "assets/aurora.png",
+                "image": "assets/aurora/icon.png",
                 "roles":["Coder", "VA", "Puzzlemaker"]
         },
         "fireboa":{
@@ -69,7 +72,7 @@
                 "roles": ["Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"]
         },
         "mr-Sane":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Mr Sane",
                 "gender": "Man",
@@ -83,12 +86,12 @@
                         "youtube":"https://youtube.com/@mr_sane",
                         "cardd": "https://mrsane.carrd.co/"
                 },
-                "image": "assets/mrSane.png",
+                "image": "assets/mrSane/icon.png",
                 "roles": ["VA", "Artist", "Musician"],
                 "css": ".backing{background-image: image-set('assets/mrSane/background.png');}"
 
         },
-        "yurika":{
+        "yuri":{
                 "generate": false,
                 "titleCard": false,
                 "title": "Yuri",
@@ -100,8 +103,10 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}.jpg",
-                "roles": ["Artist", "Musician"]
+                "image": "assets/{name}/icon.jpg",
+                "roles": ["Artist", "Musician"],
+                "css": ".backing{background-image: image-set('assets/yuri/background.png');}"
+
         },
         "jadesgarden":{
                 "generate": false,
@@ -117,7 +122,7 @@
                 "roles": []
         },
         "kirachi":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Kirachi",
                 "gender":"Male",
@@ -131,7 +136,9 @@
 
                 },
                 "image": "assets/{name}/icon.png",
-                "roles": ["Writer", "VA", "Musician"]
+                "roles": ["Writer", "VA", "Musician"],
+                "css": ".backing{background-image: image-set('assets/kirachi/background.png');}"
+
         },
         "ashe":{
                 "generate": false,
@@ -146,11 +153,11 @@
                         "list":["linktree"],
                         "linktree":"https://linktr.ee/Asheira"
                 },
-                "image": "assets/{name}.png",
+                "image": "assets/{name}/icon.png",
                 "roles": ["VA"]
         },
         "snow":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Queen_Sniw",
                 "gender":"???",
@@ -163,7 +170,7 @@
                         "list":["tumblr"],
                         "tumblr":"https://www.tumblr.com/queen--snow "
                 },
-                "image": "assets/{name}.png",
+                "image": "assets/{name}/icon.png",
                 "roles": ["VA", "Singer"]
         },
         "tookie":{
@@ -178,11 +185,11 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}.jpg",
+                "image": "assets/{name}/icon.jpg",
                 "roles": ["VA", "Snippet Writer"]
         },
         "harvey":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Harvey",
                 "gender":"Demiboy",
@@ -194,23 +201,24 @@
                         "list":["tumblr"],
                         "tumblr": "https://tumblr.com/beelze98"
                 },
-                "image": "assets/{name}.jpg",
+                "image": "assets/{name}/icon.jpg",
                 "roles": ["Editor"]
         },
         "koen":{
                 "generate": false,
                 "titleCard": false,
                 "title": "Koen",
-                "gender":"",
+                "gender":"Genderfaun",
                 "pronouns":"He/It",
                 "about": [
-                        "Hiya, my name is Koen! I cut and dye my hair a lot so it's never the same but as I'm writing this it's blue and green! :3 You'll often find me under the username TheDove0859 most places. I love anime, music, theatre, art and way more. I voice act {Ali} !! Wtaow is one of the best things I've been a part of, I've done various other projects and will definitely do more in the future! <3"
+                        "Hiya, my name is Koen! I cut and dye my hair a lot so it's never the same but as I'm writing this it's blue and green! :3 You'll often find me under the username TheDove0859 most places. I love anime, music, theatre, art and way more. I voice act {Ali} !! WTAOW is one of the best things I've been a part of, I've done various other projects and will definitely do more in the future! <3"
                 ],
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}.jpg",
-                "roles": ["VA"]
+                "image": "assets/{name}/icon.jpg",
+                "roles": ["VA", "Singer", "Lyricist"],
+                "css": ".backing{background-image: image-set('assets/koen/background.jpg');}"
         },
         "embry":{
                 "generate": false,
@@ -241,11 +249,11 @@
                         "list":["cardd"],
                         "cardd": "https://rebeccamondry.carrd.co/"
                 },
-                "image": "assets/{name}.png",
+                "image": "assets/{name}/icon.png",
                 "roles": ["VA", "Singer"]
         },
         "yazuroo":{
-                "generate": true,
+                "generate": false,
                 "titleCard": false,
                 "title": "Yazuroo",
                 "gender":"Male",
@@ -262,6 +270,63 @@
                 "roles": ["Singer"],
                 "css": ".backing{background-image: image-set('assets/yazuroo/background.jpg');}"
         },
+        "shi-no-ogama":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Shi No Ōgama",
+                "gender":"Genderfluid",
+                "pronouns":"Any",
+                "about": [
+                        "Greetings! I am Shi No Ōgama I am the voice of Owen in WTAOW! I dabble I a bit if everything, management of creations, like video making, scheduling for content, etc. I also draw, voice act, cosplay and dance!"
+                ],
+                "socials":{
+                        "list":["cardd"],
+                        "cardd": "https://shinoogama.carrd.co/"
+                },
+                "image": "assets/{name}/icon.png",
+                "roles": ["VA"],
+                "css": ".backing{background-image: image-set('assets/shi-no-ogama/background.png');}"
+
+        },
+        "death":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Death/Yang",
+                "gender":"Genderfluid",
+                "pronouns":"They/Them",
+                "about": [
+                        "Hai! I'm glad to meet new people even if I may be a little bit awkward. I enjoy being a backup singer or main singer and also making art covers for any project, rather for a fun little hobby."
+                ],
+                "socials":{
+                        "list":["strawPage"],
+                        "strawPage": "https://caironai.straw.page/"
+                },
+                "image": "assets/{name}/icon.png",
+                "roles": ["Singer"],
+                "css": ".backing{background-image: image-set('assets/death/background.jpg');}"
+
+        },
+        "onyx":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Onyx",
+                "gender":"TransMasc",
+                "pronouns":"He/Him",
+                "about": [
+                        "I'm the Voice Actor for {Model X} and Art crew!",
+                        "",
+                        "Hihi! I'm Onyx! I'm on the voice acting team and art team. I've been in art since I could hold a crayon, and have been in theater for about four years! I'm very interested in animals and history, I'm a big vampire fanatic… love love love superheros, love dc and marvel. I'm a book/comic and oddities collector!"
+                ],
+                "socials":{
+                        "list":["tumblr", "instagram"],
+                        "tumblr": "https://www.tumblr.com/boneeater3000",
+                        "instagram": "https://www.instagram.com/boneeater9000"
+                },
+                "image": "assets/{name}/icon.jpg",
+                "roles": ["VA"],
+                "css": ".backing{background-image: image-set('assets/onyx/background.jpg');}"
+
+        },
         "":{
                 "generate": false,
                 "titleCard": false,
@@ -274,8 +339,13 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}.png",
-                "roles": []
+                "image": "assets/{name}/icon.png",
+                "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.jpg');}"
+
         }
+
+
+
 
 }

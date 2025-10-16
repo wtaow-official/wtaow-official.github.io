@@ -4,20 +4,48 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Kirachi</title>
-                <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+                <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
                 <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
                 <link href="crewStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <script src = "scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/kirachi/icon.png");
+                        :root{
+                                --top-bg-colour: #ff8080;
+                                --top-a-bg-colour: #fdc474;
+                                --top-a-colour: #000;
+                                --top-a-hover-bg-colour: #a1d8e2;
+                                --top-a-hover-colour: #000;
+                                --highlight: #b5dfff;
+                                --text-colour: #a1d8e2;
+                                --page-colour: #3e62adaf;
+                                --image: image-set("assets/kirachi/icon.png");
+                                --background: image-set("assets/kirachi/background.png");
+                        }
+                        .top{
+                                transition-duration: 0.3s;
+                                background-color: #ff8080;
+                        }
+                        .top a{
+                                background-color: #fdc474;
+                        }
+                        .top a:hover{
+                                background-color: #a1d8e2;
+                        }
+                        .top a.active{
+                                background-color: #a1d8e2;
+                        }
+                        .local .imageColumn{
+                                background-color: #3e62adaf;
+                        }
+                        .local .textColumn{
+                                background-color: #3e62adaf;
+                                color: #a1d8e2;
                         }
 
                         @media only screen and (max-width: 700px) {
 
                         }
-                        
                 </style>
         </head>
 
@@ -35,12 +63,12 @@
                         </div>
                 </div>
 
-                <div class = "crewPage">
+                <div class = "crewPage local">
                         <div class = "imageColumn" id = "imageCol">
                                 <a class = "image"></a>
                         </div>
                         <div class = "textColumn" id = "textCol">
-                                <h1 style = "margin-top:0; font-size: 28px;">Kirachi</h1>
+                                <h1 style = "margin:0;">Kirachi</h1>
                                 <table>
                                         <tr>
                                                 <td class = "category">Gender: </td>
@@ -54,15 +82,15 @@
                                                 <td class = "category">Roles: </td>
                                                 <td class = "data">
                                                         <a href = "../roles.html#writer">Writer</a>,
-                                                        <a href = "../roles.html#va">VA</a>,
-                                                        <a href = "../roles.html#musician">Musician</a>,
+                                                        <a href = "../roles.html#va">VA</a> &
+                                                        <a href = "../roles.html#musician">Musician</a>
 
                                                 </td>
                                         </tr>
                                         <tr>
                                                 <td class = "category">Socials: </td>
                                                 <td class = "data">
-                                                        <a href = "https://en.pronouns.page/@kirachi">Pronounspage</a>,
+                                                        <a href = "https://en.pronouns.page/@kirachi">Pronouns.Page</a>
 
                                                 </td>
                                         </tr>

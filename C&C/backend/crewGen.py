@@ -29,7 +29,7 @@ for crew in crewmembers["Array"]:
                         if value not in unnecessaryData:
                                 if value == "titleCard":
                                         if crewmember[value] == True:
-                                                titleLine = '''<h1 style = "margin-top:0; font-size: 28px;">TITLE</h1>'''
+                                                titleLine = '''<h1 style = "margin:0;">TITLE</h1>'''
                                                 outString = outString.replace(titleLine, prefabs["titleCard"])
                                 elif value == "generate":
                                         pass
@@ -93,4 +93,7 @@ for crew in crewmembers["Array"]:
                 output.write(outString)
         else:
                 pass
+
+
+if socialntFiles.__len__() == 0: socialntFiles += f"\n  - Null"
 print(f"Files without socials lists: {socialntFiles}")

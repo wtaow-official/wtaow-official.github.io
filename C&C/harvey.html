@@ -4,20 +4,29 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Harvey</title>
-                <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+                <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
                 <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
                 <link href="crewStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <script src = "scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/harvey.jpg");
+                        :root{
+                                --top-bg-colour: #3a7e7d;
+                                --top-a-bg-colour: #5c9c96;
+                                --top-a-colour: #0a0a0a15;
+                                --top-a-hover-bg-colour: #056d53;
+                                --top-a-hover-colour: #04ca9f;
+                                --highlight: #14f2fa;
+                                --text-colour: #04ddae;
+                                --page-colour: #056d53af;
+                                --image: image-set("assets/harvey/icon.jpg")
                         }
 
                         @media only screen and (max-width: 700px) {
-
+                                .local{
+                                        background-color: #056d538f;
+                                }
                         }
-                        
                 </style>
         </head>
 
@@ -35,12 +44,12 @@
                         </div>
                 </div>
 
-                <div class = "crewPage">
+                <div class = "crewPage local">
                         <div class = "imageColumn" id = "imageCol">
                                 <a class = "image"></a>
                         </div>
                         <div class = "textColumn" id = "textCol">
-                                <h1 style = "margin-top:0; font-size: 28px;">Harvey</h1>
+                                <h1 style = "margin:0;">Harvey</h1>
                                 <table>
                                         <tr>
                                                 <td class = "category">Gender: </td>
@@ -53,14 +62,14 @@
                                         <tr>
                                                 <td class = "category">Roles: </td>
                                                 <td class = "data">
-                                                        <a href = "../roles.html#editor">Editor</a>,
+                                                        <a href = "../roles.html#editor">Editor</a>
 
                                                 </td>
                                         </tr>
                                         <tr>
                                                 <td class = "category">Socials: </td>
                                                 <td class = "data">
-                                                        <a href = "https://tumblr.com/beelze98">Tumblr</a>,
+                                                        <a href = "https://tumblr.com/beelze98">Tumblr</a>
 
                                                 </td>
                                         </tr>

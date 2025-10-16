@@ -29,9 +29,9 @@
                                 <a>Mr-sane<span class = "mobile"><br></span></a>
                         </div>
 
-                        <div class = 'tile yurika' onclick = "link('yurika.html')">
-                                <a class = 'image' id = "yurika" href="yurika.html" tabindex="0"></a>
-                                <a>Yurika<span class = "mobile"><br></span></a>
+                        <div class = 'tile yuri' onclick = "link('yuri.html')">
+                                <a class = 'image' id = "yuri" href="yuri.html" tabindex="0"></a>
+                                <a>Yuri<span class = "mobile"><br></span></a>
                         </div>
 
                         <div class = 'tile ashe' onclick = "link('ashe.html')">
@@ -72,4 +72,19 @@
                         <div class = 'tile rebecca' onclick = "link('rebecca.html')">
                                 <a class = 'image' id = "rebecca" href="rebecca.html" tabindex="0"></a>
                                 <a>Rebecca<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile shi-no-ogama' onclick = "link('shi-no-ogama.html')">
+                                <a class = 'image' id = "shi-no-ogama" href="shi-no-ogama.html" tabindex="0"></a>
+                                <a>Shi-no-ogama<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile death' onclick = "link('death.html')">
+                                <a class = 'image' id = "death" href="death.html" tabindex="0"></a>
+                                <a>Death<span class = "mobile"><br></span></a>
+                        </div>
+
+                        <div class = 'tile onyx' onclick = "link('onyx.html')">
+                                <a class = 'image' id = "onyx" href="onyx.html" tabindex="0"></a>
+                                <a>Onyx<span class = "mobile"><br></span></a>
                         </div>

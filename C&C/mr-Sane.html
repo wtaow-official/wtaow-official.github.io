@@ -4,20 +4,27 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Mr Sane</title>
-                <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+                <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
                 <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
                 <link href="crewStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <script src = "scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/mrSane.png");
+                        :root{
+                                --top-bg-colour: #684b51;
+                                --top-a-bg-colour: #b5838e;
+                                --top-a-colour: #0a0a0a15;
+                                --top-a-hover-bg-colour: #6c6876;
+                                --top-a-hover-colour: #ffcdb2;
+                                --highlight: #ffcdb2;
+                                --text-colour: #5f5c64;
+                                --page-colour: #ffb4a2af;
+                                --image: image-set("assets/mrSane/icon.png");
+                                --background: image-set("assets/mrSane/background.png");
                         }
-
                         @media only screen and (max-width: 700px) {
 
                         }
-                        .backing{background-image: image-set('assets/mrSane/background.png');}
                 </style>
         </head>
 
@@ -35,12 +42,12 @@
                         </div>
                 </div>
 
-                <div class = "crewPage">
+                <div class = "crewPage local">
                         <div class = "imageColumn" id = "imageCol">
                                 <a class = "image"></a>
                         </div>
                         <div class = "textColumn" id = "textCol">
-                                <h1 style = "margin-top:0; font-size: 28px;">Mr Sane</h1>
+                                <h1 style = "margin:0;">Mr Sane</h1>
                                 <table>
                                         <tr>
                                                 <td class = "category">Gender: </td>
@@ -54,23 +61,23 @@
                                                 <td class = "category">Roles: </td>
                                                 <td class = "data">
                                                         <a href = "../roles.html#va">VA</a>,
-                                                        <a href = "../roles.html#artist">Artist</a>,
-                                                        <a href = "../roles.html#musician">Musician</a>,
+                                                        <a href = "../roles.html#artist">Artist</a> &
+                                                        <a href = "../roles.html#musician">Musician</a>
 
                                                 </td>
                                         </tr>
                                         <tr>
                                                 <td class = "category">Socials: </td>
                                                 <td class = "data">
-                                                        <a href = "https://youtube.com/@mr_sane">Youtube</a>,
-                                                        <a href = "https://mrsane.carrd.co/">Cardd</a>,
+                                                        <a href = "https://youtube.com/@mr_sane">Youtube</a> &
+                                                        <a href = "https://mrsane.carrd.co/">Cardd</a>
 
                                                 </td>
                                         </tr>
                                 </table>
                                 <h3>About Me</h3>
                                 <p>
-                                        Hello I'm Mr Sane! I voice <a href='../characters/Alexis.html'>Alexis</a> in WTAOW, but I'm also a youtuber! If you like watching video games, horror, music and Vtubers, Ancient Egypt, anime, cosplays? And all over silly stupid humor
+                                        Hello I'm Mr Sane! I voice <a href='../characters/Alexis.html'>Alexis</a> in WTAOW, but I'm also a youtuber! If you like watching video games, horror, music and Vtubers, Ancient Egypt, anime, cosplays? And all over silly stupid humour
                                     <br>Then I'm your guy!
 
                                 </p>
@@ -84,6 +91,5 @@
         <script>
                 imgTxtAlignment()
                 moveUp("crewPage")
-                
         </script>
 </html>

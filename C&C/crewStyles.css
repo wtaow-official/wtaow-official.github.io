@@ -1,3 +1,13 @@
+:root{
+        --highlight: blue;
+        --page-colour: #ebba7baf;
+        --image: image-set();
+        --text-colour: #000;
+        --background: image-set("../assets/images/background.png")
+}
+.backing{
+        background-image: var(--background);
+}
 .characterSelector{
         margin: 10%;
         margin-top: 300px;
@@ -32,6 +42,7 @@
         object-fit:contain;
         justify-self: center;
         border-radius: 30px;
+        background-repeat: no-repeat;
 }
 .characterSelector .tile a{
         white-space-collapse: nowrap;
@@ -50,10 +61,11 @@
         margin-top: 1000px;
         border-radius: 20px;
         justify-content: center;
+        color: var(--text-colour)
 }
 .crewPage div{
         height:100%;
-        background-color: rgba(235, 186, 123, 0.686);
+        background-color: var(--page-colour);
 }
 .crewPage .textColumn{
         transition-duration: 0.4s;
@@ -69,7 +81,7 @@
         border-bottom-right-radius: 20px;
         font-family:monospace;
         font-size:20px;
-        background-color: rgba(235, 186, 123, 0.686);
+        background-color: var(--page-colour);
 }
 .crewPage .imageColumn{
         transition-duration: 0.4s;
@@ -80,9 +92,10 @@
         height:auto;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        background-color: rgba(235, 186, 123, 0.686);
+        background-color: var(--page-colour);
 }
 .crewPage .image{
+        background-image: var(--image);
         width: 102%;
         aspect-ratio: 1/1;
         background-size: contain;
@@ -95,13 +108,6 @@
         -o-border-radius: 30px;
 }
 
-.fireboa .imageColumn{
-        background-color: #db2929af;
-}
-
-.fireboa .textColumn{
-        background-color: #db2929af;
-}
 .titleCard{
         background-size: cover;
         height: 100px;
@@ -109,12 +115,22 @@
         display: inline-block;
 }
 
-h1{
-        padding-top: 20px;
-}
 h3{margin-bottom: 0}
 p{margin-top: 0;}
 
+p a{
+        color: var(--highlight);
+        font-weight: 900;
+}
+.local div h1{
+        padding-top: 20px;
+        color: var(--highlight);
+        font-weight: 900;
+        font-size: 50px;
+}
+td.data a{
+        color: var(--highlight);
+}
 @media only screen and (max-width: 700px) {
         h1{
                 text-align: center;
@@ -161,12 +177,12 @@ p{margin-top: 0;}
         .bar{
                 display: block;
         }
-        .fireboa{
+        .local{
                 display: block;
                 margin: 1.5%;
                 width:90%;
                 padding: 3.5%;
                 margin-top: 1000px;
-                background-color: #A00000;
+                background-color: var(--page-colour);
         }
 }

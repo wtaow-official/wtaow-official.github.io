@@ -4,20 +4,53 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Rebecca Mondry-Zanaglio </title>
-                <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+                <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
                 <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
                 <link href="crewStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <script src = "scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/rebecca.png");
+                        :root{
+                                /* --top-bg-colour: #060c08;
+                                --top-a-bg-colour: #193221;
+                                --top-a-colour: #595d2b;
+                                --top-a-hover-bg-colour: #595d2b;
+                                --top-a-hover-colour: #060c08; */
+                                --highlight: #ffab46;
+                                --image: image-set("assets/rebecca/icon.png");
+                        }
+                        .local .imageColumn{
+                                background-image: image-set("assets/rebecca/demigirl flag.png");
+                                background-size: 100rem 100%;
+                        }
+
+                        .local .textColumn{
+                                background-image: image-set("assets/rebecca/demigirl flag.png");
+                                background-size: 100rem 100%;
+
+                        }
+                        .local .textColumn .gradient-wrapper{
+                                background: -webkit-linear-gradient(#c72a71, #c72a71, #915396, #1236a4, #1236a4);
+                                -webkit-text-fill-color: transparent;
+                                -webkit-background-clip: text;
+
+                                background-size: 200% 400%;
+                                animation: gradientAnim 15s ease infinite;
+                                -webkit-animation: gradientAnim 15s ease infinite;
+                                -moz-animation: gradientAnim 15s ease infinite;
                         }
 
                         @media only screen and (max-width: 700px) {
-
+                                .local{
+                                        background-color: initial;
+                                }
                         }
-                        
+        
+                        @keyframes gradientAnim{
+                                0%{background-position: 0 0%;}
+                                50%{background-position: 0, 100%;}
+                                100%{background-position: 0 0%;}
+                        }
                 </style>
         </head>
 
@@ -35,12 +68,13 @@
                         </div>
                 </div>
 
-                <div class = "crewPage">
+                <div class = "crewPage local">
                         <div class = "imageColumn" id = "imageCol">
                                 <a class = "image"></a>
                         </div>
                         <div class = "textColumn" id = "textCol">
-                                <h1 style = "margin-top:0; font-size: 28px;">Rebecca Mondry-Zanaglio </h1>
+                                <div class="gradient-wrapper">
+                                <h1 style = "margin:0;">Rebecca Mondry-Zanaglio </h1>
                                 <table>
                                         <tr>
                                                 <td class = "category">Gender: </td>
@@ -53,15 +87,15 @@
                                         <tr>
                                                 <td class = "category">Roles: </td>
                                                 <td class = "data">
-                                                        <a href = "../roles.html#va">VA</a>,
-                                                        <a href = "../roles.html#singer">Singer</a>,
+                                                        <a href = "../roles.html#va">VA</a> &
+                                                        <a href = "../roles.html#singer">Singer</a>
 
                                                 </td>
                                         </tr>
                                         <tr>
                                                 <td class = "category">Socials: </td>
                                                 <td class = "data">
-                                                        <a href = "https://rebeccamondry.carrd.co/">Cardd</a>,
+                                                        <a href = "https://rebeccamondry.carrd.co/">Cardd</a>
 
                                                 </td>
                                         </tr>
@@ -70,6 +104,7 @@
                                 <p>
                                         Hi! I'm Rebecca/Raku, and I'm a voice actor and singer. I started voice acting in December 2024, but I have 10+ years of experience singing and even competed locally. Voice acting has been an enjoyable hobby, and I have been thankful to receive roles in games, visual novels, animations, YouTube series, audio dramas, and more! Aside from voice acting, I am a cosplay musical guest performing for local conventions, and I am designing a supernatural musical adventure game! 
                                 </p>
+                                </div>
                         </div>
                 </div>
 

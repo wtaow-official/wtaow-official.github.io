@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Yuri</title>
+                <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
+                <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
+                <link href="crewStyles.css" rel="stylesheet" type="text/css" media="all">
+                <script src = "../scripts.js"></script>
+                <script src = "scripts.js"></script>
+                <style>
+                        :root{
+                                --top-bg-colour: #735851;
+                                --top-a-bg-colour: #bf4343;
+                                --top-a-colour: #0a0a0a15;
+                                --top-a-hover-bg-colour: #8c1b13;
+                                --top-a-hover-colour: #e7d7c0;
+                                --highlight: #ff5959;
+                                --text-colour: #e7d7c0;
+                                --page-colour: #a68a7fcf;
+                                --image: image-set("assets/yuri/icon.jpg");
+                                --background: image-set("assets/yuri/backgroundDesktop.png");
+                        }
+
+                        .backing{
+                                background-repeat: no-repeat;
+                        }
+                        @media only screen and (max-width: 700px) {
+                                :root{
+                                        --background: image-set("assets/yuri/backgroundMobile.png");
+                                }
+
+                        }
+                </style>
+        </head>
+
+        <body class = "index_Back">
+                <div class= "backing"></div>
+                <div class= "cover"></div>
+                <div class = "top">
+                        <div class = "links">
+                                <a tabindex="1" href = "../socials.html">Socials</a>
+                                <a tabindex="1" href = ".." >Home</a>
+                                <a tabindex="1" href = "../characters">Characters</a>
+                                <a tabindex="1" href = "../Fanart" class="fanart">Fanart</a>
+                                <a tabindex="1" href = "." class = "active">C&C</a>
+                                <a tabindex="1" href = "../credits.html" style="margin-right: 15%;" class="credits">Credits</a>
+                        </div>
+                </div>
+
+                <div class = "crewPage local">
+                        <div class = "imageColumn" id = "imageCol">
+                                <a class = "image"></a>
+                        </div>
+                        <div class = "textColumn" id = "textCol">
+                                <h1 style = "margin:0">Yuri</h1>
+                                <table>
+                                        <tr>
+                                                <td class = "category">Gender: </td>
+                                                <td class = "data">???</td>
+                                        </tr>
+                                        <tr>
+                                                <td class = "category">Pronouns: </td>
+                                                <td class = "data">They/Them</td>
+                                        </tr>
+                                        <tr>
+                                                <td class = "category">Roles: </td>
+                                                <td class = "data">
+                                                        <a href = "../roles.html#artist">Artist</a>,
+                                                        <a href = "../roles.html#musician">Musician</a>
+
+                                                </td>
+                                        </tr>
+                                </table>
+                                <h3>About Me</h3>
+                                <p>
+                                        Greetings… I am Yuri✨<br> I am kind of an artist, and I like music!! I don't really have a lot of achievements but I do cover songs with some friends irl. Sometimes I write a bit for fun, and sometimes I try new things. I like to listen to true crime podcasts and music. Nice to meet you, stranger on the internet… (^_^)
+                                </p>
+                        </div>
+                </div>
+
+                <div class = "bottom">
+                </div>
+                <br>
+        </body>
+        <script>
+                imgTxtAlignment()
+                moveUp("crewPage")
+                
+        </script>
+</html>

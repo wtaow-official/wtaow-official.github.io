@@ -4,20 +4,28 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Embry</title>
-                <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+                <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
                 <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
                 <link href="crewStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <script src = "scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/embry/icon.png");
+                        :root{
+                                --top-bg-colour: #6e352c;
+                                --top-a-bg-colour: #94473b;
+                                --top-a-colour: #6e352c;
+                                --top-a-hover-bg-colour: #d15231;
+                                --top-a-hover-colour: #e4c599;
+                                --highlight: #e4c599;
+                                --text-colour: #3a3d55;
+                                --page-colour: #f69a45af;
+                                --image: image-set("assets/embry/icon.png");
+                                --background: image-set("assets/embry/background.jpg");
                         }
 
                         @media only screen and (max-width: 700px) {
 
                         }
-                        .backing{background-image: image-set('assets/embry/background.jpg');}
                 </style>
         </head>
 
@@ -35,12 +43,12 @@
                         </div>
                 </div>
 
-                <div class = "crewPage">
+                <div class = "crewPage local">
                         <div class = "imageColumn" id = "imageCol">
                                 <a class = "image"></a>
                         </div>
                         <div class = "textColumn" id = "textCol">
-                                <h1 style = "margin-top:0; font-size: 28px;">Embry</h1>
+                                <h1 style = "margin:0;">Embry</h1>
                                 <table>
                                         <tr>
                                                 <td class = "category">Gender: </td>
@@ -53,7 +61,7 @@
                                         <tr>
                                                 <td class = "category">Roles: </td>
                                                 <td class = "data">
-                                                        <a href = "../roles.html#singer">Singer</a>,
+                                                        <a href = "../roles.html#singer">Singer</a>
 
                                                 </td>
                                         </tr>
