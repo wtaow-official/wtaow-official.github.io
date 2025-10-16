@@ -67,9 +67,9 @@ function checkEnabled(id, cname){
         }
         console.log(string)
         if (string == "false"){
-                document.getElementById("posterSwap").style.backgroundColor = "red"
-                document.getElementById("base").style.overflowY = "hidden";
                 document.getElementById("posterWTAOW").style.display = "none";
+                document.getElementById("posterSwap").style.backgroundColor = "red"
+                document.getElementById("base").style.overflowY = "scroll";
                 begone("posterWTAOW")
         }
         else{
