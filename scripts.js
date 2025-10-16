@@ -1,5 +1,3 @@
-const vh = document.body.offsetHeight/100
-const vw = document.body.offsetWidth/100
 
 function sleep(ms){
         return new Promise(resolve => setTimeout(resolve, ms));
@@ -98,11 +96,12 @@ function swapEnabled(cname){
 function schrodingersXeroPicture(className){
         string = getCookie("xeroImage")
         console.log(string)
+        console.log("test")
 
         picture = document.getElementsByClassName(className)[0]["children"][0]
         console.log(picture)
 
-        if (string == ""||string == "undefined") {
+        if (string == "" || string == "undefined") {
                 fetch("./characters.json")
                 .then(res => res.json())
                 .then(data =>{
@@ -162,3 +161,25 @@ function paperfound(){
         }
 
 }
+
+function preloadImages(array) {
+    if (!preloadImages.list) {
+        preloadImages.list = [];
+    }
+    var list = preloadImages.list;
+    for (var i = 0; i < array.length; i++) {
+        var img = new Image();
+        img.onload = function() {
+            var index = list.indexOf(this);
+            if (index !== -1) {
+                // remove image from the array once it's loaded
+                // for memory consumption reasons
+                list.splice(index, 1);
+            }
+        }
+        list.push(img);
+        img.src = array[i];
+    }
+}
+
+preloadImages(["assets/images/background.png"]);
