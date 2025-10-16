@@ -88,14 +88,14 @@ html {
         transition-duration: 0.4s;
         font-weight: 900;
         font-size:xxx-large;
-        margin: 15px;
+        margin: 1vw;
         padding: 5px;
         padding-bottom: 18px;
         padding-top: 8px;
         color: var(--top-a-colour);
         background-color: var(--top-a-bg-colour);
         background-size: cover;
-        width: 250px;
+        width: 18.5vw;
         height: 45px;
         border-radius: 13px;
         display:inline-block;
