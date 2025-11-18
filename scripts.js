@@ -140,10 +140,12 @@ function imgTxtAlignment(){
 }
 
 function paperfound(){
-        const audioElement = document.querySelector("audio")
         const paper = document.getElementById("news");
         const dark = document.getElementById("darken");
+        const audioElement = paper.querySelector("audio")
 
+        path = "assets/audio/crumple-" + ["01.mp3", "02.mp3", "03.mp3", "04.mp3"][Math.floor(Math.random() * 4)]
+        audioElement.src = path
         audioElement.play()
         x = ((document.body.offsetWidth - paper.offsetWidth)/200).toString()
         y = ((document.body.offsetHeight - paper.offsetHeight)/2).toString()

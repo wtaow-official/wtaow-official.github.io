@@ -1,4 +1,5 @@
 :root{
+        --background: image-set("../assets/images/background.png");
         --top-bg-colour:#0a9127be;
         --top-a-bg-colour: #bdb64ea8;
         --top-a-colour: #000000;
@@ -15,7 +16,7 @@ html {
         position: fixed;
         top: 0;
         right: 0;
-        background-image: image-set("assets/images/background.png");
+        background-image: var(--background);
         background-size: 100%;
         width: 100vw;
         height: 100vw;
@@ -311,7 +312,7 @@ html {
         bottom: -88vh;
         width: 90vw;
         height: 80vh;
-        background-image: image-set("assets/untitled1199.png");
+        background-image: image-set("assets/images/untitled1199.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top;
