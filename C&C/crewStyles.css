@@ -151,7 +151,7 @@ td.data a{
                 width:90%;
                 padding: 3.5%;
                 margin-top: 1000px;
-                background-color: rgba(250, 186, 123, 0.412);
+                background-color: var(--page-colour);
         }
         .crewPage .imageColumn{
                 margin: 0;

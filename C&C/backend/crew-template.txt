@@ -3,15 +3,26 @@
         <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>TITLE</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Name</title>
                 <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
                 <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
                 <link href="crewStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <script src = "scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("IMAGE");
+                        :root{
+                                --top-bg-colour: ;
+                                --top-a-bg-colour: ;
+                                --top-a-colour: ;
+                                --top-a-hover-bg-colour: ;
+                                --top-a-hover-colour: ;
+                                --highlight: ;
+                                --text-colour: ;
+                                --page-colour: ;
+                                --image: ;
+                                --background: ;
                         }
 
                         @media only screen and (max-width: 700px) {
