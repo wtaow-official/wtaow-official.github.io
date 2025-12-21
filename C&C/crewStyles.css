@@ -3,7 +3,7 @@
         --page-colour: #ebba7baf;
         --image: image-set();
         --text-colour: #000;
-        --background: image-set("../assets/images/background.png")
+        --background: image-set("../assets/images/background.jpg")
 }
 .backing{
         background-image: var(--background);

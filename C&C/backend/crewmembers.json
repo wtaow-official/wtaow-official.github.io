@@ -33,7 +33,7 @@
                         "list":["tumblr"],
                         "tumblr": "https://thethinkingaurora.tumblr.com"
                 },
-                "image": "assets/aurora/icon.png",
+                "image": "assets/aurora/icon",
                 "roles":["Coder", "VA", "Puzzlemaker"]
         },
         "fireboa":{
@@ -52,9 +52,9 @@
                         "tumblr": "https://tumblr.com/fireboaserpent",
                         "rentry": "https://rentry.co/fireboaserpent"
                 },
-                "image": "assets/fireboa/icon.png",
+                "image": "assets/fireboa/icon",
                 "roles": ["Director", "Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"],
-                "css": ".titleCard{background-image: image-set('assets/fireboa/title.png');aspect-ratio:10/2}\n.crewpage div{background-color: #db2929;}"
+                "css": ".titleCard{background-image: image-set('assets/fireboa/title');aspect-ratio:10/2}\n.crewpage div{background-color: #db2929;}"
         },
         "bloomaboo":{
                 "generate": false,
@@ -68,7 +68,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/bloom.png",
+                "image": "assets/bloom",
                 "roles": ["Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"]
         },
         "mr-Sane":{
@@ -86,9 +86,9 @@
                         "youtube":"https://youtube.com/@mr_sane",
                         "cardd": "https://mrsane.carrd.co/"
                 },
-                "image": "assets/mrSane/icon.png",
+                "image": "assets/mrSane/icon",
                 "roles": ["VA", "Artist", "Musician"],
-                "css": ".backing{background-image: image-set('assets/mrSane/background.png');}"
+                "css": ".backing{background-image: image-set('assets/mrSane/background');}"
 
         },
         "yuri":{
@@ -105,7 +105,7 @@
                 },
                 "image": "assets/{name}/icon.jpg",
                 "roles": ["Artist", "Musician"],
-                "css": ".backing{background-image: image-set('assets/yuri/background.png');}"
+                "css": ".backing{background-image: image-set('assets/yuri/background');}"
 
         },
         "jadesgarden":{
@@ -118,7 +118,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}.png",
+                "image": "assets/{name}",
                 "roles": []
         },
         "kirachi":{
@@ -135,9 +135,9 @@
                         "pronounsPage":"https://en.pronouns.page/@kirachi"
 
                 },
-                "image": "assets/{name}/icon.png",
+                "image": "assets/{name}/icon",
                 "roles": ["Writer", "VA", "Musician"],
-                "css": ".backing{background-image: image-set('assets/kirachi/background.png');}"
+                "css": ".backing{background-image: image-set('assets/kirachi/background');}"
 
         },
         "ashe":{
@@ -153,7 +153,7 @@
                         "list":["linktree"],
                         "linktree":"https://linktr.ee/Asheira"
                 },
-                "image": "assets/{name}/icon.png",
+                "image": "assets/{name}/icon",
                 "roles": ["VA"]
         },
         "snow":{
@@ -170,7 +170,7 @@
                         "list":["tumblr"],
                         "tumblr":"https://www.tumblr.com/queen--snow "
                 },
-                "image": "assets/{name}/icon.png",
+                "image": "assets/{name}/icon",
                 "roles": ["VA", "Singer"]
         },
         "tookie":{
@@ -232,7 +232,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon.png",
+                "image": "assets/{name}/icon",
                 "roles": ["Singer"],
                 "css": ".backing{background-image: image-set('assets/embry/background.jpg');}"
         },
@@ -249,7 +249,7 @@
                         "list":["cardd"],
                         "cardd": "https://rebeccamondry.carrd.co/"
                 },
-                "image": "assets/{name}/icon.png",
+                "image": "assets/{name}/icon",
                 "roles": ["VA", "Singer"]
         },
         "yazuroo":{
@@ -283,9 +283,9 @@
                         "list":["cardd"],
                         "cardd": "https://shinoogama.carrd.co/"
                 },
-                "image": "assets/{name}/icon.png",
+                "image": "assets/{name}/icon",
                 "roles": ["VA"],
-                "css": ".backing{background-image: image-set('assets/shi-no-ogama/background.png');}"
+                "css": ".backing{background-image: image-set('assets/shi-no-ogama/background');}"
 
         },
         "death":{
@@ -301,7 +301,7 @@
                         "list":["strawPage"],
                         "strawPage": "https://caironai.straw.page/"
                 },
-                "image": "assets/{name}/icon.png",
+                "image": "assets/{name}/icon",
                 "roles": ["Singer"],
                 "css": ".backing{background-image: image-set('assets/death/background.jpg');}"
 
@@ -339,7 +339,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon.png",
+                "image": "assets/{name}/icon",
                 "roles": [],
                 "css": ".backing{background-image: image-set('assets/{name}/background.jpg');}"
 
