@@ -6,7 +6,7 @@
         --top-a-colour: #000000;
         --top-a-hover-bg-colour: #e6dc5a;
         --top-a-hover-colour: #000000;
-        --highlight: #84d8fa;
+        --highlight: #33c4fd;
         --hover-highlight: color-mix(in srgb, var(--highlight) 70%, white 30%);
 }
 html {
@@ -38,7 +38,7 @@ html {
 }
 
 .cover-paper{
-        z-index: -1;
+        z-index: -10;
         position: fixed;
         top: 0;
         right: 0;
@@ -163,7 +163,7 @@ html {
         display: flex;
         top:-10px;
         left:0px;
-        z-index: 8;
+        z-index: 100;
         width: calc(100vw + 20px);
         padding-top:20px;
         margin: 0;
