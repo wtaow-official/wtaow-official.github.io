@@ -330,7 +330,7 @@ html {
 }
 
 .newspaper{
-        z-index: 999999;
+        z-index: 99;
         right: -98vw;
         bottom: -88vh;
         width: 90vw;
@@ -410,7 +410,7 @@ html {
         .poster{
                 margin: 0;
                 width: calc(100%);
-                z-index: 20;
+                z-index: 100;
         }
         .poster img{
                 margin: 0;

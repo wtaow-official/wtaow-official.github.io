@@ -160,7 +160,7 @@ function paperfound(){
 
         if (paper.style.bottom == "-88vh"){
                 dark.style.transitionDuration = "0s"
-                dark.style.zIndex = "100"
+                dark.style.zIndex = "98"
                 dark.style.transitionDuration = delay
                 paper.style.right = x + "px"
                 paper.style.bottom = "5vh"
@@ -215,4 +215,4 @@ function loadCC(){
         moveUp("crewPage")
         imageDisplayLink()
 }
-preloadImages(["assets/images/background.png"]);
+preloadImages(["assets/images/background.jpg"]);
