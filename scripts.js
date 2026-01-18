@@ -140,7 +140,7 @@ function imgTxtAlignment(){
 }
 
 const frameCounts = {
-        untitled1199:22,
+        untitled1199:12,
 }
 const imageID = {
         untitled1199: "news",
@@ -167,7 +167,16 @@ function paperfound(){
         console.log("Delay:",delay)
         console.log("DelayMS:",delayMS)
 
-        if (paper.style.bottom == "-88vh"){
+        if (dark.style.zIndex != "-1"){
+                paper.glitching = false
+                paper.style.bottom = "-88vh"
+                paper.style.right = "-98vw"
+                dark.style.backgroundColor = "rgba(20, 20, 20, 0)"
+                sleep(delayMS).then(() => {
+                        dark.style.zIndex = "-1"
+                });
+        }
+        else{
                 dark.style.transitionDuration = "0s"
                 dark.style.zIndex = "98"
                 dark.style.transitionDuration = delay
@@ -178,16 +187,7 @@ function paperfound(){
 
                 glitchImage("untitled1199")
         }
-        else{
-                paper.glitching = false
-                paper.style.bottom = "-88vh"
-                paper.style.right = "-98vw"
-                dark.style.backgroundColor = "rgba(20, 20, 20, 0)"
-                sleep(delayMS).then(() => {
-                        dark.style.zIndex = "-1"
-                });
-        }
-        console.log("Glitching: ",paper.glitching);
+        console.log("Glitching: ", paper.glitching);
         
 
 }
@@ -204,7 +204,7 @@ function loadGlitch(name){
         preloadImages(frames)
 }
 
-async function glitchImage(name){
+function glitchImage(name){
         if(image==null){
                 image = document.getElementById(imageID[name])
                 glitchImage(name)
@@ -213,7 +213,7 @@ async function glitchImage(name){
                 
         }
         else{
-                nextGlitchFrame(name, 20, 12)
+                nextGlitchFrame(name, 20, 6)
         }
 }
 function nextGlitchFrame(name, iterations, fps) {
