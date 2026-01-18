@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Image</title>
+                <link rel="icon" type="image/x-icon" href="../assets/images/icon.jpg">
+                <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
+                <script src = "scripts.js"></script>
+                <script>
+                        function imageLoad(){
+                                queryString = String(window.location.href.split("?")[1])
+
+                                imageURL = queryString.slice(9)
+
+                                console.log("imageURL:", imageURL)
+                                const image = document.getElementById("image")
+                                image.src = imageURL
+                                image.style.content = "image-set('" + imageURL + "')"
+                        }
+                        function downloadFix(){
+                                const image = document.getElementById("image")
+                                const imageStyle = getComputedStyle(image)
+                                image.src = imageStyle.content.split('"')[1]
+                        }
+                </script>
+                <style>
+                </style>
+        </head>
+
+        <body class = "index_Back">
+                <div class= "backing"></div>
+                <div class= "cover"></div>
+                <div class = "top">
+                        <div class = "links">
+                                <a tabindex="1" href = "../socials.html">Socials</a>
+                                <a tabindex="1" href = "." >Home</a>
+                                <a tabindex="1" href = "../characters">Characters</a>
+                                <a tabindex="1" href = "../Fanart" class="fanart">Fanart</a>
+                                <a tabindex="1" href = "./C&C/" >C&C</a>
+                                <a tabindex="1" href = "../credits.html" style="margin-right: 15%;" class="credits">Credits</a>
+                        </div>
+                </div>
+        
+                <div class="holder" style="text-align: center;">
+                        <img class="viewer" id="image" >
+                </div>
+                <div class = "bottom">
+                </div>
+                <br>
+        </body>
+        <script>
+                imageLoad()
+        </script>
+</html>
