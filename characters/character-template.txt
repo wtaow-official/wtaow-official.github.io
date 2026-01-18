@@ -9,12 +9,9 @@
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("IMAGE");
-                        }
-
-                        @media only screen and (max-width: 700px) {
-
+                        :root{
+                                --image: image-set(IMAGE);
+                                --page-colour:#fff;
                         }
                 </style>
         </head>
@@ -65,7 +62,7 @@
                                                 <td class = "data">HEIGHT</td>
                                         </tr>
                                         <tr>
-                                                <td class = "category">Story Role:</td>
+                                                <td class = "category storyRole">Story Role:</td>
                                                 <td class = "data">ROLE</td>
                                         </tr>
                                         <tr>

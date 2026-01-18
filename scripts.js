@@ -116,7 +116,7 @@ function schrodingersXeroPicture(className){
         else{
                 imageName = getCookie("xeroImage")
                 imageUrl = "url('./assets/" + imageName + ".png')"
-                picture.style.backgroundImage = imageUrl
+                picture.style.backgroundImage = "image-set(" + imageUrl + ")"
                 console.log("Image set to",imageName + ".png")
         }
 }

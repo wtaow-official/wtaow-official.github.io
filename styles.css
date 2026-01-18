@@ -6,7 +6,7 @@
         --top-a-colour: #000000;
         --top-a-hover-bg-colour: #e6dc5a;
         --top-a-hover-colour: #000000;
-        --highlight: #33c4fd;
+        --highlight: #57b7dd;
         --hover-highlight: color-mix(in srgb, var(--highlight) 70%, white 30%);
 }
 html {
