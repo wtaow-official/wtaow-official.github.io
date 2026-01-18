@@ -143,6 +143,7 @@ function paperfound(){
         const paper = document.getElementById("news");
         const dark = document.getElementById("darken");
         const audioElement = paper.querySelector("audio")
+        dark.style.transitionDuration = "0.8s"
 
         path = "assets/audio/crumple-" + ["01.mp3", "02.mp3", "03.mp3", "04.mp3"][Math.floor(Math.random() * 4)]
         audioElement.src = path
@@ -150,16 +151,28 @@ function paperfound(){
         x = ((document.body.offsetWidth - paper.offsetWidth)/200).toString()
         y = ((document.body.offsetHeight - paper.offsetHeight)/2).toString()
 
+        delay = dark.style.transitionDuration
+        delayMS = parseFloat(delay.slice(0, delay.length-1)) * 1000
+
+        console.log("Transition:", dark)
+        console.log("Delay:",delay)
+        console.log("DelayMS:",delayMS)
 
         if (paper.style.bottom == "-88vh"){
+                dark.style.transitionDuration = "0s"
+                dark.style.zIndex = "100"
+                dark.style.transitionDuration = delay
                 paper.style.right = x + "px"
                 paper.style.bottom = "5vh"
-                dark.style.zIndex = "100"
+                dark.style.background = "rgba(0, 0, 0, 0.9)"
         }
         else{
                 paper.style.bottom = "-88vh"
                 paper.style.right = "-98vw"
-                dark.style.zIndex = "-1"
+                dark.style.backgroundColor = "rgba(20, 20, 20, 0)"
+                sleep(delayMS).then(() => {
+                        dark.style.zIndex = "-1"
+                });
         }
 
 }
@@ -184,4 +197,22 @@ function preloadImages(array) {
     }
 }
 
+function imageDisplayLink(){
+        let linkObj = document.getElementsByClassName("image")[0]
+        imageUrl = String(getComputedStyle(linkObj).backgroundImage)
+        imageUrl = imageUrl.slice(15)
+        imageUrl = imageUrl.split('"')[0]
+        console.log("Image Source:",imageUrl)
+
+        linkObj.href = window.location.origin + "/imageView.html?imageURL=" + imageUrl
+        
+}
+
+
+function loadCC(){
+        console.log("C&C Page Loaded")
+        imgTxtAlignment()
+        moveUp("crewPage")
+        imageDisplayLink()
+}
 preloadImages(["assets/images/background.png"]);
