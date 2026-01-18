@@ -26,15 +26,16 @@
                                         baseImage.src = image.src
                                         baseImage.onload = imageFitToFrame(baseImage)
                                 }
-                                else{
-                                        sleep(250).then(()=>{
+                                else{   
+                                        run = true
+                                        checkDelay = 250
+                                        sleep(500).then(()=>{
                                                 console.log(imageVAL.naturalHeight);
                                                 h = imageVAL.naturalHeight
-                                                shrinkValue = image.height / imageVAL.height
+                                                shrinkValue = image.height / h
                                                 actualWidth = imageVAL.width*shrinkValue
                                                 console.log(actualWidth);
                                                 
-
                                                 if(actualWidth > document.body.offsetWidth){
                                                         shrinkValue = document.body.offsetWidth / actualWidth
                                                         newWidth = actualWidth*shrinkValue
@@ -47,10 +48,11 @@
                                                         console.log(newHeight);
                                                         image.style.height = newHeight
                                                 }
-                                        })
-                                        
-                                        
 
+                                                if (h==0) {
+                                                        imageFitToFrame(imageVAL)
+                                                }
+                                        })
                                         
                                 }
                         }
