@@ -9,17 +9,15 @@
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/ali.png");
-                        }
-
-                        @media only screen and (max-width: 700px) {
-
+                        :root{
+                                --image: image-set("assets/ali.png");
+                                --page-colour:#ffcca3;
+                                --highlight:#ff5c59;
                         }
                 </style>
         </head>
 
-        <body class = "index_Back">
+        <body class = "index_Back">s
                 <div class= "backing"></div>
                 <div class= "cover"></div>
                 <div class = "top">
@@ -87,7 +85,6 @@
                 <br>
         </body>
         <script>
-                imgTxtAlignment();
-                moveUp("characterPage")
+               loadCharacter()
         </script>
 </html>

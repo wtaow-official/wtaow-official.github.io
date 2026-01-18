@@ -9,12 +9,10 @@
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/marissa.png");
-                        }
-
-                        @media only screen and (max-width: 700px) {
-
+                        :root{
+                                --image: image-set("assets/marissa.png");
+                                --page-colour:#a3f6ff;
+                                --highlight:#0079b5;
                         }
                 </style>
         </head>
@@ -46,7 +44,7 @@
                                         </tr>
                                         <tr>
                                                 <td class = "category">Pronouns:</td>
-                                                <td class = "data">She/Her/?/</td>
+                                                <td class = "data">She/Her</td>
                                         </tr>
                                         <tr>
                                                 <td class = "category">Orientation:</td>
@@ -87,7 +85,6 @@
                 <br>
         </body>
         <script>
-                imgTxtAlignment();
-                moveUp("characterPage")
+               loadCharacter()
         </script>
 </html>

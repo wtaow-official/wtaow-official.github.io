@@ -116,7 +116,7 @@ function schrodingersXeroPicture(className){
         else{
                 imageName = getCookie("xeroImage")
                 imageUrl = "url('./assets/" + imageName + ".png')"
-                picture.style.backgroundImage = imageUrl
+                picture.style.backgroundImage = "image-set(" + imageUrl + ")"
                 console.log("Image set to",imageName + ".png")
         }
 }
@@ -285,5 +285,11 @@ function loadCC(){
         imgTxtAlignment()
         moveUp("crewPage")
         imageDisplayLink()
+}
+function loadCharacter(){
+        console.log("Character Page Loaded")
+        imageDisplayLink()
+        imgTxtAlignment();
+        moveUp("characterPage")
 }
 preloadImages(["assets/images/background.jpg"]);

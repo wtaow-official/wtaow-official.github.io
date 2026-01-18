@@ -1,3 +1,9 @@
+:root{
+        --page-colour: rgba(235, 186, 123, 0.686);
+        --text-colour:#000000;
+        --image: image-set("../assets/images/idk-man.png");
+}
+
 .characterSelector{
         margin: 10%;
         margin-top: 300px;
@@ -51,7 +57,7 @@
 }
 .characterPage div{
         height:100%;
-        background-color: rgba(235, 186, 123, 0.686);
+        background-color: var(--page-colour);
 }
 .characterPage .textColumn{
         transition-duration: 0.4s;
@@ -67,7 +73,7 @@
         border-bottom-right-radius: 20px;
         font-family:monospace;
         font-size:20px;
-        background-color: rgba(235, 186, 123, 0.686);
+        color: var(--text-colour);
 }
 .characterPage .imageColumn{
         transition-duration: 0.4s;
@@ -78,7 +84,6 @@
         height:auto;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        background-color: rgba(235, 186, 123, 0.686);
 }
 .characterPage .image{
         width: 102%;
@@ -86,6 +91,7 @@
         background-size: contain;
         display:inline-block;
         object-fit:contain;
+        background-image: var(--image);
 }
 
 h1{

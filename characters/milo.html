@@ -9,12 +9,10 @@
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/milo.png");
-                        }
-
-                        @media only screen and (max-width: 700px) {
-
+                        :root{
+                                --image: image-set("assets/milo.png");
+                                --page-colour:#ff585a;
+                                --highlight:#ebebeb;
                         }
                 </style>
         </head>
@@ -87,7 +85,6 @@
                 <br>
         </body>
         <script>
-                imgTxtAlignment();
-                moveUp("characterPage")
+               loadCharacter()
         </script>
 </html>
