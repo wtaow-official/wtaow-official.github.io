@@ -65,7 +65,7 @@ function checkEnabled(id, cname){
         if (string == "") {
                 setCookie(cname, true, 365)
         }
-        console.log(string)
+        // console.log(string)
         if (string == "false"){
                 document.getElementById("posterWTAOW").style.display = "none";
                 document.getElementById("posterSwap").style.backgroundColor = "red"
@@ -139,13 +139,23 @@ function imgTxtAlignment(){
         }
 }
 
+const frameCounts = {
+        untitled1199:22,
+}
+const imageID = {
+        untitled1199: "news",
+}
+let glitchFrames = {}
+let image = null
+
 function paperfound(){
         const paper = document.getElementById("news");
         const dark = document.getElementById("darken");
         const audioElement = paper.querySelector("audio")
         dark.style.transitionDuration = "0.8s"
 
-        path = "assets/audio/crumple-" + ["01.mp3", "02.mp3", "03.mp3", "04.mp3"][Math.floor(Math.random() * 4)]
+        path = window.location.origin + "/assets/audio/crumple-" + ["01.mp3", "02.mp3", "03.mp3", "04.mp3"][Math.floor(Math.random() * 4)]
+        console.log("Audio Path:", path)
         audioElement.src = path
         audioElement.play()
         x = ((document.body.offsetWidth - paper.offsetWidth)/200).toString()
@@ -154,7 +164,6 @@ function paperfound(){
         delay = dark.style.transitionDuration
         delayMS = parseFloat(delay.slice(0, delay.length-1)) * 1000
 
-        console.log("Transition:", dark)
         console.log("Delay:",delay)
         console.log("DelayMS:",delayMS)
 
@@ -164,9 +173,13 @@ function paperfound(){
                 dark.style.transitionDuration = delay
                 paper.style.right = x + "px"
                 paper.style.bottom = "5vh"
-                dark.style.background = "rgba(0, 0, 0, 0.9)"
+                dark.style.background = "rgba(0, 0, 0, 0.999)"
+                paper.glitching = true
+
+                glitchImage("untitled1199")
         }
         else{
+                paper.glitching = false
                 paper.style.bottom = "-88vh"
                 paper.style.right = "-98vw"
                 dark.style.backgroundColor = "rgba(20, 20, 20, 0)"
@@ -174,7 +187,65 @@ function paperfound(){
                         dark.style.zIndex = "-1"
                 });
         }
+        console.log("Glitching: ",paper.glitching);
+        
 
+}
+
+function loadGlitch(name){
+        glitchDirectory = window.location.origin + "/assets/images/glitched/" + name + "/"
+        let frames = []
+        for(let i =0; i<frameCounts[name]; i++){
+                num = String(i)
+                if (num.length ==1){num = "0"+num}
+                frames.push(glitchDirectory + "glitch-" + num + ".jpg")
+        }
+        glitchFrames[name] = frames
+        preloadImages(frames)
+}
+
+async function glitchImage(name){
+        if(image==null){
+                image = document.getElementById(imageID[name])
+                glitchImage(name)
+                console.log("startGlitch")
+                console.log(image);
+                
+        }
+        else{
+                nextGlitchFrame(name, 20, 12)
+        }
+}
+function nextGlitchFrame(name, iterations, fps) {
+        image = document.getElementById(imageID[name])
+        sleep(1000/fps).then(()=>{
+                backgroundImage = "image-set('"+ glitchFrames[name][Math.floor(Math.random() * glitchFrames[name].length)] +"')"
+                
+                image.style.backgroundImage = backgroundImage
+
+                
+                if(image.glitching){
+                        if ((iterations > 0)){
+                                
+                                nextGlitchFrame(name, iterations-1, fps)
+                        }
+                        else{
+                                if(iterations=="infinite"){
+                                        nextGlitchFrame(name, iterations, fps)
+                                }
+                                if(iterations==0){
+                                        image.glitching = false
+                                        nextGlitchFrame(name, iterations, fps)
+                                }
+                                
+                        }
+                }
+                else{
+                        console.log("done");
+                        
+                        image.style.backgroundImage = "image-set('"+ glitchFrames[name][0] +"')"
+                }
+        })
 }
 
 function preloadImages(array) {
@@ -214,5 +285,11 @@ function loadCC(){
         imgTxtAlignment()
         moveUp("crewPage")
         imageDisplayLink()
+}
+function loadCharacter(){
+        console.log("Character Page Loaded")
+        imageDisplayLink()
+        imgTxtAlignment();
+        moveUp("characterPage")
 }
 preloadImages(["assets/images/background.jpg"]);

@@ -6,7 +6,7 @@
         --top-a-colour: #000000;
         --top-a-hover-bg-colour: #e6dc5a;
         --top-a-hover-colour: #000000;
-        --highlight: #48c6f8;
+        --highlight: #84d8fa;
         --hover-highlight: color-mix(in srgb, var(--highlight) 70%, white 30%);
 }
 html {
@@ -214,13 +214,13 @@ html {
         border-radius: 30px;
         transition-duration: 1.5s;
 }
-        .center a{
-                color: var(--highlight);
-        }
-        .center a:hover{
+
+a{
+        color: var(--highlight);
+}
+a:hover{
                 color: var(--hover-highlight);
         }
-
 
 .tooltip {
         position: relative;
@@ -339,7 +339,6 @@ html {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top;
-
         transition-duration: 0.5s;
 }
 .newsbutton{
