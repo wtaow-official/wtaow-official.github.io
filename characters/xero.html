@@ -9,6 +9,10 @@
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
+                        :root{
+                                --highlight: #3ba5cf;
+
+                        }
                         .image{
                                 background-image: image-set("assets/xero");
                         }
@@ -65,7 +69,7 @@
                                                 <td class = "data">???</td>
                                         </tr>
                                         <tr>
-                                                <td class = "category">Story Role:</td>
+                                                <td class = "category storyRole">Story Role:</td>
                                                 <td class = "data">Supporting Character</td>
                                         </tr>
                                         <tr>
@@ -89,8 +93,7 @@
                 <br>
         </body>
         <script>
-                imgTxtAlignment();
-                moveUp("characterPage")
                 schrodingersXeroPicture("imageColumn")
+                loadCharacter()
         </script>
 </html>

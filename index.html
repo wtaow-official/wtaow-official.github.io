@@ -6,7 +6,6 @@
                 <title>WTAOW</title>
                 <link rel="icon" type="image/x-icon" href="assets/images/icon.jpg">
                 <link href="styles.css" rel="stylesheet" type="text/css" media="all">
-                <link rel="javascript" href = "scripts.js" type="text/javascript">
                 <script src = "scripts.js"></script>
                 <style>
                         .posterSwap{
@@ -35,7 +34,7 @@
         <body onload = "checkEnabled('posterWTAOW', 'poster')">
                 <div class= "backing"></div>
                 <div class= "cover"></div>
-                <div class= "cover-paper" id="darken"></div>
+                <div class= "cover-paper" id="darken" style="z-index: -1;"></div>
                 <div class= "poster" id = "posterWTAOW" onclick = "begone('posterWTAOW')" onfocus = "begone('posterWTAOW')" tabindex="1">
                         <img src = "assets/images/poster.png" onfocus = "begone('posterWTAOW')" tabindex="1" onkeydown="begone('posterWTAOW')">
                 </div>
@@ -68,15 +67,16 @@
                 </div>
 
 
-                <div class = "bottom newspaper" id="news" onclick="paperfound()">
+                <div class = "bottom newspaper" id="news" onclick="paperfound()" data-glitching="false">
                         <audio src="assets/audio/crumple-01.mp3"></audio>
                 </div>
-                <div class = "bottom newsbutton" onclick="paperfound()">
+                <div class = "bottom newsbutton" onclick="paperfound()" >
                 </div>
                 <br>
         </body>
         <script>
                 let paper = document.getElementById("news");
                 paper.style.bottom = "-88vh"
+                loadGlitch("untitled1199")
         </script>
 </html>
