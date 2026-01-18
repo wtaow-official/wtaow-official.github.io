@@ -9,12 +9,10 @@
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/owen.png");
-                        }
-
-                        @media only screen and (max-width: 700px) {
-
+                        :root{
+                                --image: image-set("assets/owen.png");
+                                --page-colour:#a3ffdd;
+                                --highlight:#0079b5;
                         }
                 </style>
         </head>
@@ -65,13 +63,13 @@
                                                 <td class = "data">5'6</td>
                                         </tr>
                                         <tr>
-                                                <td class = "category">Story Role:</td>
+                                                <td class = "category storyRole">Story Role:</td>
                                                 <td class = "data">Supporting Character</td>
                                         </tr>
                                         <tr>
                                                 <td class = "category">Voice Actor:</td>
                                                 <td class = "data">
-                                                        <a href="../C&C/shi-no-�gama.html">Shi No Ōgama</a>
+                                                        <a href="../C&C/shi-no-ogama.html">Shi No Ōgama</a>
                                                 </td>
                                         </tr>
                                 </table>
@@ -87,7 +85,6 @@
                 <br>
         </body>
         <script>
-                imgTxtAlignment();
-                moveUp("characterPage")
+               loadCharacter()
         </script>
 </html>

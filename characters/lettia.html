@@ -9,12 +9,10 @@
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("assets/lettia.png");
-                        }
-
-                        @media only screen and (max-width: 700px) {
-
+                        :root{
+                                --image: image-set("assets/lettia.png");
+                                --page-colour:#a3bfff;
+                                --highlight:#0079b5;
                         }
                 </style>
         </head>
@@ -65,7 +63,7 @@
                                                 <td class = "data">5'4</td>
                                         </tr>
                                         <tr>
-                                                <td class = "category">Story Role:</td>
+                                                <td class = "category storyRole">Story Role:</td>
                                                 <td class = "data">Side</td>
                                         </tr>
                                         <tr>
@@ -87,7 +85,6 @@
                 <br>
         </body>
         <script>
-                imgTxtAlignment();
-                moveUp("characterPage")
+               loadCharacter()
         </script>
 </html>
