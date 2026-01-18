@@ -286,4 +286,10 @@ function loadCC(){
         moveUp("crewPage")
         imageDisplayLink()
 }
+function loadCharacter(){
+        console.log("Character Page Loaded")
+        imageDisplayLink()
+        imgTxtAlignment();
+        moveUp("characterPage")
+}
 preloadImages(["assets/images/background.jpg"]);
