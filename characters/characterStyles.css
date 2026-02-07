@@ -27,9 +27,6 @@
         color: aliceblue;
 }
 
-.characterSelector .tile:hover{
-        cursor: pointer;
-}
 .characterSelector .tile .image{
         width: 102%;
         aspect-ratio: 1/1;
@@ -124,7 +121,7 @@ tr:has(td.storyRole){
                 width:90%;
                 padding: 3.5%;
                 margin-top: 1000px;
-                background-color: rgba(250, 186, 123, 0.412);
+                background-color:color-mix(in srgb, var(--page-colour) 75%, transparent 25%)
         }
         .characterPage .imageColumn{
                 margin: 0;
