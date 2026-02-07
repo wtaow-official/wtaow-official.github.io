@@ -120,7 +120,7 @@ async function schrodingersXeroPicture(idName, fullPageMode){
                         
                         imageName = characterArray[randomNumber]
                         
-                        setCookie("xeroImage", characterArray[randomNumber], 0.0000000000625)
+                        setCookie("xeroImage", characterArray[randomNumber], 0.0104)
                         imageUrl = "url('./assets/" + characterArray[randomNumber] + ".png')"
                         picture.style.backgroundImage = imageUrl
                         console.log("Image set to",characterArray[randomNumber] + ".png")
