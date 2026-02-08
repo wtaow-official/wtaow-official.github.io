@@ -125,7 +125,7 @@ function schrodingersXeroPicture(idName, fullPageMode){
                                         gettingImage = false
                         }
                         
-                        setCookie("xeroImage", imageName, 0.000000000000104)
+                        setCookie("xeroImage", imageName, 0.0104)
                         imageUrl = "url('./assets/" + imageName + "')"
                         picture.style.backgroundImage = imageUrl
                         console.log("Image set to",imageName)
