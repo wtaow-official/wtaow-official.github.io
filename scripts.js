@@ -149,6 +149,7 @@ async function schrodingersXeroPicture(idName, fullPageMode){
                         setXeroRoot("page-colour")
                         setXeroRoot("text-colour")
                         setXeroRoot("highlight")
+                        loadCharacter()
                 });
         }
 }
@@ -167,11 +168,13 @@ function generate(){
         .then(res => res.json())
         .then(characters =>{
                 console.log(characters);
-                characterList = Object.keys(characters)
-                
-                for (let i in characterList){
+                let characterList = Object.keys(characters)
+                blankIndex = characterList.indexOf("")
+                characterList.splice(blankIndex)
+
+                for (i in characterList){
                         Name = characterList[i]
-                        characterData = characters[Name]
+                        let characterData = characters[Name]
 
                         tileBody.appendChild(template.cloneNode(true))
                         let charElement = tileBody.children[tileBody.children.length-1]
@@ -184,12 +187,11 @@ function generate(){
 
                         linkObj.href = Name + ".html"
                         
-                        charElement.classList.add(Name)
                         charElement.id = Name
                         charElement.href = Name + ".html"
 
                         
-                        img.style.backgroundImage = "image-set('assets/"+Name+".png')"                        
+                        img.style.backgroundImage = "image-set('assets/"+characterData["image"]+"')"                        
                         img.href = Name + ".html"
                         
 
@@ -350,6 +352,8 @@ function preloadImages(array) {
 function imageDisplayLink(){
         let linkObj = document.getElementsByClassName("image")[0]
         imageUrl = String(getComputedStyle(linkObj).backgroundImage)
+        console.log(imageUrl);
+        
         imageUrl = imageUrl.slice(15)
         imageUrl = imageUrl.split('"')[0]
         console.log("Image Source:", imageUrl)
