@@ -102,14 +102,15 @@ function swapEnabled(cName){
         }
 }
 
-async function schrodingersXeroPicture(idName, fullPageMode){
+function schrodingersXeroPicture(idName, fullPageMode){
         string = getCookie("xeroImage")
 
         picture = document.getElementById(idName)["children"][0]
         console.log(picture)
+        let imageName = ""
 
         if (string == "" || string == "undefined") {
-                await fetch("./characters.json")
+                fetch("./characters.json")
                 .then(res => res.json())
                 .then(data =>{
                         // data = await readJson("./characters.json")
@@ -118,20 +119,20 @@ async function schrodingersXeroPicture(idName, fullPageMode){
                         let characterArray = Object.keys(data)
                         gettingImage = true
                         while (gettingImage) {
-                        randomNumber = Math.floor(Math.random()* (characterArray.length-1))
-                        imageName = data[characterArray[randomNumber]]["image"]
-                        if (imageName != "blank.webp")
-                                gettingImage = false
+                                randomNumber = Math.floor(Math.random()* (characterArray.length))
+                                imageName = data[characterArray[randomNumber]]["image"]
+                                if (imageName != "blank.webp" && imageName != "xero")
+                                        gettingImage = false
                         }
                         
-                        setCookie("xeroImage", imageName, 0.0104)
+                        setCookie("xeroImage", imageName, 0.000000000000104)
                         imageUrl = "url('./assets/" + imageName + "')"
                         picture.style.backgroundImage = imageUrl
                         console.log("Image set to",imageName)
                 });
         }
         else{
-                imageName = string
+                imageName = getCookie("xeroImage")
                 imageUrl = "url('./assets/" + imageName + "')"
                 picture.style.backgroundImage = "image-set(" + imageUrl + ")"
                 console.log("Image set to",imageName)
@@ -142,6 +143,9 @@ async function schrodingersXeroPicture(idName, fullPageMode){
                 .then(res => res.json())
                 .then(data =>{
                         let root = document.documentElement
+                        console.log(imageName);
+                        imageName = imageName.split(".")[0]
+                        
                         let relevantData = data[imageName];
                         console.log(relevantData);
                         function setXeroRoot(name){

@@ -86,7 +86,7 @@
                 <br>
         </body>
         <script>
-                SCRIPT
                 loadCharacter()
+                SCRIPT
         </script>
 </html>

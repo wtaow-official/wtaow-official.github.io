@@ -5,7 +5,7 @@
                 "fireboa",
                 "jadesgarden",
                 "kirachi",
-                "mr-Sane",
+                "mr-sane",
                 "yuri",
                 "ashe",
                 "snow",
@@ -17,8 +17,32 @@
                 "rebecca",
 		"shi-no-ogama",
 		"death",
-                "onyx"
+                "onyx",
+                "kitty",
+                "zel",
+                "sacred_n",
+                "yogurt-enjoyer",
+                "willow",
+                "minnow",
+                "ronin",
+                "aves"
         ],
+        "ashe":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Asheira",
+                "gender":"TransFem",
+                "pronouns":"She/Her/They",
+                "about": [
+                        "Hey there! My name is Ashe, I'm the Voice of {Angel} in WTAOW! I'm a full time Paramedic and a part time streamer and Youtuber. I go by Asheiraa on almost everything so stop by and say hey sometime!"
+                ],
+                "socials":{
+                        "list":["linktree"],
+                        "linktree":"https://linktr.ee/Asheira"
+                },
+                "image": "assets/{name}/icon",
+                "roles": ["VA"]
+        },
         "aurora":{
                 "generate": false,
                 "titleCard": false,
@@ -35,6 +59,72 @@
                 },
                 "image": "assets/aurora/icon",
                 "roles":["Coder", "VA", "Puzzlemaker"]
+        },
+        "aves":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Aves",
+                "gender":"",
+                "pronouns":"",
+                "about": [
+                        ""
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "assets/{name}/icon",
+                "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
+
+        },
+        "bloomaboo":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Bloomaboo",
+                "gender": "?",
+                "pronouns": "Any",
+                "about": [
+                        ""
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "assets/bloom",
+                "roles": ["Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"]
+        },
+        "death":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Death/Yang",
+                "gender":"Genderfluid",
+                "pronouns":"They/Them",
+                "about": [
+                        "Hai! I'm glad to meet new people even if I may be a little bit awkward. I enjoy being a backup singer or main singer and also making art covers for any project, rather for a fun little hobby."
+                ],
+                "socials":{
+                        "list":["strawPage"],
+                        "strawPage": "https://caironai.straw.page/"
+                },
+                "image": "assets/{name}/icon",
+                "roles": ["Singer"],
+                "css": ".backing{background-image: image-set('assets/death/background.webp');}"
+
+        },
+        "embry":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Embry",
+                "gender":"Non-Binary",
+                "pronouns":"They/Them",
+                "about": [
+                        "Hello peoples! I'm your local raccoon trash hermit! I haven't done much professional work (or any at all), but I've been singing for most of my life. I've been trying to write a book, and do art on the side outside of school and work. I don't have much of a life outside of the Internet, but one of my biggest dreams is to do work like this professionally, whether it be voice acting or just singing."
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "assets/{name}/icon",
+                "roles": ["Singer"],
+                "css": ".backing{background-image: image-set('assets/embry/background.webp');}"
         },
         "fireboa":{
                 "generate": false,
@@ -56,62 +146,26 @@
                 "roles": ["Director", "Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"],
                 "css": ".titleCard{background-image: image-set('assets/fireboa/title');aspect-ratio:10/2}\n.crewpage div{background-color: #db2929;}"
         },
-        "bloomaboo":{
+        "harvey":{
                 "generate": false,
                 "titleCard": false,
-                "title": "Bloomaboo",
-                "gender": "?",
-                "pronouns": "Any",
+                "title": "Harvey",
+                "gender":"Demiboy",
+                "pronouns":"He/They",
                 "about": [
-                        ""
+                        "Hi hi! I'm Harvey. I'm an editor, among other things. I have experience in short film making and theatre (4 years and 9~ years respectively), and I love doing the behind the scenes work on creative projects, whether that be stage crew, camera work, sound, foley artistry, or so on. I also play DND and draw in my spare time."
                 ],
                 "socials":{
-                        "list":[]
-                },
-                "image": "assets/bloom",
-                "roles": ["Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"]
-        },
-        "mr-Sane":{
-                "generate": false,
-                "titleCard": false,
-                "title": "Mr Sane",
-                "gender": "Man",
-                "pronouns": "He/him",
-                "about": [
-                        "Hello I'm Mr Sane! I voice {Alexis} in WTAOW, but I'm also a youtuber! If you like watching video games, horror, music and Vtubers, Ancient Egypt, anime, cosplays? And all over silly stupid humor",
-                        "Then I'm your guy!"
-                ],
-                "socials":{
-                        "list":["youtube", "cardd"],
-                        "youtube":"https://youtube.com/@mr_sane",
-                        "cardd": "https://mrsane.carrd.co/"
-                },
-                "image": "assets/mrSane/icon",
-                "roles": ["VA", "Artist", "Musician"],
-                "css": ".backing{background-image: image-set('assets/mrSane/background');}"
-
-        },
-        "yuri":{
-                "generate": false,
-                "titleCard": false,
-                "title": "Yuri",
-                "gender": "???",
-                "pronouns": "They/Them",
-                "about": [
-                        "Greetings… I am Yuri✨ I am kind of an artist, and I like music!! Im don't really have a lot of achievements but I do cover songs with some friends irl. Sometimes I write a bit for fun, and sometimes I try new things. I like to listen to true crime podcasts and music. Nice to meet you, stranger on the internet…(^_^)"
-                ],
-                "socials":{
-                        "list":[]
+                        "list":["tumblr"],
+                        "tumblr": "https://tumblr.com/beelze98"
                 },
                 "image": "assets/{name}/icon.webp",
-                "roles": ["Artist", "Musician"],
-                "css": ".backing{background-image: image-set('assets/yuri/background');}"
-
+                "roles": ["Editor"]
         },
         "jadesgarden":{
                 "generate": false,
                 "titleCard": false,
-                "title": "",
+                "title": "Jadesgarden",
                 "about": [
                         ""
                 ],
@@ -140,21 +194,164 @@
                 "css": ".backing{background-image: image-set('assets/kirachi/background');}"
 
         },
-        "ashe":{
+        "kitty":{
                 "generate": false,
                 "titleCard": false,
-                "title": "Asheira",
-                "gender":"TransFem",
-                "pronouns":"She/Her/They",
+                "title": "Kitty/Rose",
+                "gender":"Any/Female",
+                "pronouns":"She/They/He",
                 "about": [
-                        "Hey there! My name is Ashe, I'm the Voice of {Angel} in WTAOW! I'm a full time Paramedic and a part time streamer and Youtuber. I go by Asheiraa on almost everything so stop by and say hey sometime!"
+                        "Hello, I'm Kitty, otherwise known as Rose! I'm the voice actor for <a href='../characters/copycat.html'>Copycat</a>! I have always wanted to voice act and I've had many small chances to voice act for small discord shows! Sadly none have been posted as of now! I'm so glad I was chosen to help voice act in this project since it seemed really interesting to me! I love voice acting, it's a small hobby of mine!"
                 ],
                 "socials":{
-                        "list":["linktree"],
-                        "linktree":"https://linktr.ee/Asheira"
+                        "list":[]
                 },
                 "image": "assets/{name}/icon",
-                "roles": ["VA"]
+                "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
+
+        },
+        "koen":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Koen",
+                "gender":"Genderfaun",
+                "pronouns":"He/It",
+                "about": [
+                        "Hiya, my name is Koen! I cut and dye my hair a lot so it's never the same but as I'm writing this it's blue and green! :3 You'll often find me under the username TheDove0859 most places. I love anime, music, theatre, art and way more. I voice act {Ali} !! WTAOW is one of the best things I've been a part of, I've done various other projects and will definitely do more in the future! <3"
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "assets/{name}/icon.webp",
+                "roles": ["VA", "Singer", "Lyricist"],
+                "css": ".backing{background-image: image-set('assets/koen/background.webp');}"
+        },
+        "minnow":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Minnow",
+                "gender":"",
+                "pronouns":"",
+                "about": [
+                        ""
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "assets/{name}/icon",
+                "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
+
+        },
+        "mr-sane":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Mr Sane",
+                "gender": "Man",
+                "pronouns": "He/him",
+                "about": [
+                        "Hello I'm Mr Sane! I voice {Alexis} in WTAOW, but I'm also a youtuber! If you like watching video games, horror, music and Vtubers, Ancient Egypt, anime, cosplays? And all over silly stupid humor",
+                        "Then I'm your guy!"
+                ],
+                "socials":{
+                        "list":["youtube", "cardd"],
+                        "youtube":"https://youtube.com/@mr_sane",
+                        "cardd": "https://mrsane.carrd.co/"
+                },
+                "image": "assets/mrSane/icon",
+                "roles": ["VA", "Artist", "Musician"],
+                "css": ".backing{background-image: image-set('assets/mrSane/background');}"
+
+        },
+        "onyx":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Onyx",
+                "gender":"TransMasc",
+                "pronouns":"He/Him",
+                "about": [
+                        "I'm the Voice Actor for {Model X} and Art crew!",
+                        "",
+                        "Hihi! I'm Onyx! I'm on the voice acting team and art team. I've been in art since I could hold a crayon, and have been in theater for about four years! I'm very interested in animals and history, I'm a big vampire fanatic… love love love superheros, love dc and marvel. I'm a book/comic and oddities collector!"
+                ],
+                "socials":{
+                        "list":["tumblr", "instagram"],
+                        "tumblr": "https://www.tumblr.com/boneeater3000",
+                        "instagram": "https://www.instagram.com/boneeater9000"
+                },
+                "image": "assets/{name}/icon.webp",
+                "roles": ["VA"],
+                "css": ".backing{background-image: image-set('assets/onyx/background.webp');}"
+
+        },
+        "rebecca":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Rebecca Mondry-Zanaglio ",
+                "gender":"Demigirl",
+                "pronouns":"She/They",
+                "about": [
+                        "Hi! I'm Rebecca/Raku, and I'm a voice actor and singer. I started voice acting in December 2024, but I have 10+ years of experience singing and even competed locally. Voice acting has been an enjoyable hobby, and I have been thankful to receive roles in games, visual novels, animations, YouTube series, audio dramas, and more! Aside from voice acting, I am a cosplay musical guest performing for local conventions, and I am designing a supernatural musical adventure game! "
+                ],
+                "socials":{
+                        "list":["cardd"],
+                        "cardd": "https://rebeccamondry.carrd.co/"
+                },
+                "image": "assets/{name}/icon",
+                "roles": ["VA", "Singer"]
+        },
+        "ronin":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Ronin",
+                "gender":"",
+                "pronouns":"",
+                "about": [
+                        ""
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "assets/{name}/icon",
+                "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
+
+        },
+        "sacred_n":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Sacred N",
+                "gender":"",
+                "pronouns":"",
+                "about": [
+                        ""
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "assets/{name}/icon",
+                "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
+
+        },
+        "shi-no-ogama":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Shi No Ōgama",
+                "gender":"Genderfluid",
+                "pronouns":"Any",
+                "about": [
+                        "Greetings! I am Shi No Ōgama I am the voice of Owen in WTAOW! I dabble I a bit if everything, management of creations, like video making, scheduling for content, etc. I also draw, voice act, cosplay and dance!"
+                ],
+                "socials":{
+                        "list":["cardd"],
+                        "cardd": "https://shinoogama.carrd.co/"
+                },
+                "image": "assets/{name}/icon",
+                "roles": ["VA"],
+                "css": ".backing{background-image: image-set('assets/shi-no-ogama/background');}"
+
         },
         "snow":{
                 "generate": false,
@@ -188,69 +385,22 @@
                 "image": "assets/{name}/icon.webp",
                 "roles": ["VA", "Snippet Writer"]
         },
-        "harvey":{
+        "willow":{
                 "generate": false,
                 "titleCard": false,
-                "title": "Harvey",
-                "gender":"Demiboy",
-                "pronouns":"He/They",
+                "title": "Willow",
+                "gender":"",
+                "pronouns":"",
                 "about": [
-                        "Hi hi! I'm Harvey. I'm an editor, among other things. I have experience in short film making and theatre (4 years and 9~ years respectively), and I love doing the behind the scenes work on creative projects, whether that be stage crew, camera work, sound, foley artistry, or so on. I also play DND and draw in my spare time."
-                ],
-                "socials":{
-                        "list":["tumblr"],
-                        "tumblr": "https://tumblr.com/beelze98"
-                },
-                "image": "assets/{name}/icon.webp",
-                "roles": ["Editor"]
-        },
-        "koen":{
-                "generate": false,
-                "titleCard": false,
-                "title": "Koen",
-                "gender":"Genderfaun",
-                "pronouns":"He/It",
-                "about": [
-                        "Hiya, my name is Koen! I cut and dye my hair a lot so it's never the same but as I'm writing this it's blue and green! :3 You'll often find me under the username TheDove0859 most places. I love anime, music, theatre, art and way more. I voice act {Ali} !! WTAOW is one of the best things I've been a part of, I've done various other projects and will definitely do more in the future! <3"
-                ],
-                "socials":{
-                        "list":[]
-                },
-                "image": "assets/{name}/icon.webp",
-                "roles": ["VA", "Singer", "Lyricist"],
-                "css": ".backing{background-image: image-set('assets/koen/background.webp');}"
-        },
-        "embry":{
-                "generate": false,
-                "titleCard": false,
-                "title": "Embry",
-                "gender":"Non-Binary",
-                "pronouns":"They/Them",
-                "about": [
-                        "Hello peoples! I'm your local raccoon trash hermit! I haven't done much professional work (or any at all), but I've been singing for most of my life. I've been trying to write a book, and do art on the side outside of school and work. I don't have much of a life outside of the Internet, but one of my biggest dreams is to do work like this professionally, whether it be voice acting or just singing."
+                        ""
                 ],
                 "socials":{
                         "list":[]
                 },
                 "image": "assets/{name}/icon",
-                "roles": ["Singer"],
-                "css": ".backing{background-image: image-set('assets/embry/background.webp');}"
-        },
-        "rebecca":{
-                "generate": false,
-                "titleCard": false,
-                "title": "Rebecca Mondry-Zanaglio ",
-                "gender":"Demigirl",
-                "pronouns":"She/They",
-                "about": [
-                        "Hi! I'm Rebecca/Raku, and I'm a voice actor and singer. I started voice acting in December 2024, but I have 10+ years of experience singing and even competed locally. Voice acting has been an enjoyable hobby, and I have been thankful to receive roles in games, visual novels, animations, YouTube series, audio dramas, and more! Aside from voice acting, I am a cosplay musical guest performing for local conventions, and I am designing a supernatural musical adventure game! "
-                ],
-                "socials":{
-                        "list":["cardd"],
-                        "cardd": "https://rebeccamondry.carrd.co/"
-                },
-                "image": "assets/{name}/icon",
-                "roles": ["VA", "Singer"]
+                "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
+
         },
         "yazuroo":{
                 "generate": false,
@@ -263,68 +413,65 @@
                 ],
                 "socials":{
                         "list":["linktree", "throne"],
-                        "linktree":"https://linktr.ee/Yazuroo",
+                        "linktree": "https://linktr.ee/Yazuroo",
                         "throne": "https://throne.com/yazuroo"
                 },
                 "image": "assets/{name}/icon.webp",
                 "roles": ["Singer"],
                 "css": ".backing{background-image: image-set('assets/yazuroo/background.webp');}"
         },
-        "shi-no-ogama":{
+        "yogurt-enjoyer":{
                 "generate": false,
                 "titleCard": false,
-                "title": "Shi No Ōgama",
-                "gender":"Genderfluid",
-                "pronouns":"Any",
+                "title": "Yogurt Enjoyer",
+                "gender":"",
+                "pronouns":"",
                 "about": [
-                        "Greetings! I am Shi No Ōgama I am the voice of Owen in WTAOW! I dabble I a bit if everything, management of creations, like video making, scheduling for content, etc. I also draw, voice act, cosplay and dance!"
+                        ""
                 ],
                 "socials":{
-                        "list":["cardd"],
-                        "cardd": "https://shinoogama.carrd.co/"
+                        "list":[]
                 },
                 "image": "assets/{name}/icon",
-                "roles": ["VA"],
-                "css": ".backing{background-image: image-set('assets/shi-no-ogama/background');}"
+                "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
         },
-        "death":{
+        "yuri":{
                 "generate": false,
                 "titleCard": false,
-                "title": "Death/Yang",
-                "gender":"Genderfluid",
-                "pronouns":"They/Them",
+                "title": "Vincent",
+                "gender": "???",
+                "pronouns": "They/Them",
                 "about": [
-                        "Hai! I'm glad to meet new people even if I may be a little bit awkward. I enjoy being a backup singer or main singer and also making art covers for any project, rather for a fun little hobby."
+                        "Greetings… I am Vincent I am kind of an artist, and I like music!! Im don't really have a lot of achievements but I do cover songs with some friends irl. Sometimes I write a bit for fun, and sometimes I try new things. I like to listen to true crime podcasts and music. Nice to meet you, stranger on the internet…(^_^)"
                 ],
                 "socials":{
-                        "list":["strawPage"],
-                        "strawPage": "https://caironai.straw.page/"
-                },
-                "image": "assets/{name}/icon",
-                "roles": ["Singer"],
-                "css": ".backing{background-image: image-set('assets/death/background.webp');}"
-
-        },
-        "onyx":{
-                "generate": false,
-                "titleCard": false,
-                "title": "Onyx",
-                "gender":"TransMasc",
-                "pronouns":"He/Him",
-                "about": [
-                        "I'm the Voice Actor for {Model X} and Art crew!",
-                        "",
-                        "Hihi! I'm Onyx! I'm on the voice acting team and art team. I've been in art since I could hold a crayon, and have been in theater for about four years! I'm very interested in animals and history, I'm a big vampire fanatic… love love love superheros, love dc and marvel. I'm a book/comic and oddities collector!"
-                ],
-                "socials":{
-                        "list":["tumblr", "instagram"],
-                        "tumblr": "https://www.tumblr.com/boneeater3000",
-                        "instagram": "https://www.instagram.com/boneeater9000"
+                        "list":[]
                 },
                 "image": "assets/{name}/icon.webp",
-                "roles": ["VA"],
-                "css": ".backing{background-image: image-set('assets/onyx/background.webp');}"
+                "roles": ["Artist", "Musician"],
+                "css": ".backing{background-image: image-set('assets/yuri/background');}"
+
+        },
+        "zel":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Zel",
+                "gender":"Non-Binary",
+                "pronouns":"Any",
+                "about": [
+                        "Hiya! I'm Zel and I am the voice of <a href='../characters/mouse.html'>Mouse</a> in WTAOW! I'm really passionate a bout writing and storytelling. I am also a twitch streamer where i play mostly Minecraft. Ouside of online stuff, i spend most of my time reading or crocheting :]"
+                ],
+                "socials":{
+                        "list":["twitch", "youtube", "twitter/x"],
+                        "twitch": "https://www.twitch.tv/zelteric",
+                        "youtube": "https://www.youtube.com/@ZeltericVODS",
+                        "twitter/x": "https://x.com/Zzelteric"
+                },
+                "image": "assets/{name}/icon",
+                "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
         },
         "":{
@@ -344,6 +491,5 @@
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
         }
-
 
 }

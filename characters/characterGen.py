@@ -2,6 +2,7 @@ import json, time
 from tqdm import trange
 templateList:list[str] = open("characters/character-template.txt", "r").readlines()
 characters:dict = json.load(open("characters/characters.json", "r"))
+crewmembers:dict = json.load(open("C&C/backend/crewmembers.json",))
 
 unnecessaryData = ["class", "generate"]
 matroyshkaData = ["age"]
@@ -43,18 +44,19 @@ for i in trange(len(characters.keys()), desc="Character Pages", leave=True):
 
                         elif value == "VA":
                                 if isinstance(character[value],str):
-                                        replacement = character[value].replace(" ", "-").lower() + ".html"
+                                        replacement = character[value] + ".html" if character[value] != "VA" else "va.html"
                                         outString = outString.replace("VA.html", replacement)
-                                        replacement = character[value]
+
+                                        replacement = character[value] if character[value]=="VA" else crewmembers[character[value]]["title"]
                                         outString = outString.replace(value.upper(), replacement)
                                 else:
                                         VAlistLines = ""
                                         anchorPrefab = '''                                                        <a href="../C&C/VA.html">VA</a>\n'''
                                         for VA in character[value]:
                                                 tempLine = anchorPrefab
-                                                replacement = VA.replace(" ", "-").lower() + ".html"
+                                                replacement = VA + ".html"
                                                 tempLine = tempLine.replace("VA.html", replacement)
-                                                replacement = VA
+                                                replacement = crewmembers[VA]["title"]
                                                 tempLine = tempLine.replace(value.upper(), replacement)
                                                 VAlistLines += tempLine
                                         # print(VAlistLines)
@@ -67,6 +69,7 @@ for i in trange(len(characters.keys()), desc="Character Pages", leave=True):
                                 outString = outString.replace(value.upper(), replacement)
 
                         # print("Replaced")
-                outString = outString.replace("\n                SCRIPT","")
                 outString = outString.replace("�","o")
+        outString = outString.replace("\n                SCRIPT","")
         output.write(outString)
+        time.sleep(0.01)           
