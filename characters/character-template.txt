@@ -4,14 +4,16 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>TITLE</title>
-                <link rel="icon" type="image/x-icon" href="../assets/images/icon.jpg">
+                <link rel="icon" type="image/x-icon" href="../assets/images/icon.webp">
                 <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
                         :root{
                                 --image: image-set(IMAGE);
-                                --page-colour:#fff;
+                                --page-colour: PAGE-COLOUR;
+                                --text-colour: TEXT-COLOUR;
+                                --highlight: HIGHLIGHT;
                         }
                 </style>
         </head>
@@ -84,8 +86,7 @@
                 <br>
         </body>
         <script>
-                imgTxtAlignment();
-                moveUp("characterPage")
                 SCRIPT
+                loadCharacter()
         </script>
 </html>

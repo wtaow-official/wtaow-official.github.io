@@ -40,7 +40,7 @@
         justify-self: center;
         border-radius: 30px;
         background-repeat: no-repeat;
-        background-image: image-set("../assets/images/idk-man.png");
+        background-image: image-set("../assets/images/idk-man.webp");
         
 }
 .characterSelector .tile a{

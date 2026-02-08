@@ -103,7 +103,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon.jpg",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["Artist", "Musician"],
                 "css": ".backing{background-image: image-set('assets/yuri/background');}"
 
@@ -185,7 +185,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon.jpg",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["VA", "Snippet Writer"]
         },
         "harvey":{
@@ -201,7 +201,7 @@
                         "list":["tumblr"],
                         "tumblr": "https://tumblr.com/beelze98"
                 },
-                "image": "assets/{name}/icon.jpg",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["Editor"]
         },
         "koen":{
@@ -216,9 +216,9 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon.jpg",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["VA", "Singer", "Lyricist"],
-                "css": ".backing{background-image: image-set('assets/koen/background.jpg');}"
+                "css": ".backing{background-image: image-set('assets/koen/background.webp');}"
         },
         "embry":{
                 "generate": false,
@@ -234,7 +234,7 @@
                 },
                 "image": "assets/{name}/icon",
                 "roles": ["Singer"],
-                "css": ".backing{background-image: image-set('assets/embry/background.jpg');}"
+                "css": ".backing{background-image: image-set('assets/embry/background.webp');}"
         },
         "rebecca":{
                 "generate": false,
@@ -266,9 +266,9 @@
                         "linktree":"https://linktr.ee/Yazuroo",
                         "throne": "https://throne.com/yazuroo"
                 },
-                "image": "assets/{name}/icon.jpg",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["Singer"],
-                "css": ".backing{background-image: image-set('assets/yazuroo/background.jpg');}"
+                "css": ".backing{background-image: image-set('assets/yazuroo/background.webp');}"
         },
         "shi-no-ogama":{
                 "generate": false,
@@ -303,7 +303,7 @@
                 },
                 "image": "assets/{name}/icon",
                 "roles": ["Singer"],
-                "css": ".backing{background-image: image-set('assets/death/background.jpg');}"
+                "css": ".backing{background-image: image-set('assets/death/background.webp');}"
 
         },
         "onyx":{
@@ -322,9 +322,9 @@
                         "tumblr": "https://www.tumblr.com/boneeater3000",
                         "instagram": "https://www.instagram.com/boneeater9000"
                 },
-                "image": "assets/{name}/icon.jpg",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["VA"],
-                "css": ".backing{background-image: image-set('assets/onyx/background.jpg');}"
+                "css": ".backing{background-image: image-set('assets/onyx/background.webp');}"
 
         },
         "":{
@@ -341,7 +341,7 @@
                 },
                 "image": "assets/{name}/icon",
                 "roles": [],
-                "css": ".backing{background-image: image-set('assets/{name}/background.jpg');}"
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
         }
 

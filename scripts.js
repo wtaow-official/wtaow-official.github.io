@@ -116,21 +116,25 @@ async function schrodingersXeroPicture(idName, fullPageMode){
                         console.log(data);
                         
                         let characterArray = Object.keys(data)
+                        gettingImage = true
+                        while (gettingImage) {
                         randomNumber = Math.floor(Math.random()* (characterArray.length-1))
+                        imageName = data[characterArray[randomNumber]]["image"]
+                        if (imageName != "blank.webp")
+                                gettingImage = false
+                        }
                         
-                        imageName = characterArray[randomNumber]
-                        
-                        setCookie("xeroImage", characterArray[randomNumber], 0.0104)
-                        imageUrl = "url('./assets/" + characterArray[randomNumber] + ".png')"
+                        setCookie("xeroImage", imageName, 0.0104)
+                        imageUrl = "url('./assets/" + imageName + "')"
                         picture.style.backgroundImage = imageUrl
-                        console.log("Image set to",characterArray[randomNumber] + ".png")
+                        console.log("Image set to",imageName)
                 });
         }
         else{
                 imageName = string
-                imageUrl = "url('./assets/" + imageName + ".png')"
+                imageUrl = "url('./assets/" + imageName + "')"
                 picture.style.backgroundImage = "image-set(" + imageUrl + ")"
-                console.log("Image set to",imageName + ".png")
+                console.log("Image set to",imageName)
         }
 
         if (fullPageMode) {
@@ -279,7 +283,7 @@ function loadGlitch(Name){
         for(let i =0; i<frameCounts[Name]; i++){
                 num = String(i)
                 if (num.length ==1){num = "0"+num}
-                frames.push(glitchDirectory + "glitch-" + num + ".jpg")
+                frames.push(glitchDirectory + "glitch-" + num + ".webp")
         }
         glitchFrames[Name] = frames
         preloadImages(frames)
@@ -385,4 +389,4 @@ function loadCharacter(){
         imgTxtAlignment();
         moveUp("characterPage")
 }
-preloadImages(["assets/images/background.jpg"]);
+preloadImages(["assets/images/background.webp"]);

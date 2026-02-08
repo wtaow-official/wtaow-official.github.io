@@ -1,7 +1,8 @@
 :root{
         --page-colour: rgba(235, 186, 123, 0.686);
         --text-colour:#000000;
-        --image: image-set("../assets/images/idk-man.png");
+        --image: image-set("../assets/images/idk-man.webp");
+        --highlight: #0079b5;
 }
 
 .characterSelector{

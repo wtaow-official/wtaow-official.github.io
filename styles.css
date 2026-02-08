@@ -1,6 +1,6 @@
 :root{
-        --background: image-set("../assets/images/background.jpg");
-        --image: image-set("../assets/images/idk-man.png");
+        --background: image-set("../assets/images/background.webp");
+        --image: image-set("../assets/images/idk-man.webp");
         --top-bg-colour:#0a9127be;
         --top-a-bg-colour: #bdb64ea8;
         --top-a-colour: #000000;
@@ -223,6 +223,16 @@ a{
                 color: var(--hover-highlight);
         }
 
+.link{
+        text-decoration: underline;
+        color: var(--highlight);
+        cursor:pointer;
+}
+        .link:hover{
+                color: var(--hover-highlight);
+                cursor:pointer;
+        }
+
 .tooltip {
         position: relative;
         display: inline-block;
@@ -336,7 +346,7 @@ a{
         bottom: -88vh;
         width: 90vw;
         height: 80vh;
-        background-image: image-set("assets/images/untitled1199.png");
+        background-image: image-set("assets/images/untitled1199.webp");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top;
