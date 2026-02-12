@@ -3,19 +3,18 @@
         <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Template</title>
+                <title>TITLE</title>
                 <link rel="icon" type="image/x-icon" href="../assets/images/icon.webp">
                 <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
-                        .image{
-                                background-image: image-set("IMAGE");
-                        }
-
-                        @media only screen and (max-width: 700px) {
-
-                        }
+                        /* :root{
+                                --image: image-set(IMAGE);
+                                --page-colour: PAGE-COLOUR;
+                                --text-colour: TEXT-COLOUR;
+                                --highlight: HIGHLIGHT;
+                        } */
                 </style>
         </head>
 
@@ -24,9 +23,12 @@
                 <div class= "cover"></div>
                 <div class = "top">
                         <div class = "links">
-                                <a href = "socials.html">Socials</a>
-                                <a href = "..">Home</a>
-                                <a href = "." class = "active">Characters</a>
+                                <a tabindex="1" href = "../socials.html">Socials</a>
+                                <a tabindex="1" href = ".." >Home</a>
+                                <a tabindex="1" href = "."  class = "active">Characters</a>
+                                <a tabindex="1" href = "../Fanart" class="fanart">Fanart</a>
+                                <a tabindex="1" href = "../C&C">C&C</a>
+                                <a tabindex="1" href = "../credits.html" style="margin-right: 15%;" class="credits">Credits</a>
                         </div>
                 </div>
 
@@ -58,16 +60,8 @@
                                                 <td class = "data">EYES</td>
                                         </tr>
                                         <tr>
-                                                <td class = "category">Height</td>
+                                                <td class = "category">Height:</td>
                                                 <td class = "data">HEIGHT</td>
-                                        </tr>
-                                        <tr>
-                                                <td class = "category">Abilities:</td>
-                                                <td class = "data">ABILITIES</td>
-                                        </tr>
-                                        <tr>
-                                                <td class = "category">Personality:</td>
-                                                <td class = "data">PERSONALITY</td>
                                         </tr>
                                         <tr>
                                                 <td class = "category storyRole">Story Role:</td>
@@ -80,16 +74,19 @@
                                                 </td>
                                         </tr>
                                 </table>
+                                <h3>Abilities</h3>
+                                <p>ABILITIES</p>
+                                <h3>Personality</h3>
+                                <p>PERSONALITY</p>
                         </div>
                 </div>
 
-
-                <div class = "bottom">
+                <div class = "bottom picrew-link">
+                        <a class="image" href="https://picrew.me/en/image_maker/1706331"></a>
                 </div>
                 <br>
         </body>
         <script>
-                imgTxtAlignment()
-                moveUp("characterPage")
+                loadCharacter()
         </script>
 </html>

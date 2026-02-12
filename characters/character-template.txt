@@ -9,12 +9,12 @@
                 <link href="characterStyles.css" rel="stylesheet" type="text/css" media="all">
                 <script src = "../scripts.js"></script>
                 <style>
-                        :root{
+                        /* :root{
                                 --image: image-set(IMAGE);
                                 --page-colour: PAGE-COLOUR;
                                 --text-colour: TEXT-COLOUR;
                                 --highlight: HIGHLIGHT;
-                        }
+                        } */
                 </style>
         </head>
 
@@ -60,7 +60,7 @@
                                                 <td class = "data">EYES</td>
                                         </tr>
                                         <tr>
-                                                <td class = "category">Height</td>
+                                                <td class = "category">Height:</td>
                                                 <td class = "data">HEIGHT</td>
                                         </tr>
                                         <tr>
@@ -81,12 +81,12 @@
                         </div>
                 </div>
 
-                <div class = "bottom">
+                <div class = "bottom picrew-link">
+                        <a class="image" href="PICREW"></a>
                 </div>
                 <br>
         </body>
         <script>
                 loadCharacter()
-                SCRIPT
         </script>
 </html>
