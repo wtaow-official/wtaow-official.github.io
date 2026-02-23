@@ -380,6 +380,14 @@ function imageDisplayLink(){
         
 }
 
+function fateDisplay(){
+        let fateRow = document.getElementById("fate")
+        let fateText = fateRow.children[1].textContent
+        if (!fateText){
+                fateRow.style.display = "none"
+        }
+        
+}
 
 function loadCC(){
         console.log("C&C Page Loaded")
@@ -390,6 +398,7 @@ function loadCC(){
 function loadCharacter(){
         console.log("Character Page Loaded")
         imageDisplayLink()
+        fateDisplay()
         imgTxtAlignment();
         moveUp("characterPage")
 }

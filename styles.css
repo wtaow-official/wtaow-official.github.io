@@ -20,9 +20,9 @@ html {
         top: 0;
         right: 0;
         background-image: var(--background);
-        background-size: 100%;
+        background-size: cover;
         width: 100vw;
-        height: 100vw;
+        height: 100vh;
         aspect-ratio: 23/27;
 }
 .cover {
@@ -385,8 +385,7 @@ a{
         html{background-size: 200%;}
         .backing{
                 height: 100vh;
-                aspect-ratio: 23/27;
-                width: auto;
+                width: 100vw;
         }
         .cover{
                 background-color: rgba(31, 31, 31, 0.703);

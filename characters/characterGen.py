@@ -4,7 +4,7 @@ templateList:list[str] = open("characters/character-template.txt", "r").readline
 characters:dict = json.load(open("characters/characters.json", "r"))
 crewmembers:dict = json.load(open("C&C/backend/crewmembers.json",))
 
-unnecessaryData = ["class", "generate"]
+unnecessaryData = ["class", "generate", ""]
 matroyshkaData = ["age"]
 rootVariables = ["page-colour", "text-colour", "highlight"]
 prefabs = {
@@ -43,7 +43,7 @@ for i in trange(len(characters.keys()), desc="Character Pages", leave=True):
 
 
                         elif value == "VA":
-                                if isinstance(character[value],str):
+                                if isinstance(character[value], str):
                                         replacement = character[value] + ".html" if character[value] != "VA" else "va.html"
                                         outString = outString.replace("VA.html", replacement)
 
@@ -57,6 +57,12 @@ for i in trange(len(characters.keys()), desc="Character Pages", leave=True):
                                                 replacement = VA + ".html"
                                                 tempLine = tempLine.replace("VA.html", replacement)
                                                 replacement = crewmembers[VA]["title"]
+                                                if VA == character[value][-1]:
+                                                        pass
+                                                elif VA == character[value][-2]:
+                                                        replacement += "&"
+                                                else:
+                                                        replacement += ","
                                                 tempLine = tempLine.replace(value.upper(), replacement)
                                                 VAlistLines += tempLine
                                         # print(VAlistLines)
