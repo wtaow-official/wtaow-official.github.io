@@ -122,7 +122,7 @@
                 "eyes":"Orange",
                 "fate": "",
                 "role": "Antagonist?",
-                "VA": "VA",
+                "VA": "sofia",
                 "personality" : "Angelbot Model 3.3 was designed to be a multipurpose bot capable of more than its predecessors.",
                 "abilities": "Angelbot Model 3.3 is the only one of its kind. There's a reason for that.",
                 "Picrew" : "https://picrew.me/en/image_maker/1706331",
@@ -553,7 +553,7 @@
         "xero":{
                 "generate": true,
                 "title": "Xero",
-                "image": "xero",
+                "image": "",
                 "class": "xero",
                 "gender": "???",
                 "pronouns": "She/He/Xe",

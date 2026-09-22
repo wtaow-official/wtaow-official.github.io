@@ -1,4 +1,3 @@
-
 function sleep(ms){
         return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -19,6 +18,7 @@ function begone(chosenId){
 function link(hyperlink){
         window.location.href = hyperlink;
 }
+
 function socialIn(){
         var elements = document.getElementsByClassName("social");
         alert(elements[0])
@@ -113,9 +113,6 @@ function schrodingersXeroPicture(idName, fullPageMode){
                 fetch("./characters.json")
                 .then(res => res.json())
                 .then(data =>{
-                        // data = await readJson("./characters.json")
-                        console.log(data);
-                        
                         let characterArray = Object.keys(data)
                         gettingImage = true
                         while (gettingImage) {
@@ -143,35 +140,28 @@ function schrodingersXeroPicture(idName, fullPageMode){
                 .then(res => res.json())
                 .then(data =>{
                         let root = document.documentElement
-                        console.log(imageName);
                         imageName = imageName.split(".")[0]
                         
-                        let relevantData = data[imageName];
-                        console.log(relevantData);
-                        function setXeroRoot(name){
-                                if (relevantData[name] != "default"){
-                                        root.style.setProperty("--"+name, relevantData[name])
-                                }
-                        }
-
-                        setXeroRoot("page-colour")
-                        setXeroRoot("text-colour")
-                        setXeroRoot("highlight")
-                        loadCharacter()
+                        let xeroData = data[imageName];
+                        // console.log(xeroData);
+                        setRootProperty("page-colour", xeroData)
+                        setRootProperty("text-colour", xeroData)
+                        setRootProperty("highlight", xeroData)
+                        // setRootProperty("image")
                 });
         }
 }
 
 
 
-function generate(){
+function generateTiles(tileset){
         let tileBody = document.getElementById("tileBody")
         let template = document.getElementsByClassName("tile")[0]
         console.log(template);
         
         template.remove()
         
-
+        if (tileset=="characters"){
         fetch("./characters.json")
         .then(res => res.json())
         .then(characters =>{
@@ -181,8 +171,9 @@ function generate(){
                 characterList.splice(blankIndex)
 
                 for (i in characterList){
-                        Name = characterList[i]
-                        let characterData = characters[Name]
+                        name = characterList[i]
+                        hrefLink = "./character.html?id=" + name
+                        let characterData = characters[name]
 
                         tileBody.appendChild(template.cloneNode(true))
                         let charElement = tileBody.children[tileBody.children.length-1]
@@ -192,22 +183,61 @@ function generate(){
                         linkObj = charElement.children[2]
 
                         title.textContent = characterData["title"]
-
-                        linkObj.href = Name + ".html"
+                        title.href = hrefLink
+                        linkObj.href = hrefLink
                         
-                        charElement.id = Name
-                        charElement.href = Name + ".html"
+                        charElement.id = name
+                        charElement.href = hrefLink
 
                         
                         img.style.backgroundImage = "image-set('assets/"+characterData["image"]+"')"                        
-                        img.href = Name + ".html"
+                        img.href = hrefLink
                         
 
-                        if (Name == "xero"){
+                        if (name == "xero"){
                                 schrodingersXeroPicture('xero', false)
                         }
                 }
         })
+        }
+        else{
+        fetch("../C&C/backend/crewmembers.json")
+        .then(res => res.json())
+        .then(crewmembers =>{
+                console.log(crewmembers);
+                let characterList = Object.keys(crewmembers)
+                blankIndex = characterList.indexOf("")
+                characterList.splice(blankIndex)
+
+                for (i in characterList){
+                        let name = characterList[i]
+                        let hrefLink = "../C&C/"+name+".html"
+                        let characterData = crewmembers[name]
+                        let imagePath = "../C&C/"+characterData["image"].replace("{name}", name)
+
+                        if (characterData["image"] != "") {                                       
+                                
+                                tileBody.appendChild(template.cloneNode(true))
+                                let charElement = tileBody.children[tileBody.children.length-1]
+                                
+                                img = charElement.children[0]
+                                title = charElement.children[1]
+                                linkObj = charElement.children[2]
+
+                                title.textContent = characterData["title"]
+                                title.href = hrefLink
+                                linkObj.href = hrefLink
+                                
+                                charElement.id = name
+                                charElement.href = hrefLink
+                                
+                                img.style.backgroundImage = "image-set('../C&C//"+characterData["image"].replace("{name}", name)+"')"                  
+                                img.href = hrefLink
+                                
+                        }
+                }
+        }) 
+        }
 }
 
 function imgTxtAlignment(){
@@ -356,11 +386,23 @@ function preloadImages(array) {
         img.src = array[i];
     }
 }
+function setRootProperty(name, relevantData){
+        let root = document.documentElement
+        
+        if (relevantData[name] != "default"){
+                if (name != "image"){
+                        root.style.setProperty("--"+name, relevantData[name])
+                }
+                else{
+                        root.style.setProperty("--image", "image-set(url('./assets/" + relevantData["image"] + "'))")
+                        
+                }
+        }
+}
 
 function imageDisplayLink(){
         let linkObj = document.getElementsByClassName("image")[0]
         imageUrl = String(getComputedStyle(linkObj).backgroundImage)
-        console.log(imageUrl);
         
         imageUrl = imageUrl.slice(15)
         imageUrl = imageUrl.split('"')[0]
@@ -382,11 +424,76 @@ function imageDisplayLink(){
 
 function fateDisplay(){
         let fateRow = document.getElementById("fate")
-        let fateText = fateRow.children[1].textContent
-        if (!fateText){
+        let fateText = fateRow.childNodes[3]
+        
+        if (!fateText.length){
                 fateRow.style.display = "none"
         }
         
+}
+function populateInfo(){
+        fetch("./characters.json")
+        .then(res => res.json())
+        .then(characters =>{
+                let input = new URLSearchParams(window.location.search)
+                id = input.get("id")
+                let characterData = characters[id]
+
+                document.title = characterData["title"]
+                setRootProperty("page-colour", characterData)
+                setRootProperty("text-colour", characterData)
+                setRootProperty("highlight", characterData)
+                setRootProperty("image", characterData)
+
+                let textColumn = document.getElementById("textCol")
+                textColumn.childNodes[1].textContent = characterData.title
+                tableArray = ["gender", "pronouns", "orientation", "age", "eyes", "height", "fate"]
+                for (let index = 0; index < tableArray.length; index++) {
+                        const attribute = tableArray[index];
+                        row = document.getElementById(attribute)
+                        textBox = row.getElementsByClassName("data")[0]
+                        textBox.textContent = characterData[attribute]
+                
+                }
+                vaCell = document.getElementById("VA").childNodes[3]
+                console.log(vaCell);
+                
+                
+                if (typeof characterData["VA"] == "string"){
+                        console.log("solo");
+
+                        let VA = characterData["VA"]
+                        let anchor = document.createElement("a")
+                        anchor.href = "../C&C/"+VA+".html"
+                        anchor.textContent = VA.charAt(0).toUpperCase() + VA.slice(1)
+                        vaCell.appendChild(anchor)
+                        
+                }
+                else{
+                        console.log("Squad");
+
+                        for (let index = 0; index < characterData["VA"].length; index++) {
+                                let VA = characterData["VA"][index];
+                                let anchor = document.createElement("a")
+                                let tempSpan = document.createElement("span") 
+                                anchor.href = "../C&C/"+VA+".html"
+                                anchor.textContent = VA.charAt(0).toUpperCase() + VA.slice(1)
+                                vaCell.appendChild(anchor)
+                                vaCell.appendChild(tempSpan)
+                                if (index < characterData["VA"].length-1){
+                                        tempSpan.textContent += ", "                                        
+                                } 
+                        }
+                        
+                }
+
+                document.getElementById("abilitiesTextbox").textContent = characterData["abilities"]
+                document.getElementById("personalityTextbox").textContent = characterData["personality"]
+                document.getElementById("picrew").childNodes[1].href = characterData["Picrew"]
+                if (characterData["script"] != null){
+                        eval(characterData["script"])
+                }
+        })
 }
 
 function loadCC(){
@@ -395,11 +502,15 @@ function loadCC(){
         moveUp("crewPage")
         imageDisplayLink()
 }
-function loadCharacter(){
-        console.log("Character Page Loaded")
+function loadCharacter(populate=false){
+        if (populate){
+                populateInfo()
+
+        }
         imageDisplayLink()
         fateDisplay()
         imgTxtAlignment();
         moveUp("characterPage")
+        console.log("Character Page Loaded")
 }
-preloadImages(["assets/images/background.webp"]);
+// preloadImages(["assets/images/background.webp"]);
