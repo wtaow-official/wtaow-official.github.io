@@ -184,6 +184,7 @@ function generateTiles(tileset){
 
                         title.textContent = characterData["title"]
                         title.href = hrefLink
+                        title.tabIndex = -1
                         linkObj.href = hrefLink
                         
                         charElement.id = name
