@@ -30,7 +30,7 @@
         "ashe":{
                 "generate": false,
                 "titleCard": false,
-                "title": "Asheira",
+                "title": "Ashe Kaine",
                 "gender":"TransFem",
                 "pronouns":"She/Her/They",
                 "about": [
@@ -40,11 +40,11 @@
                         "list":["linktree"],
                         "linktree":"https://linktr.ee/Asheira"
                 },
-                "image": "assets/{name}/icon",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["VA"]
         },
         "aurora":{
-                "generate": false,
+                "generate": true,
                 "titleCard": false,
                 "title": "Aurora",
                 "gender": "Girlflux",
@@ -57,8 +57,9 @@
                         "list":["tumblr"],
                         "tumblr": "https://thethinkingaurora.tumblr.com"
                 },
-                "image": "assets/aurora/icon",
-                "roles":["Coder", "VA", "Puzzlemaker"]
+                "image": "assets/aurora/icon.webp",
+                "roles":["Coder", "VA", "Puzzlemaker"],
+                "picrew": "https://picrew.me/en/image_maker/599056"
         },
         "aves":{
                 "generate": false,
@@ -72,7 +73,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon",
+                "image": "",
                 "roles": [],
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
@@ -89,7 +90,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/bloom",
+                "image": "",
                 "roles": ["Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"]
         },
         "death":{
@@ -105,7 +106,7 @@
                         "list":["strawPage"],
                         "strawPage": "https://caironai.straw.page/"
                 },
-                "image": "assets/{name}/icon",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["Singer"],
                 "css": ".backing{background-image: image-set('assets/death/background.webp');}"
 
@@ -113,7 +114,7 @@
         "embry":{
                 "generate": false,
                 "titleCard": false,
-                "title": "Embry",
+                "title": "¤»Embry«¤",
                 "gender":"Non-Binary",
                 "pronouns":"They/Them",
                 "about": [
@@ -122,7 +123,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["Singer"],
                 "css": ".backing{background-image: image-set('assets/embry/background.webp');}"
         },
@@ -142,7 +143,7 @@
                         "tumblr": "https://tumblr.com/fireboaserpent",
                         "rentry": "https://rentry.co/fireboaserpent"
                 },
-                "image": "assets/fireboa/icon",
+                "image": "assets/fireboa/icon.webp",
                 "roles": ["Director", "Staff", "Writer", "Musician", "Lyricist", "Singer", "VA", "Puzzlemaker"],
                 "css": ".titleCard{background-image: image-set('assets/fireboa/title');aspect-ratio:10/2}\n.crewpage div{background-color: #db2929;}"
         },
@@ -172,7 +173,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}",
+                "image": "",
                 "roles": []
         },
         "kirachi":{
@@ -189,7 +190,7 @@
                         "pronounsPage":"https://en.pronouns.page/@kirachi"
 
                 },
-                "image": "assets/{name}/icon",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["Writer", "VA", "Musician"],
                 "css": ".backing{background-image: image-set('assets/kirachi/background');}"
 
@@ -201,12 +202,12 @@
                 "gender":"Any/Female",
                 "pronouns":"She/They/He",
                 "about": [
-                        "Hello, I'm Kitty, otherwise known as Rose! I'm the voice actor for <a href='../characters/copycat.html'>Copycat</a>! I have always wanted to voice act and I've had many small chances to voice act for small discord shows! Sadly none have been posted as of now! I'm so glad I was chosen to help voice act in this project since it seemed really interesting to me! I love voice acting, it's a small hobby of mine!"
+                        "Hello, I'm Kitty, otherwise known as Rose! I'm the voice actor for <a href='../characters/character.html?id=copycat'>Copycat</a>! I have always wanted to voice act and I've had many small chances to voice act for small discord shows! Sadly none have been posted as of now! I'm so glad I was chosen to help voice act in this project since it seemed really interesting to me! I love voice acting, it's a small hobby of mine!"
                 ],
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon",
+                "image": "assets/{name}/icon.webp",
                 "roles": [],
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
@@ -239,7 +240,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon",
+                "image": "",
                 "roles": [],
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
@@ -259,7 +260,7 @@
                         "youtube":"https://youtube.com/@mr_sane",
                         "cardd": "https://mrsane.carrd.co/"
                 },
-                "image": "assets/mrSane/icon",
+                "image": "assets/mrSane/icon.webp",
                 "roles": ["VA", "Artist", "Musician"],
                 "css": ".backing{background-image: image-set('assets/mrSane/background');}"
 
@@ -298,7 +299,7 @@
                         "list":["cardd"],
                         "cardd": "https://rebeccamondry.carrd.co/"
                 },
-                "image": "assets/{name}/icon",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["VA", "Singer"]
         },
         "ronin":{
@@ -313,7 +314,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon",
+                "image": "",
                 "roles": [],
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
@@ -330,7 +331,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon",
+                "image": "",
                 "roles": [],
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
@@ -348,7 +349,7 @@
                         "list":["cardd"],
                         "cardd": "https://shinoogama.carrd.co/"
                 },
-                "image": "assets/{name}/icon",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["VA"],
                 "css": ".backing{background-image: image-set('assets/shi-no-ogama/background');}"
 
@@ -367,7 +368,7 @@
                         "list":["tumblr"],
                         "tumblr":"https://www.tumblr.com/queen--snow "
                 },
-                "image": "assets/{name}/icon",
+                "image": "assets/{name}/icon.webp",
                 "roles": ["VA", "Singer"]
         },
         "tookie":{
@@ -397,7 +398,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon",
+                "image": "",
                 "roles": [],
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
@@ -432,7 +433,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon",
+                "image": "",
                 "roles": [],
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
@@ -461,7 +462,7 @@
                 "gender":"Non-Binary",
                 "pronouns":"Any",
                 "about": [
-                        "Hiya! I'm Zel and I am the voice of <a href='../characters/mouse.html'>Mouse</a> in WTAOW! I'm really passionate a bout writing and storytelling. I am also a twitch streamer where i play mostly Minecraft. Ouside of online stuff, i spend most of my time reading or crocheting :]"
+                        "Hiya! I'm Zel and I am the voice of <a href='../characters/character.html?id=mouse'>Mouse</a> in WTAOW! I'm really passionate a bout writing and storytelling. I am also a twitch streamer where i play mostly Minecraft. Ouside of online stuff, i spend most of my time reading or crocheting :]"
                 ],
                 "socials":{
                         "list":["twitch", "youtube", "twitter/x"],
@@ -469,8 +470,25 @@
                         "youtube": "https://www.youtube.com/@ZeltericVODS",
                         "twitter/x": "https://x.com/Zzelteric"
                 },
-                "image": "assets/{name}/icon",
+                "image": "assets/{name}/icon.webp",
                 "roles": [],
+                "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
+
+        },
+        "sofia":{
+                "generate": false,
+                "titleCard": false,
+                "title": "Sofia Tarvalo",
+                "gender":"Female",
+                "pronouns":"She/Her",
+                "about": [
+                        "Voice actor for <a href='../characters/.html?id=angelbot_model_3-3'>Model 3.3"
+                ],
+                "socials":{
+                        "list":[]
+                },
+                "image": "",
+                "roles": ["VA"],
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 
         },
@@ -486,7 +504,7 @@
                 "socials":{
                         "list":[]
                 },
-                "image": "assets/{name}/icon",
+                "image": "",
                 "roles": [],
                 "css": ".backing{background-image: image-set('assets/{name}/background.webp');}"
 

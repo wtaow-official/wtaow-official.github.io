@@ -206,7 +206,7 @@ function generateTiles(tileset){
         .then(res => res.json())
         .then(crewmembers =>{
                 console.log(crewmembers);
-                let characterList = Object.keys(crewmembers)
+                let characterList = Object.keys(crewmembers).slice(1,-1)
                 blankIndex = characterList.indexOf("")
                 characterList.splice(blankIndex)
 
@@ -446,6 +446,9 @@ function populateInfo(){
                 setRootProperty("highlight", characterData)
                 setRootProperty("image", characterData)
 
+                imageDisplayLink()
+
+
                 let textColumn = document.getElementById("textCol")
                 textColumn.childNodes[1].textContent = characterData.title
                 tableArray = ["gender", "pronouns", "orientation", "age", "eyes", "height", "fate"]
@@ -459,26 +462,27 @@ function populateInfo(){
                 vaCell = document.getElementById("VA").childNodes[3]
                 console.log(vaCell);
                 
-                
+                fetch("../C&C/backend/crewmembers.json")
+                .then(res => res.json())
+                .then(crewmembers =>{
                 if (typeof characterData["VA"] == "string"){
-                        console.log("solo");
 
                         let VA = characterData["VA"]
                         let anchor = document.createElement("a")
                         anchor.href = "../C&C/"+VA+".html"
-                        anchor.textContent = VA.charAt(0).toUpperCase() + VA.slice(1)
+                        anchor.textContent = crewmembers[VA].title
                         vaCell.appendChild(anchor)
                         
                 }
                 else{
-                        console.log("Squad");
 
                         for (let index = 0; index < characterData["VA"].length; index++) {
                                 let VA = characterData["VA"][index];
                                 let anchor = document.createElement("a")
                                 let tempSpan = document.createElement("span") 
                                 anchor.href = "../C&C/"+VA+".html"
-                                anchor.textContent = VA.charAt(0).toUpperCase() + VA.slice(1)
+                                anchor.textContent = crewmembers[VA].title
+                                // anchor.textContent = VA.charAt(0).toUpperCase() + VA.slice(1)
                                 vaCell.appendChild(anchor)
                                 vaCell.appendChild(tempSpan)
                                 if (index < characterData["VA"].length-1){
@@ -486,10 +490,38 @@ function populateInfo(){
                                 } 
                         }
                         
-                }
+                }})
+                // document.getElementById("personalityTextbox").textContent = characterData["personality"]
+                let personalityTextbox = document.getElementById("personalityTextbox")
+                let personalityText = characterData["personality"] + ""
+                // if (personalityText.includes("<a")){
+                //         //  "...<a href = 'alexis.html'>Alexis</a>..."
+                //         personalityText = personalityText.replace(/>/g, "<")
+                //         console.log(personalityText);
+                        
+                //         personalityTexts = personalityText.split("<")
+                //         //  "..." + "a href = 'alexis.html'" + Alexis" + "/a" + "..."
+                //         console.log(personalityTexts);
+                        
+                //         let s1a = document.createElement("span")
+                //         s1a.textContent = personalityTexts[0]
+                //         personalityTextbox.appendChild(s1a)
 
+                //         let a1  = document.createElement("a") 
+                //         personalityTexts[1] = personalityTexts[1].replace("a href = '", "")
+                //         personalityTexts[1] = personalityTexts[1].replace("'", "")
+                //         a1.href = personalityTexts[1]
+                //         a1.textContent = personalityTexts[2]
+                //         personalityTextbox.appendChild(a1)
+
+                //         let s1b = document.createElement("span")
+                //         s1b.textContent = personalityTexts[4]
+                //         personalityTextbox.appendChild(s1b)
+                // }
+                // else{
+                        personalityTextbox.innerHTML = characterData["personality"]
+                // }
                 document.getElementById("abilitiesTextbox").textContent = characterData["abilities"]
-                document.getElementById("personalityTextbox").textContent = characterData["personality"]
                 document.getElementById("picrew").childNodes[1].href = characterData["Picrew"]
                 if (characterData["script"] != null){
                         eval(characterData["script"])

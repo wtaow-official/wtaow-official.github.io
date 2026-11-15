@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>C&C</title>
+                <link rel="icon" type="image/x-icon" href="../assets/images/icon.webp">
+                <link href="../styles.css" rel="stylesheet" type="text/css" media="all">
+                <link href="crewStyles.css" rel="stylesheet" type="text/css" media="all">
+                <script src = "../scripts.js"></script>
+                <style>
+                        :root{
+                                --highlight: aliceblue
+                        }
+
+                        .tile.base .image{background-image: image-set("assets/base.webp");}
+                        a .link-spanner{
+                                margin-top: -110%;
+                                margin-left: -5%;
+                                width: 110%;
+                                aspect-ratio: 0.95;
+                                float: left;
+                                z-index: 1;
+                                cursor: pointer;
+                        }
+                </style>
+
+                <script>
+
+                </script>
+
+        </head>
+
+        <body class = "index_Back">
+                <div class= "backing"></div>
+                <div class= "cover"></div>
+                <div class = "top">
+                        <div class = "links">
+                                <a href = "../socials.html">Socials</a>
+                                <a href = "..">Home</a>
+                                <a href = "../characters/">Characters</a>
+                                <a href = "../Fanart" class="fanart">Fanart</a>
+                                <a href = "." class = "active">C&C</a>
+                                <a href = "../credits.html" style="margin-right: 15%;" class="credits">Credits</a>
+                        </div>
+                </div>
+
+
+                <div class = "characterSelector" id="tileBody">
+                        <div class = 'tile'>
+                                <a class = 'image' id = "" href="" tabindex="0" style="background-image: image-set('');"></a>
+                                <a><span class = "mobile"><br></span></a>
+                                <a href="" tabindex="-1"><span class="link-spanner"></span></a>
+                        </div>
+                    
+                </div>
+
+
+                <div class = "bottom">
+                </div>
+                <br>
+        </body>
+        <script>
+                generateTiles("crew")
+                // sleep(500).then(() => {
+                //         schrodingersXeroPicture('xero', false)
+                // });
+        </script>
+</html>

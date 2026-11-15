@@ -1,6 +1,7 @@
-import json, aTools
+import json
+from aTools import localPath
 templateList = open("C&C/backend/crew-template.txt", "r").readlines()
-crewmembers = json.load(open(aTools.localPath("../backend/crewmembers.json"), "r"))
+crewmembers = json.load(open(localPath("../backend/crewmembers.json"), "r"))
 unnecessaryData = [""]
 
 templateString = ""
@@ -11,7 +12,8 @@ prefabs = {
         "role":['''                                                        ''','''<a href = "../roles.html#ROLE">ROLE</a>,\n'''],
         "aboutTab":"                                    <br>",
         "titleCard": "<a class = 'titleCard' style='width:100%'></a>",
-        "social":['''                                                        ''','''<a href = "SOCIALLINK">SOCIAL</a>,\n''']
+        "social":['''                                                        ''','''<a href = "SOCIALLINK">SOCIAL</a>,\n'''],
+        "picrewBox": """<div class = "bottom picrew-link">\n                        <a class="image" href="PICREW"></a>\n                </div>"""
 }
 elements = ["css", "script", ""]
 
@@ -83,6 +85,10 @@ for crew in crewmembers["Array"]:
                                                 line = line.replace("SOCIAL", social.capitalize(), 1)
                                                 lines += line
                                         outString = outString.replace(value.upper(), lines)
+                                elif value == "picrew":
+                                        outString = outString.replace("""<div class = "bottom">\n                </div>""", prefabs["picrewBox"])
+                                        replacement = crewmember[value]
+                                        outString = outString.replace(value.upper(), replacement)
                                 else:
                                         replacement = crewmember[value]
                                         outString = outString.replace(value.upper(), replacement)

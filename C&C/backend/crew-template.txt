@@ -12,16 +12,17 @@
                 <script src = "../scripts.js"></script>
                 <style>
                         :root{
-                                --top-bg-colour: ;
-                                --top-a-bg-colour: ;
-                                --top-a-colour: ;
-                                --top-a-hover-bg-colour: ;
-                                --top-a-hover-colour: ;
-                                --highlight: ;
-                                --text-colour: ;
-                                --page-colour: ;
-                                --image: ;
-                                --background: ;
+/*                                --top-bg-colour: default;
+                                --top-a-bg-colour: default;
+                                --top-a-colour: default;
+                                --top-a-hover-bg-colour: default;
+                                --top-a-hover-colour: default;
+                                --highlight: default;
+                                --text-colour: default;
+                                --page-colour: default;
+                                --background: default;*/
+                                --image: image-set("IMAGE");
+
                         }
 
                         @media only screen and (max-width: 700px) {

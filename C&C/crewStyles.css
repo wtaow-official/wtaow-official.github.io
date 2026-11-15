@@ -17,7 +17,7 @@
         -o-border-radius: 30px;
 }
 .characterSelector .tile{
-        margin:3%;
+        margin:2.9%;
         display: inline-block;
         width: 25%;
         background-color:rgba(87, 79, 72, 0.74);
@@ -137,6 +137,26 @@ td.data a{
 td.data a:hover{
         color: var(--hover-highlight);
 }
+.picrew-link{
+        width: auto;
+        height: auto;
+        right: 5px;
+        bottom: -10px;
+        padding: 0;
+}
+        .picrew-link a{
+                background-image: image-set("../assets/images/picrew.webp");
+                background-size: contain;
+                background-repeat: no-repeat;
+                display:inline-block;
+                object-fit:contain;
+                width: 6vw;
+                height: 6vw;
+                border-radius: 15px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+        }
+
 @media only screen and (max-width: 700px) {
         h1{
                 text-align: center;

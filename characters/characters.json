@@ -35,7 +35,7 @@
                 "fate": "",
                 "role": "Protagonist",
                 "VA": "koen",
-                "personality" : "Ali is a cheerful and bright kid, filled with hope. He lost his big sister a few months ago, and is desperate to find her. They believe that everyone deserves a second chance, and are determined to trust people even when <a href = 'alexis.html'>Alexis</a> won't.",
+                "personality" : "Ali is a cheerful and bright kid, filled with hope. He lost his big sister a few months ago, and is desperate to find her. They believe that everyone deserves a second chance, and are determined to trust people even when <a href = 'character.html?id=alexis'>Alexis</a> won't.",
                 "abilities": "Ali doesn't possess any abilities.",
                 "Picrew" : "https://picrew.me/en/image_maker/1706331",
                 "page-colour" : "#ffcca3",
